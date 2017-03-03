@@ -8,7 +8,7 @@ category: java
 Core Java
 Memory Management
 
-{% highlight java %}
+{% highlight java linenos %}
 class Outer {
 	private int item;
 
@@ -28,3 +28,6 @@ class Outer {
 }
 {% endhighlight %}
 
+<!--
+https://demisx.github.io/jekyll/2014/01/13/improve-code-highlighting-in-jekyll.html
+-->
