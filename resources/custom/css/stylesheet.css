@@ -22,7 +22,7 @@ header h1 {
 	font-family: 'Fredericka the Great', cursive;
 }
 
-header h1 a, header h1 a:hover{
+header h1 a, header h1 a:hover, header h1 a:visited{
 	text-decoration:none;
 	color:#b63b4d;
 }
@@ -36,9 +36,23 @@ h1,h2,h3 {
 }
 
 h1{
+	
 	font-size:50px;
+	/*
 	font-weight:bold;
 	line-height:75px;
+	*/
+	width: 100%;
+    height: auto;
+	 display:block;       
+    -webkit-transition: .2s height linear;
+    -moz-transition: .2s height linear;
+    -o-transition: .2s height linear;
+    transition: .2s height linear;
+}
+
+.main-content h1{
+	text-align:center;
 }
 
 table thead tr td {
@@ -47,15 +61,11 @@ table thead tr td {
 	font-weight:bold;
 	font-size:20px;
 }
-.center {
-	text-align:center;
-	
-}
+
 .header-cap {
-	/*
-	height:3px;
-	background:#444359;
-	*/
+	
+	height:2px;
+	background:#b63b4d;
 }
 
 .header-content {
@@ -86,6 +96,29 @@ table thead tr td {
 	padding:25px 0;
 	width:100%;
 }
+
+.nav-button a{
+	padding:10px 0 0 0;
+	text-decoration:none;
+	display:block;
+}
+
+.topic_link, .topic_link:hover, .topic_link:active, .topic_link.visited{
+	text-decoration:none;
+}
+
+.posttitle {
+	text-align:center;
+	padding:0;
+}
+
+.posttitle h1{
+	margin:0;
+}
+
+.aboutmelink a,.aboutmelink a:active,.aboutmelink a:hover,.aboutmelink a:visited{
+	text-decoration:none;
+}
 /*
 .header-bottom {
 	height:3px;
@@ -93,51 +126,27 @@ table thead tr td {
 }
 */
 
+
+/*
+	Footer
+*/
+{% include css/footer.css %}
+
+/*
+	Right side bar
+*/
+{% include css/sidebar-right.css %}
+
+
 .box {
 	border:1px solid red;
 }
-
-footer {
-	/*padding:25px 0;*/
-	background-color:#444359;
-	width:100%;
-	height:200px;
-	position:absolute;
-	bottom:0;
-	left:0;
-	color:white;
-	text-align:center;
-}
-.footer-top{
-	height:4px;	
-	background-color:#b63b4d;
+.center {
+	text-align:center;	
 }
 
-.footer-content {
-	padding:25px 0;
-}
 
-.side-bar-right .aboutme{	
-	padding:5px;
-	margin:10px 0;
-	
-}
-.side-bar-right {
-	text-align:center;
-	hight:300px;
-}
-.profileimage {
-	height:150px;
-	padding:5px;
-	border:1px solid #ccc;
-}
-.aboutmedesc{
-	margin-top:10px;
-	text-align:justify;
-	font-style:italic;
-	font-family: 'Nixie One', cursive;
-	color:black;
-}
+
 /*
 .footer-content {
 	position: absolute;
