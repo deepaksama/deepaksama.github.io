@@ -1,0 +1,13 @@
+	
+						<ul class="nav {{include.navclass}}">								
+							{% for currentpage in site.pages %}
+								{% if currentpage.title != 'none' %}							
+								<li> 
+									<a href="{{currentpage.url}}" class="{% if currentpage.url == page.url %} current{% endif %} ">
+										{{currentpage.title}}
+									</a>
+								</li>
+								{% endif %}
+							{% endfor %}							
+		
+						</ul>

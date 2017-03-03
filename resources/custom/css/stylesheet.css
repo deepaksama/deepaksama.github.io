@@ -1,0 +1,150 @@
+---
+title: none
+---
+
+/*
+	Header related
+*/
+
+body, html {
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+	
+	font-size:15px;
+	width:100%;
+}
+
+header h1 {
+	font-family: 'Tangerine', cursive;
+	font-family: 'Great Vibes', cursive;
+	font-family: 'Sacramento', cursive;
+	font-family: 'Fredericka the Great', cursive;
+}
+
+header h1 a, header h1 a:hover{
+	text-decoration:none;
+	color:#b63b4d;
+}
+
+h1,h2,h3 {
+	/*font-family: 'Rancho', cursive;
+	font-family: 'Lato', sans-serif;*/
+	font-family: 'Rochester', cursive;
+	font-family: 'Kaushan Script', cursive;
+	font-family: 'Domine', serif;
+}
+
+h1{
+	font-size:50px;
+	font-weight:bold;
+	line-height:75px;
+}
+
+table thead tr td {
+	/*background-color:#77768c;*/
+	color:#444359;
+	font-weight:bold;
+	font-size:20px;
+}
+.center {
+	text-align:center;
+	
+}
+.header-cap {
+	/*
+	height:3px;
+	background:#444359;
+	*/
+}
+
+.header-content {
+	height:25%;
+	border-bottom:1px solid #ccc;
+}
+.header-bottom {
+	/*height:2px;*/
+	border-bottom:2px dashed #444359;
+	/*
+	background-color:#eee;
+	background-color:#444359;
+	background-color:#b63b4d;
+	*/
+}
+
+.page-wrapper {
+	min-height:100%;
+	position:relative;
+}
+.container-fluid {
+	margin:0;
+	padding:0;
+}
+.content-wrapper {
+	border-top:1px solid #ccc;
+	margin-bottom:200px;
+	padding:25px 0;
+	width:100%;
+}
+/*
+.header-bottom {
+	height:3px;
+	background:#444359;
+}
+*/
+
+.box {
+	border:1px solid red;
+}
+
+footer {
+	/*padding:25px 0;*/
+	background-color:#444359;
+	width:100%;
+	height:200px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	color:white;
+	text-align:center;
+}
+.footer-top{
+	height:4px;	
+	background-color:#b63b4d;
+}
+
+.footer-content {
+	padding:25px 0;
+}
+
+.side-bar-right .aboutme{	
+	padding:5px;
+	margin:10px 0;
+	
+}
+.side-bar-right {
+	text-align:center;
+	hight:300px;
+}
+.profileimage {
+	height:150px;
+	padding:5px;
+	border:1px solid #ccc;
+}
+.aboutmedesc{
+	margin-top:10px;
+	text-align:justify;
+	font-style:italic;
+	font-family: 'Nixie One', cursive;
+	color:black;
+}
+/*
+.footer-content {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color:#333;
+	height:15%;
+}
+*/
