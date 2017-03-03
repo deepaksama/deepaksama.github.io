@@ -1,0 +1,9 @@
+
+baseurl: /
+
+markdown: kramdown
+highlight: roug
+exclude: ['README.md']
+authors:
+    deepak_sama:
+        display_name:Deepak Reddy Sama
