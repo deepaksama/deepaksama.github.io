@@ -1,6 +1,5 @@
 
-baseurl: /
-
+baseurl: ""
 markdown: kramdown
 highlight: roug
 exclude: ['README.md']
