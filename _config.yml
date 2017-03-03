@@ -1,8 +1,14 @@
 
-baseurl: /
+baseurl: ""
+markdown: kramdown
+
 
 markdown: kramdown
-highlight: roug
+kramdown:
+    input: GFM
+    auto_ids: true
+    syntax_highlighter: rouge
+        
 exclude: ['README.md']
 authors:
     deepak_sama:

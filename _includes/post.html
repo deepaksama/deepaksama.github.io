@@ -1,0 +1,28 @@
+			<div class="content-wrapper row">
+				<div class="col-md-2 side-bar-left">				
+					
+				</div>
+				<div class="col-md-8 main-content">
+						<div class="col-md-12 nav-button">								
+							{% if page.categories contains 'java' %} 
+								{% assign my_var = 'javatopics.html' %}
+							{% endif %}
+							<h4><a href="/{{my_var}}">
+								<span class="glyphicon glyphicon-triangle-left">  </span> Back to topics 
+								</a>
+							</h4>
+						</div>
+
+						<div class="col-md-12 posttitle">							
+							<h1>{{page.title}}</h1>
+						</div>
+						<div class="col-md-12">
+							<p>
+							{{content}}
+							</p>
+						</div>
+				</div>
+				<div class="col-md-2 side-bar-right">
+					
+				</div>
+			</div>

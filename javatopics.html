@@ -1,0 +1,39 @@
+---
+layout: archives-by-category
+title : Java Topics
+---
+
+<!-- <h1 class="center"> Topics </h1> -->
+<table class="table">
+	<thead>
+		<tr>
+			<td> Java Topics </td>
+			<td> Description <td>
+		</tr>
+	</thead>
+	<tbody>
+		{% for post in site.categories.java %}
+			<tr>
+				<td><a class="topic_link" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></td><td>{{post.meta}}</td>
+			</tr>
+		{% endfor %}
+
+		<!--
+		<tr>
+		<td><a class="topic_link" href="">Multithreading</a></td><td></td>
+		</tr>
+		<tr>
+		<td><a class="topic_link" href="">Serialization</a></td><td></td>
+		</tr>
+		<tr>
+		<td><a class="topic_link" href="">Collections</a></td><td></td>
+		</tr>
+		<tr>		
+		<td><a class="topic_link" href="{{site.baseurl}}javainterview.html">Java Interview Questions</a></td><td></td>
+		</tr>
+		-->
+	</tbody>
+</table>
+
+
+
