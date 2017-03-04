@@ -9,9 +9,10 @@
 	hight:300px;
 }
 .profileimage {
-	height:150px;
+	/*height:150px;*/
 	padding:5px;
-	border:1px solid #bbb;
+	/*border:1px solid #bbb;*/
+	text-align:right;
 }
 .aboutmedesc{
 	margin-top:10px;
