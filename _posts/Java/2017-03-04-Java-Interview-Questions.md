@@ -36,7 +36,7 @@ Similarly we can synchronize other collections as:
 Collection.synchronizedMap(Map map)
 Collection.synchronizedCollection(Collection c)
 
-4.	If an Employee class is present and its objects are added to an ArrayList.  How do I sort this list on employId of the Employee class?
+### **4.	If an Employee class is present and its objects are added to an ArrayList.  How do I sort this list on employId of the Employee class?**
 
 Follow below if you have to write new Employee class:
 
@@ -48,10 +48,10 @@ Follow below if you already have Employee class:
 •	Since Comparable interface cannot be implemented, create Comparator and override the compare(Object obj1, Object obj2) method.
 •	Call the Collections.sort() on the list and pass Comparator as an argument.
 
-5.	What is the difference between ArrayList and LinkedList?
+### **5.	What is the difference between ArrayList and LinkedList?**
 
 
-6.	What are the benefits of Java Collections framework?
+### **6.	What are the benefits of Java Collections framework?**
 
 a.	Reduces development effort as we not need to implement our own collection classes
 b.	Enhances the quality of the code with well tested framework classes Or Quality is assured as they are well tested.
