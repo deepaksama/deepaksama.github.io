@@ -65,11 +65,11 @@ b.	Generics make code cleaner since we do not need to use casting and instanceof
 
 If Collection extends Cloneable or Serializable, that would require all Collection implantation to be Cloneable and Serializable, but that would be mistake as it would not be meaning full for all the collection implementation.  For example what does it mean to clone a Collection that is backed by database?  Same argument is true for serialization.
 
-9.	Why Map interface doesn’t extend Collection interface?
+### **9.	Why Map interface doesn’t extend Collection interface?**
 
 Although Map interface and its implementations are part of collections framework, Maps are not collections and collections are not maps.  Collections are “group of elements” and Map contains key-value pairs and it does not fit into the “group of elements” paradigm.
 
-10.	 What is an iterator?
+### **10.	 What is an iterator?**
 
 Iterator interface provides methods to iterate over any Collection. We can get iterator instance for any collection using iterator() method.  Iterator allows the caller to remove elements from underlying collection while iterating.  It implements Iterator design pattern.
 11.	What is the difference between Enumeration and Iterator interface?
@@ -86,21 +86,26 @@ next()
 remove()
 3.	Not safer in multi-threaded environment	3.	More safe and secure when compared to Enumeration as iterator does not allow other thread to modify the collection object while some thread is iterating over it.  It throws ConcurrentModificationException.  
 
-12.	 What are differences between Iterator and ListIterator?
+### **12.	 What are differences between Iterator and ListIterator?**
 
 a.	We can use Iterator to traverse Set and List collection.  Whereas ListIterator can be used with Lists only
 b.	Iterator can traverse in forward direction only.  Whereas ListIterator can be used to traverse in both directions.
 c.	ListIterator inherits from Iterator interface and comes with extra functionalities like adding an element, replacing an element, getting index positon for previous and next elements.	
 
-13.	What are the different ways to iterate over list?
+### **13.	What are the different ways to iterate over list?**
 
 We can iterate over list in two different ways:
 
+{% highlight java linenos %}
 //Fisrt
 List<String> list = new ArrayList<String>();
 for(String st : list) {
 	System.out.println(st + " ");
 }
+
+{% endhighlight %}
+
+{% highlight java linenos %}
 //Second
 Itertor<String> itr = list.iterator();
 while(itr.hasNext())
@@ -109,15 +114,17 @@ while(itr.hasNext())
 	System.out.println(obj + " ");
 }
 
-14.	What is fail-fast property of the Iterator?
+{% endhighlight %}
+
+### **14.	What is fail-fast property of the Iterator?**
 
 Iterator fail-fast property checks for any modification in the structure of the underlying collection every time we try to get the next element.  If there is any modification fount, it throws ConcurrentModificationException.  All the implementations 	of Iterator in Collection classes are fail-fast by design except the concurrent collection classes like ConcurrentHashMap and CopyOnWriteArrayList.
 
-15.	How to avoid ConcurrentModificationException while iterating over collection?
+### **15.	How to avoid ConcurrentModificationException while iterating over collection?**
 
 We can user concurrent collection classes to avoid ConcurrentModificationException.  
 	
-16.	How HashMap works in Java?
+### **16.	How HashMap works in Java?**
 
 HashMap stores key-value pair in Map.Entry static nested class implementation.  HashMap uses hashing algorithm and uses hashCode() and equals() method in put() and get() methods.  
 
@@ -127,15 +134,16 @@ When we call get method by passing Key, again it uses the hashCode() to find the
 
 The important things to note about HashMap are capacity, load factor, and threshold resizing.  HashMap initial default capacity is 16 and load factor is 0.75.  Threshold is the capacity multiplied by load factor and whenever we try to add and entry, if map size is greater than threshold, HashMap rehashes the contents of the map into a new array with larger capacity.  The capacity is always the power of 2.
 
-17.	What is the importance of hashCode() and equals() methods?
+### **17.	What is the importance of hashCode() and equals() methods?**
 
 HashMap uses key Object hashCode() and equals() method to determine the index to put the key-value pair.  These methods are also used when we try to get value from HashMap.  If these methods are not implemented correctly, two different key’s might produce same hashCode() and equals() output and in that case rather than storing it at different locations,. HashMap will consider them same and overwrite them
 Similarly all the collection classes that does not store duplicate data use hashCode() and equals() to find duplicates, so its very important to implement them correctly.  	 
 
-18.	Why override hashCode() method when override equals()?
+### **18.	Why override hashCode() method when override equals()?**
 
 When you insert an object into Hashtable hashCode() method is used to identify the buck where it should be stored.  If you do not override equals() and do not override hashCode() the contract If obj1.equals() == obj2.equals() then obj1.hashCode() should be equal to obj2.hashCode().  Due to which equal object my fall into different buckets of hash tables and while lookup you may end up looking in wrong bucket resulting in object not found.
-19.	Can we use any class as Map key?
+
+### **19.	Can we use any class as Map key?**
 
 We can use any class as Map key, however following points should be considered before using them.
 
@@ -144,13 +152,13 @@ b.	The class should follow all the rules associated with equals() and hashCode()
 c.	If a class member is not used in equals(), you should not use it in hashCode() also.
 d.	Best practice 
 
-20.	What are the different Collection views provided by Map interface?
+### **20.	What are the different Collection views provided by Map interface?**
 
 a.	Set keyset()	
 b.	Collection values()
 c.	Set<Map.Entry<K,V>> entrySet()
 
-21.	What is difference between HashMap and Hashtable?
+### **21.	What is difference between HashMap and Hashtable?**
 
 HashMap and Hashtable both implement Map interface and look similar, however there are following differences between them:
 
@@ -160,12 +168,13 @@ c.	LinkedHashMap was introduced in java 1.4 as a sub class of HashMap, so in cas
 d.	HashMap provides Set of keys to iterate and hence it’s fail-fast. But Hashtable provides Enumeration of keys that does not support this feature.
 e.	Hashtable is considered as legacy class and if you are looking for modification of Map while iterating, you should use ConcurrentHashMap
 
-22.	How to decide between HashMap and TreeMap?
+### **22.	How to decide between HashMap and TreeMap?**
 
 For inserting, deleting and locating elements in a Map, the HashMap offers the best alternative.  If however you need to traverse the keys in sorted order, then TreeMap is better alternative.  
 
 Depending on the size of your collection, it may be faster to add elements to a HashMap, then covert the map to TreeMap for sorted key traversal.
-23.	What are the similarities and differences between ArrayList and Vector?
+
+### **23.	What are the similarities and differences between ArrayList and Vector?**
 
 Similarities:
 a.	Both are index based and backed up by an array internally.
@@ -178,7 +187,7 @@ a.	Vector is synchronized whereas ArrayList is not synchronized.  However if you
 b.	ArrayList is faster than Vector because it doesn’t have any overhead of synchronization.
 c.	ArrayList is more versatile because we can get synchronized list or read-only list from it easily using Collections utility class.
 
-24.	What is difference between Array and ArrayList?  When will you use Array over ArrayList?
+### **24.	What is difference between Array and ArrayList?  When will you use Array over ArrayList?**
 
 Differences:
 
@@ -192,7 +201,7 @@ a.	If the size of list is fixed and mostly used to store and traverse through th
 b.	For list of primitive data types, although Collections use autoboxing to reduce the coding effort but still it makes them slow when working on fixed size primitive data types.
 c.	If you are working on fixed multi-dimensional data, using [][] is far more easier than List<List<>>
 
-25.	What is difference between ArrayList and LinkedList?
+### **25.	What is difference between ArrayList and LinkedList?**
 
 ArrayList and LinkedList both implement List interface but there are some differences between them.
 
@@ -202,7 +211,7 @@ b.	Insertion, addition or removal of an element is faster in LinkedList compared
 
 c.	LinkedList consumes more memory than ArrayList because every node in LinkedList store reference of previous and next elements.
 
-26.	Which collection classes provide random access of its elements?
+### **26.	Which collection classes provide random access of its elements?**
 
 ArrayList, HashMap, TreeMap and Hashtable classes provide random access to its elements.
 
