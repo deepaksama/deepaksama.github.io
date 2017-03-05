@@ -250,6 +250,4 @@ We can create a read-only collection using Collections.unmodifiableCollection(Co
 We can use Collections.synchronizedCollection(Collection c) to get synchronized (thread-safe) collection backed by the specified collection.
 
 
-http://www.java-questions.com/collections-interview-questions.html
-
 
