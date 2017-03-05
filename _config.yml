@@ -1,6 +1,7 @@
 
 baseurl: ""
 markdown: kramdown
+future: true
 
 
 markdown: kramdown
