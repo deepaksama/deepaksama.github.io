@@ -8,7 +8,7 @@ published: true
 Collections
 
 
-1.	What are the basic interfaces of Java Collection framework?
+### **1.	What are the basic interfaces of Java Collection framework?**
 
 Java collections framework has 4 basic interfaces.   
 a.	Collection is the root of the collections hierarchy.  Java does not provide any direct implementation of this interface.
@@ -17,14 +17,16 @@ c.	List extends Collection interface.  This is an ordered collection and can con
 d.	Queue extends Collection interface.
 e.	Map is a collection of key , value pairs.  A map cannot contain duplicate keys.  Each key can map to at most one value.
 
-2.	What are the differences between ArrayList and Vector?
+### **2.	What are the differences between ArrayList and Vector?**
+
 
 Differences can be explained in terms of three aspects 
 
 •	Synchronization – ArryList is not thread safe whereas Vector is thread-safe.  In Vector class each method like add() , get(int i) is surrounded with a synchronized block, thus making Vector thread-safe.
 •	Data growth – Internally both ArrayList and Vector hold their content using an Array.  When an element is inserted into an ArrayList or a Vector, the object needs to expand its internal array if it runs out of room for new element.  A Vector defaults to doubling its array size, while the ArrayList increases its array size by 50 percent.
 •	Performance – Since vector is thread-safe, performance is slower than ArrayList.
-3.	How and ArrayList can be synchronized without using Vector?
+
+### **3.	How and ArrayList can be synchronized without using Vector?**
 
 An ArrayList can be synchronized using 
 
