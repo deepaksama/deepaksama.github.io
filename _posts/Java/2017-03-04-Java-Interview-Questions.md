@@ -215,7 +215,7 @@ c.	LinkedList consumes more memory than ArrayList because every node in LinkedLi
 
 ArrayList, HashMap, TreeMap and Hashtable classes provide random access to its elements.
 
-27.	What are concurrent Collection classes?
+### **27.	What are concurrent Collection classes?**
 
 Java 1.5 provided package java.util.concurrent.  This package contains thread-safe collections that allow collections to be modified while iterating.  By design iterator implementation in java.util pakage are fail-fast and throw ConcurrentModificationException..  But iterator implementation in java.util.concurrent package are fail-safe and we can modify the collection while iterating.
 
@@ -225,13 +225,13 @@ Some of these classes are:
 •	ConcurrentHashMap
 •	CopyOnWriteArraySet
 
-28.	What is Queue and Stack differences?
+### **28.	What is Queue and Stack differences?**
 
 Both Queue and Stack are used to store elements before processing.  java.util.Queue is an interface whose implementations classes are present in java concurrent package.  Queue allows retrieval of elements in order but not necessarily in FIFO order.  There is a DQueue interface that allows elements to be removed from either ends of Queue.
 
 Stack is similar to Queue except that it allows elements to be retrieved in LIFO order.  Stack is class that extends Vector whereas Queue is an interface.
 
-29.	What is Comparable and Comparator interface? What are differences?
+### **29.	What is Comparable and Comparator interface? What are differences?**
 
 Java provides Comparable interface which should be implemented by any class if it wants to use Array or collections sorting method.  Comparable interface has compareTo (obj) method which is used by sorting methods.  We should implement in such a way that it should return a negative integer, zero and a positive integer if this object is less than, equal to  or greater than the object passed as argument.
 
@@ -246,17 +246,17 @@ Comparable interface is used to provide the natural sorting of objects and we ca
 
 Comparator interface is use to provide different algorithms for.
 
-30.	How can we sort list of objects?
+### **30.	How can we sort list of objects?**
 
 If we need to sort array of object, we can use Array.sort().  If we need to sort list of objects, we can use Collections.sort().  Both of these have overloaded sort() methods for natural sorting using Comparable or sorting base on criteria using Comparator.
 
 Collections internally use Arrays sort method, so both of them have same performance except that Collections take some time to convert list to array.
 
-31.	While passing collection as argument to a function how can we make sure the function will not modify it?
+### **31.	While passing collection as argument to a function how can we make sure the function will not modify it?**
 
 We can create a read-only collection using Collections.unmodifiableCollection(Collection c) method before passing it as argument.  This will make sure that any operation to change the collection will throw UnsupportedOperationException.
 
-32.	How can we create synchronized collection from a given collection?
+### **32.	How can we create synchronized collection from a given collection?**
 
 We can use Collections.synchronizedCollection(Collection c) to get synchronized (thread-safe) collection backed by the specified collection.
 
