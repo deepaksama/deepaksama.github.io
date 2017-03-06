@@ -22,8 +22,10 @@ Core Container consists of below modules
 * Context (___spring-context___)
 * ContextSupport (___spring-context-support___)
 * Spring Exression (___spring-expression___)
-
+	spring-core and spring-beans modules provide the fundamental parts of the framework that includes IoC and Dependency Injection.
+    
 ### **2. Data Access/Intergration**
+
 ### **3. Web**
 ### **4. AOP**
 ### **5. Instrumentation**
