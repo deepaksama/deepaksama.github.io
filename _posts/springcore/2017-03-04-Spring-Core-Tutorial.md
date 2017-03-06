@@ -18,17 +18,12 @@ Spring framework has its featured spread accross 20 modules.  These modules are 
 * Test
 
 ### 1. Core Container
-### 1. Data Access/Intergration
-
-
-### 1. Core Container
-
-### 1. Data Access/Intergration
-### 1. **Web**
-### 1. **AOP**
-### 1. **Instrumentation**
-### 1. **Messaging**
-### 1. **Test**
+### 2. Data Access/Intergration
+### 3. **Web**
+### 4. **AOP**
+### 5. **Instrumentation**
+### 6. **Messaging**
+### 7. **Test**
 
 
 ![spring modules]({{site.baseurl}}resources/images/spring-framework-modules.JPG)
