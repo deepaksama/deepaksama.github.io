@@ -11,42 +11,43 @@ Collections
 ### **1.	What are the basic interfaces of Java Collection framework?**
 
 Java collections framework has 4 basic interfaces.   
-a.	Collection is the root of the collections hierarchy.  Java does not provide any direct implementation of this interface.
-b.	Set extends Collection interface.  This is a collection that cannot contain duplicate elements.  It basically models the mathematical set abstraction.  This can be used to represent set of objects such as deck of cards.
-c.	List extends Collection interface.  This is an ordered collection and can contain duplicate elements.  We can access any element from its index.
-d.	Queue extends Collection interface.
-e.	Map is a collection of key , value pairs.  A map cannot contain duplicate keys.  Each key can map to at most one value.
+1. Collection is the root of the collections hierarchy.  Java does not provide any direct implementation of this interface.
+1. Set extends Collection interface.  This is a collection that cannot contain duplicate elements.  It basically models the mathematical set abstraction.  This can be used to represent set of objects such as deck of cards.
+1. List extends Collection interface.  This is an ordered collection and can contain duplicate elements.  We can access any element from its index.
+1. Queue extends Collection interface.
+1. Map is a collection of key , value pairs.  A map cannot contain duplicate keys.  Each key can map to at most one value.
 
 ### **2.	What are the differences between ArrayList and Vector?**
 
 
 Differences can be explained in terms of three aspects 
 
-•	Synchronization – ArryList is not thread safe whereas Vector is thread-safe.  In Vector class each method like add() , get(int i) is surrounded with a synchronized block, thus making Vector thread-safe.
-•	Data growth – Internally both ArrayList and Vector hold their content using an Array.  When an element is inserted into an ArrayList or a Vector, the object needs to expand its internal array if it runs out of room for new element.  A Vector defaults to doubling its array size, while the ArrayList increases its array size by 50 percent.
-•	Performance – Since vector is thread-safe, performance is slower than ArrayList.
+* **Synchronization** – ArryList is not thread safe whereas Vector is thread-safe.  In Vector class each method like add() , get(int i) is surrounded with a synchronized block, thus making Vector thread-safe.
+* **Data growth** – Internally both ArrayList and Vector hold their content using an Array.  When an element is inserted into an ArrayList or a Vector, the object needs to expand its internal array if it runs out of room for new element.  A Vector defaults to doubling its array size, while the ArrayList increases its array size by 50 percent.
+* **Performance** – Since vector is thread-safe, performance is slower than ArrayList.
 
 ### **3.	How and ArrayList can be synchronized without using Vector?**
 
 An ArrayList can be synchronized using 
 
-Collection.synchronizedList (List list)
+* Collection.synchronizedList (List list)
 
 Similarly we can synchronize other collections as:
-Collection.synchronizedMap(Map map)
-Collection.synchronizedCollection(Collection c)
+
+* Collection.synchronizedMap(Map map)
+* Collection.synchronizedCollection(Collection c)
 
 ### **4.	If an Employee class is present and its objects are added to an ArrayList.  How do I sort this list on employId of the Employee class?**
 
 Follow below if you have to write new Employee class:
 
-•	Implement Comparable interface for the Employee class and override the compareTo(Object obj) in which compare the employId
-•	Now call the Collections.sort() passing the list as an argument.
+* Implement Comparable interface for the Employee class and override the compareTo(Object obj) in which compare the employId
+* Now call the Collections.sort() passing the list as an argument.
 
 Follow below if you already have Employee class:
 
-•	Since Comparable interface cannot be implemented, create Comparator and override the compare(Object obj1, Object obj2) method.
-•	Call the Collections.sort() on the list and pass Comparator as an argument.
+* Since Comparable interface cannot be implemented, create Comparator and override the compare(Object obj1, Object obj2) method.
+* Call the Collections.sort() on the list and pass Comparator as an argument.
 
 ### **5.	What is the difference between ArrayList and LinkedList?**
 
@@ -77,8 +78,8 @@ Iterator interface provides methods to iterate over any Collection. We can get i
 
 Both Enumeration and Iterator are used for traversing and fetching elements from collection.  Below the differences between Enumeration and Iterator
 
-<table class="table table-striped table-compact">
-	<thead>
+<table class="table table-striped table-compact table-bordered">
+	<thead >
 		<tr>
 			<td>Enumeration</td>
 			<td>Iterator</td>
@@ -237,7 +238,7 @@ ArrayList, HashMap, TreeMap and Hashtable classes provide random access to its e
 
 ### **27.	What are concurrent Collection classes?**
 
-Java 1.5 provided package java.util.concurrent.  This package contains thread-safe collections that allow collections to be modified while iterating.  By design iterator implementation in java.util pakage are fail-fast and throw ConcurrentModificationException..  But iterator implementation in java.util.concurrent package are fail-safe and we can modify the collection while iterating.
+Java 1.5 provided package ___java.util.concurrent___.  This package contains thread-safe collections that allow collections to be modified while iterating.  By design iterator implementation in ___java.util___ pakage are fail-fast and throw ConcurrentModificationException. But iterator implementation in ___java.util.concurrent___ package are fail-safe and we can modify the collection while iterating.
 
 Some of these classes are:
 
@@ -247,24 +248,23 @@ Some of these classes are:
 
 ### **28.	What is Queue and Stack differences?**
 
-Both Queue and Stack are used to store elements before processing.  java.util.Queue is an interface whose implementations classes are present in java concurrent package.  Queue allows retrieval of elements in order but not necessarily in FIFO order.  There is a DQueue interface that allows elements to be removed from either ends of Queue.
+Both Queue and Stack are used to store elements before processing.  ___java.util.Queue___ is an interface whose implementations classes are present in java concurrent package.  Queue allows retrieval of elements in order but not necessarily in FIFO order.  There is a DQueue interface that allows elements to be removed from either ends of Queue.
 
 Stack is similar to Queue except that it allows elements to be retrieved in LIFO order.  Stack is class that extends Vector whereas Queue is an interface.
 
 ### **29.	What is Comparable and Comparator interface? What are differences?**
 
-Java provides Comparable interface which should be implemented by any class if it wants to use Array or collections sorting method.  Comparable interface has compareTo (obj) method which is used by sorting methods.  We should implement in such a way that it should return a negative integer, zero and a positive integer if this object is less than, equal to  or greater than the object passed as argument.
+Java provides Comparable interface which should be implemented by any class if it wants to use Array or collections sorting method.  Comparable interface has ___compareTo (obj)___ method which is used by sorting methods.  We should implement in such a way that it should return a negative integer, zero and a positive integer if this object is less than, equal to  or greater than the object passed as argument.
 
-In general we want sorting to be based on different parameters.  In such cases we need to use Comparator interface because Comparable.compareTo(Object o) method implementation can sort based on one field only.
+In general we want sorting to be based on different parameters.  In such cases we need to use Comparator interface because ___Comparable.compareTo(Object o)___ method implementation can sort based on one field only.
 
-Comparator interface compare(Object obj1, Object obj2) method need to be implemented in such a way that it return negetive if first argument is less than the second one and return zero if they are equal and positive if first argument is greater than second one.
+Comparator interface ___compare(Object obj1, Object obj2)___ method need to be implemented in such a way that it return negetive if first argument is less than the second one and return zero if they are equal and positive if first argument is greater than second one.
 
 
-Differences:
+**Differences:**
 
-Comparable interface is used to provide the natural sorting of objects and we can use it to provide sorting based on single logic.
-
-Comparator interface is use to provide different algorithms for.
+* Comparable interface is used to provide the natural sorting of objects and we can use it to provide sorting based on single logic.
+* Comparator interface is use to provide different algorithms for.
 
 ### **30.	How can we sort list of objects?**
 
