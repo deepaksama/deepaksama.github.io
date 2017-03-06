@@ -82,7 +82,8 @@ BeanFactory is representex by BeanFactory interface.  The most important impleme
 * XmlBeanFactory (___org.springframework.beans.factory.xml.XmlBeanFactory___)
 This reads the bean definition from an XML file.
 __Consructor:__
-```java
+
+```
 XmlBeanFactory(Resource resource);	
 ```
 
