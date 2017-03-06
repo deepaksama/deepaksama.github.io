@@ -100,3 +100,6 @@ BeanFactory has 6 methods:
 * boolean containsBean(String name)
 * Object getBean(String name,class type)
 * Class getType(String name)
+* boolean isSingleton(String name)
+* String[] getAliases(String)
+
