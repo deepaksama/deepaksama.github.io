@@ -80,7 +80,8 @@ Spring provides two distinct types of containers:
 
 BeanFactory is representex by BeanFactory interface.  The most important implementations of BeanFactory are:
 * XmlBeanFactory (___org.springframework.beans.factory.xml.XmlBeanFactory___)
-	This reads the bean definition from an XML file.
+This reads the bean definition from an XML file.
+
 {% highlight java linenos %}
 Resource resource = new FileSystemResource("bean.xml");
 BeanFactory beanFactory = new XmlBeanFactory(resource);
