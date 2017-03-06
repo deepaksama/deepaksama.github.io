@@ -103,3 +103,5 @@ BeanFactory has 6 methods:
 * boolean isSingleton(String name)
 * String[] getAliases(String)
 
+### ApplicationContainer
+
