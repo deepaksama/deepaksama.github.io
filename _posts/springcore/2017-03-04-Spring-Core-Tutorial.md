@@ -83,7 +83,7 @@ BeanFactory is representex by BeanFactory interface.  The most important impleme
 This reads the bean definition from an XML file.
 __Consructor:__
 ```java
-		XmlBeanFactory(Resource resource);	
+XmlBeanFactory(Resource resource);	
 ```
 
 {% highlight java linenos %}
