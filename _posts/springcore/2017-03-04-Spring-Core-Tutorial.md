@@ -68,5 +68,11 @@ It provides key abstractions such as Message, MessageChannel and MessageHandler 
 
 Supports the unit testing and integration testing of spring components with JUnit or TestNG. 
 
-
 ![spring modules]({{site.baseurl}}resources/images/spring-framework-modules.JPG)
+
+** Spring IoC container
+
+Spring provides two distinct types of containers:
+* BeanFactory
+* ApplicationContext
+
