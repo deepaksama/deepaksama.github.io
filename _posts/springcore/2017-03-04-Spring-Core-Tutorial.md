@@ -62,7 +62,7 @@ Supports Class intrumentation support.
 
 ### **6. Messaging**
 	
-    It provides key abstractions such as Message, MessageChannel and MessageHandler as foundation for messaging applications.
+It provides key abstractions such as Message, MessageChannel and MessageHandler as foundation for messaging applications.
     
 ### **7. Test**
 
