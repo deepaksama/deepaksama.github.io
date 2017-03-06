@@ -70,7 +70,7 @@ Supports the unit testing and integration testing of spring components with JUni
 
 ![spring modules]({{site.baseurl}}resources/images/spring-framework-modules.JPG)
 
-** Spring IoC container
+## Spring IoC container
 
 Spring provides two distinct types of containers:
 * BeanFactory
