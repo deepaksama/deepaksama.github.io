@@ -94,4 +94,9 @@ Resource resource = new FileSystemResource("bean.xml");
 BeanFactory beanFactory = new XmlBeanFactory(resource);
 {% endhighlight %}
 
-* 
+BeanFactory has 6 methods:
+
+Object getBean(String name)
+boolean containsBean(String name)
+Object getBean(String name,class type)
+Class getType(String name)
