@@ -45,6 +45,11 @@ The spring OXM (___spring-oxm___) provides an abstraction layer that supports Ob
 
 ### **3. Web**
 
+This layer consists of 
+* Web
+* Web MVC
+* WebSockets
+* Portlet 
 
 ### **4. AOP**
 ### **5. Instrumentation**
