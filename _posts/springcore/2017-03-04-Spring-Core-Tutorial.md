@@ -21,7 +21,7 @@ Core Container consists of below modules
 * Beans (___spring-beans___)
 * Context (___spring-context___)
 * ContextSupport (___spring-context-support___)
-* Spring Exression (___spring.expression___)
+* Spring Exression (___spring-expression___)
 
 ### **2. Data Access/Intergration**
 ### **3. Web**
