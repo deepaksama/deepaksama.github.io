@@ -68,4 +68,5 @@ Supports Class intrumentation support.
 
 Supports the unit testing and integration testing of spring components with JUnit or TestNG. 
 
+
 ![spring modules]({{site.baseurl}}resources/images/spring-framework-modules.JPG)
