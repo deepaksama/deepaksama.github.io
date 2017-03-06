@@ -29,7 +29,8 @@ Core Container consists of below modules
     ___spring-expression___ module provides a power Expression language for querying and manipulating an object graph at runtime.
     
 ### **2. Data Access/Intergration**
-	Data Access/Integraion consits of below modules
+
+Data Access/Integraion consits of below modules
 * JDBC (___spring-jdbc___)
 * ORM (___spring-orm___)
 * JMS (___spring-jml___)
