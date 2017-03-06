@@ -39,6 +39,7 @@ With JDBC abstraction and DAO module (___sring-jdbc___) we can make the database
 
 Spring ORM module (___spring-orm___) enables to tie into several ORM frameworks including Hibernate, JDO and iBATIS.  Spring transaction management supports both ORM frameworks and JDBC
 
+The spring JMS (___spring-jms___) contains features for producing and consuming messages.  Since Spring 4.1 this provides integraion with ___spring-messaging___
 
 ### **3. Web**
 ### **4. AOP**
