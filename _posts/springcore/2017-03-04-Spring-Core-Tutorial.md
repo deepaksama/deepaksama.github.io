@@ -87,7 +87,7 @@ __Consructor:__
 	XmlBeanFactory(Resource resource);	
 {% endhighlight %}
 
-__Ex:__
+_Ex:_
 
 {% highlight java linenos %}
 Resource resource = new FileSystemResource("bean.xml");
