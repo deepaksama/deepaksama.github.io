@@ -41,6 +41,8 @@ Spring ORM module (___spring-orm___) enables to tie into several ORM frameworks 
 
 The spring JMS (___spring-jms___) contains features for producing and consuming messages.  Since Spring 4.1 this provides integraion with ___spring-messaging___
 
+The spring OXM (___spring-oxm___) provides an abstraction layer that supports Object/XML mapping implementation such as JAXB.
+
 ### **3. Web**
 ### **4. AOP**
 ### **5. Instrumentation**
