@@ -29,7 +29,17 @@ Core Container consists of below modules
     ___spring-expression___ module provides a power Expression language for querying and manipulating an object graph at runtime.
     
 ### **2. Data Access/Intergration**
-	
+	Data Access/Integraion consits of below modules
+* JDBC (___spring-jdbc___)
+* ORM (___spring-orm___)
+* JMS (___spring-jml___)
+* OXM (___spring-oxm___)
+
+With JDBC abstraction and DAO module (___sring-jdbc___) we can make the database code clean and simple, and prevent problems resulting from failure to close database resources.  It also provide a layer of meaningful exceptions on top of exceptions given by several database servers.  It makes user of Spring AOP module to provide transaction management services for objects in a spring application.
+
+Spring ORM module (___spring-orm___) enables to tie into several ORM frameworks including Hibernate, JDO and iBATIS.  Spring transaction management supports both ORM frameworks and JDBC
+
+
 ### **3. Web**
 ### **4. AOP**
 ### **5. Instrumentation**
