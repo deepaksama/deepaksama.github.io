@@ -17,10 +17,10 @@ Spring framework has its featured spread accross 20 modules.  These modules are 
 
 ### **1. Core Container**
 Core Container consists of below modules
-* Core (___spring.core___)
-* Beans (___spring.beans___)
-* Context (___spring.context___)
-* ContextSupport (___spring.context.support___)
+* Core (___spring-core___)
+* Beans (___spring-beans___)
+* Context (___spring-context___)
+* ContextSupport (___spring-context-support___)
 * Spring Exression (___spring.expression___)
 
 ### **2. Data Access/Intergration**
