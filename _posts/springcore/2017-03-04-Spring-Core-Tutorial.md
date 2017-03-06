@@ -5,6 +5,9 @@ meta: Java Collections
 category: java
 published: true
 ---
+---
+layout: post
+---
 Spring framework has its featured spread accross 20 modules.  These modules are grouped into 
 * Core Container
 * Data Access/Intergration
