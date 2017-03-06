@@ -52,9 +52,19 @@ This layer consists of
 * Portlet 
 
 ### **4. AOP**
+
+Supports Aspect Oriented Programming.
+
 ### **5. Instrumentation**
+
+Supports Class intrumentation support.
+
 ### **6. Messaging**
+	
+    It provides key abstractions such as Message, MessageChannel and MessageHandler as foundation for messaging applications.
+    
 ### **7. Test**
 
+Supports the unit testing and integration testing of spring components with JUnit or TestNG. 
 
 ![spring modules]({{site.baseurl}}resources/images/spring-framework-modules.JPG)
