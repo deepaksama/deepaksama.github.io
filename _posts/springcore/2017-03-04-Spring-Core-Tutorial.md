@@ -96,7 +96,7 @@ BeanFactory beanFactory = new XmlBeanFactory(resource);
 
 BeanFactory has 6 methods:
 
-Object getBean(String name)
-boolean containsBean(String name)
-Object getBean(String name,class type)
-Class getType(String name)
+* Object getBean(String name)
+* boolean containsBean(String name)
+* Object getBean(String name,class type)
+* Class getType(String name)
