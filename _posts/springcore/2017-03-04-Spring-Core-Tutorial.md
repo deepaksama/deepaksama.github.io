@@ -84,6 +84,12 @@ This reads the bean definition from an XML file.
 __Consructor:__
 
 {% highlight java linenos %}
+	XmlBeanFactory(Resource resource);	
+{% endhighlight %}
+
+__Ex:__
+
+{% highlight java linenos %}
 Resource resource = new FileSystemResource("bean.xml");
 BeanFactory beanFactory = new XmlBeanFactory(resource);
 {% endhighlight %}
