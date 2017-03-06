@@ -85,11 +85,7 @@ __Consructor:__
 ```java
 XmlBeanFactory(Resource resource);	
 ```
-```java
-{% highlight java linenos %}
-	XmlBeanFactory(Resource resource);	
-{% endhighlight %}
-```
+
 _Ex:_
 
 {% highlight java linenos %}
