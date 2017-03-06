@@ -17,4 +17,4 @@ Spring framework has its featured spread accross 20 modules.  These modules are 
 * Messaging
 * Test
 
-![spring modules]({{site.baseurl}}/resources/images/spring-framework-modules.JPG)
+![spring modules]({{site.baseurl}}resources/images/spring-framework-modules.JPG)
