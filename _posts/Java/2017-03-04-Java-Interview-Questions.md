@@ -72,20 +72,40 @@ Although Map interface and its implementations are part of collections framework
 ### **10.	 What is an iterator?**
 
 Iterator interface provides methods to iterate over any Collection. We can get iterator instance for any collection using iterator() method.  Iterator allows the caller to remove elements from underlying collection while iterating.  It implements Iterator design pattern.
-11.	What is the difference between Enumeration and Iterator interface?
+
+### **11.	What is the difference between Enumeration and Iterator interface?**
 
 Both Enumeration and Iterator are used for traversing and fetching elements from collection.  Below the differences between Enumeration and Iterator
 
-Enumeration	Iterator
-1.	Acts as read only interface, because It has the methods only to travers and fetch the objects from collection.	1.	Iterator provides methods for manipulating collect like adding and removing objects from collection
-2.	Has longer names for methods like
-hasMoreElements()
-nextElement()	2.	Shorter names when compared to methods from Enumeration like
-hasNext()
-next()
-remove()
-3.	Not safer in multi-threaded environment	3.	More safe and secure when compared to Enumeration as iterator does not allow other thread to modify the collection object while some thread is iterating over it.  It throws ConcurrentModificationException.  
-
+<table class="table table-striped table-compact">
+	<thead>
+		<tr>
+			<td>Enumeration</td>
+			<td>Iterator</td>
+		</tr>
+	</thead>
+		<tr>
+			<td> 1.	Acts as read only interface, because It has the methods only to travers and fetch the objects from collection</td>
+			<td> 1.	Iterator provides methods for manipulating collect like adding and removing objects from collection</td>
+		</tr>
+		<tr>
+			<td> 2.	Has longer names for methods like
+			hasMoreElements()
+			nextElement()
+			</td>
+			<td>2.	Shorter names when compared to methods from Enumeration like
+			hasNext()
+			next()
+			remove()
+			</td>
+		</tr>
+		<tr>
+			<td> 3. Not safer in multi-threaded environment</td>
+			<td> 3. More safe and secure when compared to Enumeration as iterator does not allow other thread to modify the collection object while some thread is iterating over it.  It throws ConcurrentModificationException.  </td>
+		</tr>
+	<tbody>
+	</tbody>
+</table>
 ### **12.	 What are differences between Iterator and ListIterator?**
 
 a.	We can use Iterator to traverse Set and List collection.  Whereas ListIterator can be used with Lists only
@@ -147,26 +167,26 @@ When you insert an object into Hashtable hashCode() method is used to identify t
 
 We can use any class as Map key, however following points should be considered before using them.
 
-a.	If the class overrides equals() method, it should also override hashCode() method
-b.	The class should follow all the rules associated with equals() and hashCode().
-c.	If a class member is not used in equals(), you should not use it in hashCode() also.
-d.	Best practice 
+* If the class overrides equals() method, it should also override hashCode() method
+* The class should follow all the rules associated with equals() and hashCode().
+* If a class member is not used in equals(), you should not use it in hashCode() also.
+* Although it is not mandatory, it is suggest to make user defined classes used as key as immutable. 
 
 ### **20.	What are the different Collection views provided by Map interface?**
 
-a.	Set keyset()	
-b.	Collection values()
-c.	Set<Map.Entry<K,V>> entrySet()
+* Set keyset()
+* Collection values()
+* Set<Map.Entry<K,V>> entrySet()
 
 ### **21.	What is difference between HashMap and Hashtable?**
 
 HashMap and Hashtable both implement Map interface and look similar, however there are following differences between them:
 
-a.	HashMap allows null key and values where as Hashtable does not allow null key and values.
-b.	Hashtable is synchronized but HashMap is not synchronized.  HashMap is better for single threaded environment and Hashtable is suitable for multi-threaded environments.
-c.	LinkedHashMap was introduced in java 1.4 as a sub class of HashMap, so in case you want iteration order, you can easily switch from HashMap to LinkedHashMap.  But this is not the case with Hashtable whose iteration order is unpredictable.
-d.	HashMap provides Set of keys to iterate and hence it’s fail-fast. But Hashtable provides Enumeration of keys that does not support this feature.
-e.	Hashtable is considered as legacy class and if you are looking for modification of Map while iterating, you should use ConcurrentHashMap
+* HashMap allows null key and values where as Hashtable does not allow null key and values.
+* Hashtable is synchronized but HashMap is not synchronized.  HashMap is better for single threaded environment and Hashtable is suitable for multi-threaded environments.
+* LinkedHashMap was introduced in java 1.4 as a sub class of HashMap, so in case you want iteration order, you can easily switch from HashMap to LinkedHashMap.  But this is not the case with Hashtable whose iteration order is unpredictable.
+* HashMap provides Set of keys to iterate and hence it’s fail-fast. But Hashtable provides Enumeration of keys that does not support this feature.
+* Hashtable is considered as legacy class and if you are looking for modification of Map while iterating, you should use ConcurrentHashMap
 
 ### **22.	How to decide between HashMap and TreeMap?**
 
@@ -177,39 +197,39 @@ Depending on the size of your collection, it may be faster to add elements to a 
 ### **23.	What are the similarities and differences between ArrayList and Vector?**
 
 Similarities:
-a.	Both are index based and backed up by an array internally.
-b.	Both maintain the order of insertion and we can get elements in the order of insertion.
-c.	The iterator implementation is fail-fast by design for both
-d.	Both allow null values and random access to elements using index number
+* Both are index based and backed up by an array internally.
+* Both maintain the order of insertion and we can get elements in the order of insertion.
+* The iterator implementation is fail-fast by design for both
+* Both allow null values and random access to elements using index number
 
 Differences:
-a.	Vector is synchronized whereas ArrayList is not synchronized.  However if you are looking for modification of list while iterating, you should use CopyOnWriteArrayList.
-b.	ArrayList is faster than Vector because it doesn’t have any overhead of synchronization.
-c.	ArrayList is more versatile because we can get synchronized list or read-only list from it easily using Collections utility class.
+* Vector is synchronized whereas ArrayList is not synchronized.  However if you are looking for modification of list while iterating, you should use CopyOnWriteArrayList.
+* ArrayList is faster than Vector because it doesn’t have any overhead of synchronization.
+* ArrayList is more versatile because we can get synchronized list or read-only list from it easily using Collections utility class.
 
 ### **24.	What is difference between Array and ArrayList?  When will you use Array over ArrayList?**
 
 Differences:
 
-a.	Array can contain primitives and Objects where as ArrayList can contain only Objects.
-b.	Arrays are fixed in size whereas ArrayList is dynamic.
-c.	Array does not provide features like ArrayList, such as addAll, removeAll, iterator etc.
+* Array can contain primitives and Objects where as ArrayList can contain only Objects.
+* Arrays are fixed in size whereas ArrayList is dynamic.
+* Array does not provide features like ArrayList, such as addAll, removeAll, iterator etc.
 
 Although the ArrayList is the obvious choice when we work on list, there are time when Array is good to use:
 
-a.	If the size of list is fixed and mostly used to store and traverse through them
-b.	For list of primitive data types, although Collections use autoboxing to reduce the coding effort but still it makes them slow when working on fixed size primitive data types.
-c.	If you are working on fixed multi-dimensional data, using [][] is far more easier than List<List<>>
+* If the size of list is fixed and mostly used to store and traverse through them
+* For list of primitive data types, although Collections use autoboxing to reduce the coding effort but still it makes them slow when working on fixed size primitive data types.
+* If you are working on fixed multi-dimensional data, using [][] is far more easier than List<List<>>
 
 ### **25.	What is difference between ArrayList and LinkedList?**
 
 ArrayList and LinkedList both implement List interface but there are some differences between them.
 
-a.	ArrayList is index based data structure backed by Array.  So it offers random access to its elements with performance of O(1).  But LinkedList stores data as list of nodes where every node is linked to previous and next node.  So even though there is a method to get the element using index, internally it traverses from start or end of the to reach the index node and then returns the element, so performance is O(n) that is slower than ArrayList.
+* ArrayList is index based data structure backed by Array.  So it offers random access to its elements with performance of O(1).  But LinkedList stores data as list of nodes where every node is linked to previous and next node.  So even though there is a method to get the element using index, internally it traverses from start or end of the to reach the index node and then returns the element, so performance is O(n) that is slower than ArrayList.
 
-b.	Insertion, addition or removal of an element is faster in LinkedList compared to ArrayList because there is no concept of resizing array or updating index when element is added in middle.
+* Insertion, addition or removal of an element is faster in LinkedList compared to ArrayList because there is no concept of resizing array or updating index when element is added in middle.
 
-c.	LinkedList consumes more memory than ArrayList because every node in LinkedList store reference of previous and next elements.
+* LinkedList consumes more memory than ArrayList because every node in LinkedList store reference of previous and next elements.
 
 ### **26.	Which collection classes provide random access of its elements?**
 
@@ -221,9 +241,9 @@ Java 1.5 provided package java.util.concurrent.  This package contains thread-sa
 
 Some of these classes are:
 
-•	CopyOnWriteArrayList
-•	ConcurrentHashMap
-•	CopyOnWriteArraySet
+* CopyOnWriteArrayList
+* ConcurrentHashMap
+* CopyOnWriteArraySet
 
 ### **28.	What is Queue and Stack differences?**
 
