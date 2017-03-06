@@ -25,6 +25,7 @@ Core Container consists of below modules
 	spring-core and spring-beans modules provide the fundamental parts of the framework that includes IoC and Dependency Injection.
     The spring-context is build on top of base provided by Core and Beans modules.  It provides a means to access objects like JNDI registry.  It inherits features from Beans module and adds support for internationalization, event propagation, resource loading.  **Application Context** is the focal point of the context module.
     spring-context-support provides support for integrating common third-party libraries into spring applicatin context for caching (EHCache, Guava, JCache), mailing (JavaMail), scheduling (CommonJ, Quartz) and template entines(FreeMarker, Velocity, JasperReports).
+    spring-expression module provides a power Expression language for querying and manipulating an object graph at runtime.
     
 ### **2. Data Access/Intergration**
 	
