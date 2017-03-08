@@ -71,8 +71,9 @@ table thead tr td {
 
 .header-content {
 	height:20%;
-	/*border-bottom:1px solid #ccc;
+	/* border-bottom:1px solid #ccc;*/
 }
+
 .header-bottom {
 	/*height:2px;*/
 	border-bottom:2px dashed #444359;
@@ -92,7 +93,7 @@ table thead tr td {
 	padding:0;
 }
 .content-wrapper {
-	border-top:1px solid #ccc;
+	/*border-top:1px solid #ccc;*/
 	margin-bottom:200px;
 	padding:25px 0;
 	width:100%;
@@ -220,8 +221,10 @@ table thead tr td {
 	border-right:0px;
 }
 
+.content-wrapper img { width:70%;}
 .post > .highlight .lineno { color: #ccc; display:inline-block; padding: 0 5px; border-right:1px solid #ccc; }
 .post > .highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }
+
 /*
 .footer-content {
 	position: absolute;
