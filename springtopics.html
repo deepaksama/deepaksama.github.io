@@ -7,10 +7,37 @@ title : Spring Topics
 <table class="table">
 	<thead>
 		<tr>
-			<td> Java Topics </td>
+			<td> Spring Topics </td>
 			<td> Description <td>
 		</tr>
 	</thead>
+	<tbody>
+	{% for post in site.categories.springcore %}
+			<div class="row">			
+				<div class="col-md-2"> </div>				
+				<div class="topic-wrapper1 col-md-8">
+					
+					<div class="topic-image col-md-4">
+						{% assign timage = 'no-image.JPG' %}
+						{% if post.topic-image %}
+							{% assign timage = post.topic-image %}
+						{% endif %}
+						<img class="img-thumbnail" src="{{site.baseurl}}/resources/images/{{timage}}" width="100%" height="100%"/>
+					</div>
+					<div class="topic-content-wrapper col-md-8">
+						<div class="topic_link ">
+							<a class="topic_link" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+						</div>
+						<div class="topic-desc">
+							<span >{{post.meta}}</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2"> </div>
+			</div>
+		
+		{% endfor %}
+		<!--
 		<tr>
 		<td><a class="topic_link" href="">Spring Core Interview Questions</a></td><td class="topic-desc"></td>
 		</tr>
@@ -20,7 +47,7 @@ title : Spring Topics
 		<tr>
 		<td><a class="topic_link" href="">Spring MVC Interview Questions</a></td><td class="topic-desc"></td>
 		</tr>
-	<tbody>
+		-->
 	</tbody>
 </table>
 

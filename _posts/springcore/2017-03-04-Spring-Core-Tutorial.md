@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Java Collections
-meta: Java Collections
-category: java
+title: Spring Core Turorial
+meta: Spring Core Turorial
+category: springcore
 published: true
 ---
 
@@ -14,6 +14,9 @@ Spring framework has its featured spread accross 20 modules.  These modules are 
 * Instrumentation 
 * Messaging
 * Test
+<br>
+
+![spring modules]({{site.baseurl}}/resources/images/spring-framework-modules.JPG)
 
 ### **1. Core Container**
 Core Container consists of below modules
@@ -23,10 +26,10 @@ Core Container consists of below modules
 * ContextSupport (___spring-context-support___)
 * Spring Exression (___spring-expression___)
 
-	___spring-core___ and ___spring-beans___ modules provide the fundamental parts of the framework that includes IoC and Dependency Injection.
-    The spring-context is build on top of base provided by Core and Beans modules.  It provides a means to access objects like JNDI registry.  It inherits features from Beans module and adds support for internationalization, event propagation, resource loading.  **Application Context** is the focal point of the context module.
-    ___spring-context-support___ provides support for integrating common third-party libraries into spring applicatin context for caching (EHCache, Guava, JCache), mailing (JavaMail), scheduling (CommonJ, Quartz) and template entines(FreeMarker, Velocity, JasperReports).
-    ___spring-expression___ module provides a power Expression language for querying and manipulating an object graph at runtime.
+___spring-core___ and ___spring-beans___ modules provide the fundamental parts of the framework that includes IoC and Dependency Injection.
+The spring-context is build on top of base provided by Core and Beans modules.  It provides a means to access objects like JNDI registry.  It inherits features from Beans module and adds support for internationalization, event propagation, resource loading.  **Application Context** is the focal point of the context module.
+___spring-context-support___ provides support for integrating common third-party libraries into spring applicatin context for caching (EHCache, Guava, JCache), mailing (JavaMail), scheduling (CommonJ, Quartz) and template entines(FreeMarker, Velocity, JasperReports).
+___spring-expression___ module provides a power Expression language for querying and manipulating an object graph at runtime.
     
 ### **2. Data Access/Intergration**
 
@@ -68,7 +71,7 @@ It provides key abstractions such as Message, MessageChannel and MessageHandler 
 
 Supports the unit testing and integration testing of spring components with JUnit or TestNG. 
 
-![spring modules]({{site.baseurl}}resources/images/spring-framework-modules.JPG)
+
 
 ## Spring IoC container
 
@@ -79,13 +82,13 @@ Spring provides two distinct types of containers:
 ### BeanFactory 
 
 BeanFactory is representex by BeanFactory interface.  The most important implementations of BeanFactory are:
-* XmlBeanFactory (___org.springframework.beans.factory.xml.XmlBeanFactory___)
-This reads the bean definition from an XML file.
+* XmlBeanFactory (___org.springframework.beans.factory.xml.XmlBeanFactory___).  This reads the bean definition from an XML file.
+
 __Consructor:__
 
-```
-XmlBeanFactory(Resource resource);	
-```
+{% highlight java %}
+	XmlBeanFactory(Resource resource);	
+{% endhighlight %}
 
 __Ex:__
 
@@ -95,13 +98,14 @@ BeanFactory beanFactory = new XmlBeanFactory(resource);
 {% endhighlight %}
 
 BeanFactory has 6 methods:
-
-* Object getBean(String name)
-* boolean containsBean(String name)
-* Object getBean(String name,class type)
-* Class getType(String name)
-* boolean isSingleton(String name)
-* String[] getAliases(String)
-
+{% highlight java %}
+	Object getBean(String name)
+	boolean containsBean(String name)
+	Object getBean(String name,Class type)
+	Class getType(String name)
+	boolean isSingleton(String name)
+	String[] getAliases(String)
+{% endhighlight %}
 ### ApplicationContainer
 
+![spring modules]({{site.baseurl}}/resources/images/application-context-impls.JPG)
