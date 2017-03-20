@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring Core Turorial
-meta: Spring Core Turorial
+meta: Spring framework has its featured spread accross 20 modules.  These modules are grouped into 
 category: springcore
 published: true
 ---
@@ -251,3 +251,65 @@ ___Ex:___ _For DispatcherServlet_
 	<img src="{{site.baseurl}}/resources/images/application-context-impls.JPG" class="content-image"/>
 	</div>
 </div>
+
+
+## Container Overview:
+
+The ___org.springframework.contex.ApplicationContext___ represents the sprring IoC container.
+Spring IoC container is responsibel for intantiating, configuring and assembling a forementioned beans.
+The container gets its instructions on what objects to instantiate by reading configuration metadata.
+
+### Configuration metadata	
+
+Spring IoC Container is totally decoupled from the format in which configuration metadata is written.
+This configuration metadata can be supplied in three forms
+* XML-based configuration
+* Annotation-based configuration
+* Java-based configuration
+
+#### <span class="underline">XML-based configuration</span>
+
+XML-based configuration shows these beans configured as <bean> elements inside toplevel <beans> element.
+
+___Ex:___
+
+{% highlight xml linenos%}
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="..." class="...">
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+
+    <bean id="..." class="...">
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+
+</beans>
+{% endhighlight %}
+
+#### <span class="underline">Annotation-based configuration</span>
+
+For detailss on annotaion based configuratin refere to 
+<br/>
+{% for post in site.categories.springcore %}
+	{% if post.title == 'Spring Annotation-based Configuration' %}
+<a href='{{site.url}}{{post.url}}'> annotation-based configuration </a>
+	{% endif %}
+{% endfor %}
+
+#### <span class="underline">Java-based configuration</span>
+
+### Instantiating Container
+
+Bean overview
+Dependencies
+Bean Scopes
+Bean definition inheritence
+Annotation based container configuration
+Classpath scanning and 	mananged components
+Using JSR330
+Java based container configuration

@@ -1,0 +1,48 @@
+Spring Framework
+
+Container Overview:
+The org.springframework.contex.ApplicationContext represents the sprring IoC container.
+Spring IoC container is responsibel for intantiating, configuring and assembling a forementioned beans.
+The container gets its instructions on what objects to instantiate by reading configuration metadata.
+This configuration metadata can be represented in 
+
+	XML
+	Java Annotations,
+	or Java code
+
+Configuration metadata	
+
+Spring IoC Container is totally decoupled from the format in which configuration metadata is written.
+It is supplied in three forms
+* XML-based configuration
+* Annotation-based configuration
+* Java-based configuration
+
+XML-based configuration
+XML-based configuration shows these beans configured as <bean> elements inside toplevel <beans> element.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="..." class="...">
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+
+    <bean id="..." class="...">
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+
+</beans>
+
+	
+Bean overview
+Dependencies
+Bean Scopes
+Bean definition inheritence
+Annotation based container configuration
+Classpath scanning and 	mananged components
+Using JSR330
+Java based container configuration
