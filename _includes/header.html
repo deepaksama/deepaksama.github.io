@@ -8,12 +8,13 @@
 					<div class="col-md-6">
 						<h1><a href="/"> Java for lazy readers</a></h1>
 					</div>
+					<!--
 					<div class="col-md-6 aboutmelink">
 						{% unless page.url contains 'about.html' %}
 						<h4><a href="/about.html"> About Me</a></h4>
 						{% endunless %}
 					</div>
-					
+					-->
 				</div>
 
 			</div>
@@ -39,6 +40,11 @@
 						<a href="#" class="{% if currentpage.url == page.url %} current{% endif %} ">
 							Design Patterns
 						</a>
+					</li>
+					<li>
+					{% unless page.url contains 'about.html' %}
+						<a href="/about.html"> About Me</a>
+						{% endunless %}
 					</li>
 				</ul>
 			</div>
