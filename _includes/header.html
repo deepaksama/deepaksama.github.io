@@ -18,4 +18,28 @@
 
 			</div>
 			<div class="header-bottom col-md-12">
+			
+				<ul class="menubar">								
+					<li> 
+						<a href="{{site.baseurl}}/javatopics.html" class="{% if page.url == {{site.baseurl}}subtopics/javatopics.html %} current{% endif %} ">
+							Java
+						</a>
+					</li>		
+					<li> 
+						<a href="{{site.baseurl}}/springtopics.html" class="{% if currentpage.url == page.url %} current{% endif %} ">
+							Spring
+						</a>
+					</li>
+					<li> 
+						<a href="#" class="{% if currentpage.url == page.url %} current{% endif %} ">
+							Hibernate
+						</a>
+					</li>							
+					<li>
+						<a href="#" class="{% if currentpage.url == page.url %} current{% endif %} ">
+							Design Patterns
+						</a>
+					</li>
+				</ul>
 			</div>
+			

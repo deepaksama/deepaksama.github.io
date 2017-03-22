@@ -1,6 +1,7 @@
 footer {
 	/*padding:25px 0;*/
 	background-color:#444359;
+	background-color:#000;
 	width:100%;
 	height:200px;
 	position:absolute;
@@ -12,6 +13,8 @@ footer {
 .footer-top{
 	height:4px;	
 	background-color:#b63b4d;
+	background-color:rgba(247, 201, 58,1);
+	background-color:rgba(228, 78, 64,.9);
 }
 
 .footer-content {
