@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring Core Turorial
-meta: Spring Core Turorial
+meta: Spring framework has its featured spread accross 20 modules.  These modules are grouped into 
 category: springcore
 published: true
 ---
@@ -15,8 +15,12 @@ Spring framework has its featured spread accross 20 modules.  These modules are 
 * Messaging
 * Test
 <br>
-
-![spring modules]({{site.baseurl}}/resources/images/spring-framework-modules.JPG)
+<div class="col-md-12">
+	<div class="col-md-6">
+	<!--![spring modules]({{site.baseurl}}/resources/images/spring-framework-modules.JPG)-->
+	<img src="{{site.baseurl}}/resources/images/spring-framework-modules.JPG" class="content-image"/>
+	</div>
+</div>
 
 ### **1. Core Container**
 Core Container consists of below modules
@@ -98,6 +102,7 @@ BeanFactory beanFactory = new XmlBeanFactory(resource);
 {% endhighlight %}
 
 BeanFactory has 6 methods:
+
 {% highlight java %}
 	Object getBean(String name)
 	boolean containsBean(String name)
@@ -106,6 +111,205 @@ BeanFactory has 6 methods:
 	boolean isSingleton(String name)
 	String[] getAliases(String)
 {% endhighlight %}
-### ApplicationContainer
 
-![spring modules]({{site.baseurl}}/resources/images/application-context-impls.JPG)
+### ApplicationContext
+
+ApplicationContext is also spring container.  BeanFactory provides basic fuctionality while ApplicationContext provides advanced features for enterprise level applications like i18n, event publishing, JNDI access, Remoting etc.
+
+If By default all singleton beans are created eagerly at the time of ApplicationContext is created.  We can change this behaviour to lazy instantiation by using lazy-init attribute of bean tag.
+
+{% highlight xml linenos %}
+	<bean id="mybean" class="..." lazy-init="true"/>
+{% endhighlight %}
+
+### Implementations of ApplicationContext
+
+There are 5 implementations of ApplicationContext
+
+**1. ClassPathXmlApplicationContext**
+
+This loads the bean definitions/configuration from xml file as class path resource.  This requires the CLASSPATH to be set properly.
+
+___Ex 1:___ _Single configuration file_
+
+{% highlight java %}
+ApplicationContext context = new ClassPathXmlApplicationContext("myconfig.xml"); 
+{% endhighlight %}
+
+___Ex 2:___ _Multiple configuration file_
+
+{% highlight java %}
+ApplicationContext context = new ClassPathXmlApplicationContext(newString[]{"servicesconfig.xml","daoconfig.xml"}); 
+{% endhighlight %}
+	
+**2. FileSystemXmlApplicationContext**
+
+This loads the bean definitions/configuration from xml file located in file system. This requires the absolute file path to be provided.
+
+___Ex:___
+{% highlight java %}
+ApplicationContext context = new FileSystemXmlApplicationContext("c:/myconfig.xml");
+{% endhighlight %}
+
+**3. XmlWebApplicationContext**
+
+* XmlWebApplicationContext is a spring container for web applications. 
+* It is an implementation of WebApplicationContext interface which interns extends from ApplicationContext interface.
+* By default every spring web application creates XmlWebApplicationContext to represent ApplicationContext.
+* This loads bean definitions from xml file /WEB-INF/applicationContext.xml.
+* If we want bean definitions to be loaded from multiple configuration files then we can specify the file location in
+contextConfigLocation parameter of ContextLoaderListener or DispatchServlet in web.xml.
+
+**4. AnnotationConfigApplicationContext**
+
+AnnotationConfigApplicationContext is when we are using java based configuration for bean definitions instead of xml.
+
+___Ex:___
+{% highlight java linenos%}
+public static void main(String[]args){
+	/* Creating Spring IoC Container Without XML configuration file*/
+	ApplicationContext context= new AnnotationConfigApplicationContext(MyConfig.class);
+	MyBean beanObj = context.getBean(MyBean.class);
+	beanObj.someMethod();
+}
+{% endhighlight %}
+
+The config class MyConfig can be written as:
+
+{% highlight java linenos%}
+@Configuration
+public class MyConfig{
+	@Bean
+	public MyBean myBeanId(){
+		return new MyBean();
+	}
+}
+{% endhighlight %}
+
+__Notes:__ 
+* The class AnnotationConfigApplicationContext and the annotations _@Configuration_ , _@Bean_  are introduced in Spring 3.0.
+
+**5. AnnotationConfigWebApplicationContext**
+
+This is web application counter part for _AnnotationConfigApplicationContext_
+
+By default spring web application uses XmlWebApplicationContext as ApplicationContext. 
+To change this to AnnotationConfigWebApplicationContext by changing contextClass parameter of ContextLoaderListener or DispatchServlet in web.xml.
+
+___Ex:___ _For ContextLoaderListener_
+
+{% highlight xml linenos%}
+<web-app>
+	<context-param>
+		<param-name>contextClass</param-name> 
+			<param-value>   
+				org.springframework.web.context.support.AnnotationConfigWebApplicationContext
+		</param-value> 
+	</context-param> 
+	<context-param>
+		<param-name>contextConfigLocation</param-name> 
+		<!--MyConfig must be annotated with @Configuration-->
+		<param-value> MyConfig</param-value>
+	</context-param>
+	<listener>
+		<listener-class> 
+			org.springframework.web.context.ContextLoaderListener 
+		</listener-class>
+	</listener> 
+</web-app> 
+{% endhighlight %}
+
+___Ex:___ _For DispatcherServlet_
+
+{% highlight xml linenos%}
+<web-app>
+	<servlet>
+		<servlet-name>mydispatcher</servlet-name>
+		<servlet-class > org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param> 
+			<param-name>contextClass</param-name> 
+			<param-value>            
+			 org.springframework.web.context.support.AnnotationConfigWebApplicationContext     
+			</param-value>
+		</init-param> 
+		<init-param>   
+			<param-name>contextConfigLocation</param-name>    
+			<!--MyConfig must be class annotated with @Configuration-->
+			<param-value> MyConfig </param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping> 
+		<servlet-name>mydispatcher</servlet-name>    
+		<url-pattern>*.htm</url-pattern>
+	</servlet-mapping>
+</web-app>
+{% endhighlight %}
+
+<div class="col-md-12">
+	<div class="col-md-7">
+	<!--![spring modules]({{site.baseurl}}/resources/images/spring-framework-modules.JPG)-->
+	<img src="{{site.baseurl}}/resources/images/application-context-impls.JPG" class="content-image"/>
+	</div>
+</div>
+
+
+## Container Overview:
+
+The ___org.springframework.contex.ApplicationContext___ represents the sprring IoC container.
+Spring IoC container is responsibel for intantiating, configuring and assembling a forementioned beans.
+The container gets its instructions on what objects to instantiate by reading configuration metadata.
+
+### Configuration metadata	
+
+Spring IoC Container is totally decoupled from the format in which configuration metadata is written.
+This configuration metadata can be supplied in three forms
+* XML-based configuration
+* Annotation-based configuration
+* Java-based configuration
+
+#### <span class="underline">XML-based configuration</span>
+
+XML-based configuration shows these beans configured as <bean> elements inside toplevel <beans> element.
+
+___Ex:___
+
+{% highlight xml linenos%}
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="..." class="...">
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+
+    <bean id="..." class="...">
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+
+</beans>
+{% endhighlight %}
+
+#### <span class="underline">Annotation-based configuration</span>
+
+For detailss on annotaion based configuratin refere to 
+<br/>
+{% for post in site.categories.springcore %}
+	{% if post.title == 'Spring Annotation-based Configuration' %}
+<a href='{{site.url}}{{post.url}}'> annotation-based configuration </a>
+	{% endif %}
+{% endfor %}
+
+#### <span class="underline">Java-based configuration</span>
+
+### Instantiating Container
+
+Bean overview
+Dependencies
+Bean Scopes
+Bean definition inheritence
+Annotation based container configuration
+Classpath scanning and 	mananged components
+Using JSR330
+Java based container configuration

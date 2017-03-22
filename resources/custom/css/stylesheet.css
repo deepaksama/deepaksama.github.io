@@ -105,10 +105,33 @@ table thead tr td {
 	display:block;
 }
 
+.postlistdate {
+	padding:0 20 0 0;
+	border-right:3px solid #ccc;
+	text-align:right;
+}
+.postlist-dayofdate {
+	font-size:30px;
+}
+.postlist-monthofdate {
+	font-size:14px;
+}
+.postlist-yearofdate {
+	font-size:14px;
+}
+.postlistheader {
+	padding:0;
+	margin:0;
+	
+}
+
+.topic_link {
+	/*border-left:3px solid #ccc;*/
+}
 .topic_link a, .topic_link a:hover, .topic_link a:active, .topic_link a:visited{
 	display:box;
 	text-decoration:none;
-	font-size: 20px;
+	font-size: 25px;
 	color:#444359;
 	margin:20px 0; !important;
 }
@@ -125,8 +148,8 @@ table thead tr td {
 
 .topic-image{
 	
-	width:100px;
-	height:100px;
+	width:130px;
+	height:130px;
 	/*border:1px solid #ccc;	*/
 	text-align:left;
 		padding:0;
@@ -141,9 +164,10 @@ table thead tr td {
 	margin:0;
 }
 .topic-wrapper1 {
-	padding:3px;
+	padding:15px 0 15px 0;
 	margin:10px 0;
-	border:1px solid #bbb;
+	border-top:1px solid #bbb;
+	/*border-bottom:1px solid #bbb;*/
 	border-radius:3px;
 }
 
@@ -165,6 +189,11 @@ table thead tr td {
 }
 .aboutmelink a {
 	color:#444359;
+}
+
+.readmorelink {
+	font-size:16px;
+	text-align:right;
 }
 /*
 .header-bottom {
@@ -221,7 +250,21 @@ table thead tr td {
 	border-right:0px;
 }
 
-.content-wrapper img { width:70%;}
+/*.content-wrapper img { max-width:50%;}*/
+.topic-image {
+	/*max-width:100%;*/
+}
+.content-image {
+	max-width:100%;	
+}
+
+.clearboth {
+	clear:both;
+}
+
+.underline {
+	text-decoration:underline;
+}
 .post > .highlight .lineno { color: #ccc; display:inline-block; padding: 0 5px; border-right:1px solid #ccc; }
 .post > .highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }
 
