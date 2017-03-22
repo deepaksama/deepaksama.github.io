@@ -8,14 +8,44 @@
 					<div class="col-md-6">
 						<h1><a href="/"> Java for lazy readers</a></h1>
 					</div>
+					<!--
 					<div class="col-md-6 aboutmelink">
 						{% unless page.url contains 'about.html' %}
 						<h4><a href="/about.html"> About Me</a></h4>
 						{% endunless %}
 					</div>
-					
+					-->
 				</div>
 
 			</div>
 			<div class="header-bottom col-md-12">
+			
+				<ul class="menubar">								
+					<li> 
+						<a href="{{site.baseurl}}/javatopics.html" class="{% if page.url == {{site.baseurl}}subtopics/javatopics.html %} current{% endif %} ">
+							Java
+						</a>
+					</li>		
+					<li> 
+						<a href="{{site.baseurl}}/springtopics.html" class="{% if currentpage.url == page.url %} current{% endif %} ">
+							Spring
+						</a>
+					</li>
+					<li> 
+						<a href="#" class="{% if currentpage.url == page.url %} current{% endif %} ">
+							Hibernate
+						</a>
+					</li>							
+					<li>
+						<a href="#" class="{% if currentpage.url == page.url %} current{% endif %} ">
+							Design Patterns
+						</a>
+					</li>
+					<li>
+					{% unless page.url contains 'about.html' %}
+						<a href="/about.html"> About Me</a>
+						{% endunless %}
+					</li>
+				</ul>
 			</div>
+			

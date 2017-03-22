@@ -8,3 +8,6 @@ published: true
 
 ## Spring transaction isolation level
 
+DirtyRead
+Non repetible Read
+Phantom Read

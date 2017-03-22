@@ -14,6 +14,11 @@ body, html {
 	
 	font-size:15px;
 	width:100%;
+	background-color:#ccc;
+}
+
+header {
+	background-color:#000;	
 }
 
 header h1 {
@@ -21,11 +26,20 @@ header h1 {
 	font-family: 'Great Vibes', cursive;
 	font-family: 'Sacramento', cursive;
 	font-family: 'Fredericka the Great', cursive;
+	font-family: 'Parisienne', cursive;
+	font-family: 'Italianno', cursive;
+	font-family: 'Kranky', cursive;
+	font-family: 'Bilbo Swash Caps', cursive;
+	font-family: 'Chau Philomene One', sans-serif;
+	font-family: 'Amatic SC', cursive;
+	
 }
 
 header h1 a, header h1 a:hover, header h1 a:visited{
 	text-decoration:none;
 	color:#b63b4d;
+	color:rgba(247, 201, 58,1);
+	color:rgba(228, 78, 64,.9);
 }
 
 h1,h2,h3 {
@@ -52,6 +66,12 @@ h1{
     transition: .2s height linear;
 }
 
+.main-content {
+	margin-top:10px;
+	background-color:white;
+	border:1px  solid rgba(204, 204, 204,1);
+	
+}
 .main-content h1{
 	text-align:center;
 }
@@ -67,33 +87,44 @@ table thead tr td {
 	
 	height:2px;
 	background:#b63b4d;
+	background:rgba(247, 201, 58,1);
+	background:rgba(228, 78, 64,.9)
+	
 }
 
 .header-content {
 	height:20%;
+	background-color:#000;
 	/* border-bottom:1px solid #ccc;*/
 }
 
 .header-bottom {
-	/*height:2px;*/
-	border-bottom:2px dashed #444359;
-	/*
-	background-color:#eee;
+	/*height:6%;*/
+	/*border-bottom:2px dashed #444359;*/
+	margin:0;
+	padding:0;
 	background-color:#444359;
-	background-color:#b63b4d;
-	*/
+	background-color:rgba(182, 59, 77,.9);
+	background-color:rgba(228, 78, 64,.9);
+	/*background-color:rgba(247, 201, 58,1);*/	
 }
 
 .page-wrapper {
+	
 	min-height:100%;
 	position:relative;
+	background-color:rgba(255, 255, 255,.6);
+	border-top:#bbb;
 }
 .container-fluid {
 	margin:0;
 	padding:0;
 }
 .content-wrapper {
+	margin:0;
+	padding:0;
 	/*border-top:1px solid #ccc;*/
+	background-color:rgba(255, 255, 255,.6);
 	margin-bottom:200px;
 	padding:25px 0;
 	width:100%;
@@ -189,11 +220,24 @@ table thead tr td {
 }
 .aboutmelink a {
 	color:#444359;
+	color:rgba(247, 201, 58,.8);
 }
 
-.readmorelink {
+.readmorelink-wrapper{
+	background-color:rgba(247, 201, 58,.8);
+	align:right;
+}
+.readmorelink-wrapper a, .readmorelink-wrapper a:hover {
 	font-size:16px;
 	text-align:right;
+	display:block;	
+	text-decoration:none;
+	color:white;
+	padding:10px;
+}
+.readmorelink-wrapper a:hover {
+	text-decoration:none;
+	color:white;
 }
 /*
 .header-bottom {
@@ -278,3 +322,22 @@ table thead tr td {
 	height:15%;
 }
 */
+
+.menubar {
+	margin:0;
+	padding:0;
+}
+.menubar li {
+	display:inline-block;
+	margin:0;
+	padding:0;
+}
+.menubar li a {
+	margin:0;
+	border-right: 1px solid rgba(182, 59, 177,1);
+	display:block;
+	padding:10px 25px 10px 25px;
+	text-decoration:none;
+	color:white;
+	/*border:1px solid red;*/
+}
