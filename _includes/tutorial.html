@@ -4,10 +4,10 @@
 				</div>
 				<div class="col-md-10 main-content">
 						<div class="col-md-12 nav-button">								
-							{% if page.url contains 'java' %} 
+							{% if page.url contains 'javatopics.html' %} 
 								{% assign my_var = 'javatopics.html' %}
 							{% endif %}
-							{% if page.url contains 'spring' %} 
+							{% if page.categories contains 'springtopics.html' %} 
 								{% assign my_var = 'springtopics.html' %}
 							{% endif %}
 							{% if page.url contains 'designpatterns' %} 
@@ -18,11 +18,10 @@
 								</a>
 							</h4>
 						</div>
-						<hr>
-						<div class="col-md-12 posttitle">							
+
+						<div class="col-md-12 posttitle">
 							<h1>{{page.title}}</h1>
 						</div>
-						<hr>
 						<div class="col-md-12">
 							<p>
 							{{content}}

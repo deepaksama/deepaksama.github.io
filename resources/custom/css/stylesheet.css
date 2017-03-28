@@ -119,6 +119,7 @@ table thead tr td {
 .container-fluid {
 	margin:0;
 	padding:0;
+	min-height:800px;
 }
 .content-wrapper {
 	margin:0;
@@ -174,7 +175,7 @@ table thead tr td {
 
 .topic-wrapper {
 	padding:20px;
-
+	
 }
 
 .topic-image{
@@ -198,8 +199,10 @@ table thead tr td {
 	padding:15px 0 15px 0;
 	margin:10px 0;
 	border-top:1px solid #bbb;
+	/*border:1px solid #bbb;*/
 	/*border-bottom:1px solid #bbb;*/
-	border-radius:3px;
+	border-radius:5px;
+	/*box-shadow: 5px 5px 1px #888888;*/
 }
 
 .topic-content-wrapper {
@@ -224,16 +227,20 @@ table thead tr td {
 }
 
 .readmorelink-wrapper{
-	background-color:rgba(247, 201, 58,.8);
+	/*background-color:rgba(247, 201, 58,.8);*/
 	align:right;
 }
 .readmorelink-wrapper a, .readmorelink-wrapper a:hover {
 	font-size:16px;
-	text-align:right;
+	text-align:center;
 	display:block;	
 	text-decoration:none;
 	color:white;
-	padding:10px;
+	padding:8px;
+	background-color:rgba(247, 201, 58,.8);
+	border-top:5px solid rgba(247, 201, 58,.8);
+	border-left:5px solid rgba(247, 201, 58,.8);
+	border-radius:2px;
 }
 .readmorelink-wrapper a:hover {
 	text-decoration:none;
@@ -323,21 +330,32 @@ table thead tr td {
 }
 */
 
+
 .menubar {
 	margin:0;
 	padding:0;
 }
+
 .menubar li {
 	display:inline-block;
 	margin:0;
 	padding:0;
 }
+.menubar li .current{
+	background-color:rgba(247, 201, 58,.7);
+}
 .menubar li a {
 	margin:0;
-	border-right: 1px solid rgba(182, 59, 177,1);
+	padding:0;
+	/*border-right: 1px solid #ccc;*/ /*rgba(182, 59, 177,1);*/
 	display:block;
 	padding:10px 25px 10px 25px;
 	text-decoration:none;
 	color:white;
 	/*border:1px solid red;*/
 }
+
+.panel-title a {
+	text-decoration:none;
+}
+

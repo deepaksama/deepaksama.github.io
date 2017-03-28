@@ -2,7 +2,7 @@
 layout: post
 title: Spring Annotation-based Configuration
 meta: Spring Annotation-based Configuration
-category: springcore
+category: spring
 published: true
 ---
 

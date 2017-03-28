@@ -2,7 +2,7 @@
 layout: post
 title: Spring Interview Questions
 meta: Spring Interview Questions
-category: springcore
+category: spring
 published: true
 ---
 
