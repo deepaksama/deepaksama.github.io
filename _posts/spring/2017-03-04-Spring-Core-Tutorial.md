@@ -2,7 +2,7 @@
 layout: post
 title: Spring Core Turorial
 meta: Spring framework has its featured spread accross 20 modules.  These modules are grouped into 
-category: springcore
+category: spring
 published: true
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Spring Beans
 meta: Spring Beans
-category: springcore
+category: spring
 published: true
 ---
 
