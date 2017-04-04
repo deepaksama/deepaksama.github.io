@@ -6,7 +6,8 @@ category: behaviouraldesignpatterns
 published: true
 ---
 
-## **Introduction**
+<div id="tableofcontents" class="col-md-6 pull-right">	
+</div>
 
 ### **Intent**
 

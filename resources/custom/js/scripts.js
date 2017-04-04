@@ -22,5 +22,23 @@ $(function() {
 		};
 	}	
 
-	var accordion = new Accordion($('#accordion'), false);
+	$.fn.tableofcontents = function (options){
+		var el, title, link,target,content;
+		target = $(this);
+		content = "<h3>Table of Content</h3><ul>";
+		$("h3").each( function() {
+		  el = $(this);
+		  title = el.text();
+		  link = "#" + el.attr("id");
+		console.log(title + link);
+		content = content + '<li><a href="' + link + '">' + title + '</a></li>';
+		});
+		content = content + '</ul>';
+		target.html(content);
+	}
+
+	var accordion = new Accordion($('#accordion'), false);	
+	$('#tableofcontents').tableofcontents();
 });
+
+

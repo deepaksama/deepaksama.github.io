@@ -13,14 +13,18 @@
 							{% if page.url contains 'designpatterns' %} 
 								{% assign my_var = 'designpatterns.html' %}
 							{% endif %}
+							{% if page.url contains 'web-service' %} 
+								{% assign my_var = 'webservices.html' %}
+							{% endif %}
 							<h4><a href="/{{my_var}}">
-								<span class="glyphicon glyphicon-triangle-left">  </span> Back to topics 
+								<span class="glyphicon glyphicon-triangle-left">  </span> Previous 
 								</a>
 							</h4>
 						</div>
 						<hr>
 						<div class="col-md-12 posttitle">							
 							<h1>{{page.title}}</h1>
+							
 						</div>
 						<hr>
 						<div class="col-md-12">

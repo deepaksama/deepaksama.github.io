@@ -1,6 +1,11 @@
 ---
 title: none
 ---
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
 
 /*
 	Header related
@@ -70,7 +75,8 @@ h1{
 	margin-top:10px;
 	background-color:white;
 	border:1px  solid rgba(204, 204, 204,1);
-	
+	min-height:100%;
+	box-shadow:1px 2px 1px 1px #ccc;
 }
 .main-content h1{
 	text-align:center;
@@ -105,7 +111,8 @@ table thead tr td {
 	padding:0;
 	background-color:#444359;
 	background-color:rgba(182, 59, 77,.9);
-	background-color:rgba(228, 78, 64,.9);
+	background-color:rgba(228, 78, 64,1);
+	/*border-top:4px solid rgba(247, 201, 58,.6);*/
 	/*background-color:rgba(247, 201, 58,1);*/	
 }
 
@@ -245,7 +252,12 @@ table thead tr td {
 .readmorelink-wrapper a:hover {
 	text-decoration:none;
 	color:white;
+	border-bottom:5px solid rgba(247, 201, 58,.8);
+	border-right:5px solid rgba(247, 201, 58,.8);
+	border-top:0px solid rgba(247, 201, 58,.8);
+	border-left:0px solid rgba(247, 201, 58,.8);
 }
+
 /*
 .header-bottom {
 	height:3px;
@@ -307,6 +319,9 @@ table thead tr td {
 }
 .content-image {
 	max-width:100%;	
+	border:1px solid #ccc;
+	margin:10px;
+	padding:10px;
 }
 
 .clearboth {
@@ -340,11 +355,13 @@ table thead tr td {
 	display:inline-block;
 	margin:0;
 	padding:0;
+	
 }
 .menubar li .current{
 	background-color:rgba(247, 201, 58,.7);
+
 }
-.menubar li a {
+.menubar li a{
 	margin:0;
 	padding:0;
 	/*border-right: 1px solid #ccc;*/ /*rgba(182, 59, 177,1);*/
@@ -355,7 +372,17 @@ table thead tr td {
 	/*border:1px solid red;*/
 }
 
+.menubar li a:hover{
+	background-color:rgba(247, 201, 58,.7);
+	border-right:1px solid rgba(228, 78, 64,.9);
+	border-left:1px solid rgba(228, 78, 64,.9);
+}
+
 .panel-title a {
 	text-decoration:none;
 }
 
+/*
+	table of content
+*/
+{% include css/table-of-content.css %}

@@ -1,0 +1,11 @@
+
+#tableofcontents {
+	background-color:#eee;
+	border-radius:5px;
+}
+#tableofcontents li {
+	list-style:none;
+}
+#tableofcontents li a, #tableofcontents li a:hover{
+	text-decoration:none;
+}

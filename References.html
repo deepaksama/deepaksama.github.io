@@ -80,7 +80,41 @@ published: true
 			<td class="topic-desc">
 				<a href= "http://dbdesigner.net/designer/schema/32033"> DBDesign/</a>	
 			</td>			
+		</tr>	  
+	  
+	</tbody>
+	
+	
+</table>
+
+<h2> Unpublished Posts </h2>
+
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<td> Java Topics </td>
+			<td> Description </td>
 		</tr>
-      
+	</thead>
+	<tbody>
+			{% for cat in site.categories %}
+				
+				{% for posts in cat %}
+					
+						{% if post.published == false %}
+					
+							<tr>
+								<td> {{ post.title }} </td>
+								<td> {{ post.url }} </td>
+							</tr>
+			
+						{% endif %}
+					
+				{% endfor %}
+			
+				
+			{% endfor %}
+			
+
 	</tbody>
 </table>
