@@ -42,7 +42,7 @@ Ex:
 
 public class A{
 	public void doSomething() {
-		B b = new B();
+		B b = new B();  // Results to A.class.getClassLoader().loadClass("B");
 		b.doSomethingElse();
 	}
 }

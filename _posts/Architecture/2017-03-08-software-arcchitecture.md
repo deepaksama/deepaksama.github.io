@@ -13,7 +13,11 @@ Software Desing:
 		- Classes, interfaces, functions, responsibilities...
 	* Component/ Module level
 
-
+n-Tier Architecture
+	- A Tier in software architecture is a boundry between a layer of application.
+	
+REST (Representational State Transfer)
+	
 	
 	
 	

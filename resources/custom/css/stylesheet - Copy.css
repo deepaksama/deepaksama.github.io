@@ -1,6 +1,12 @@
 ---
 title: none
 ---
+* {
+	margin: 0;
+	padding: 0; 
+}
+
+
 @media print {
   a[href]:after {
     content: none !important;
@@ -11,19 +17,24 @@ title: none
 	Header related
 */
 
+html {
+	overflow-y: scroll !important;
+}
+
 body, html {
-	margin:0;
-	padding:0;
+	margin:0px;
+	padding:0px;
 	font-family: 'Open Sans', sans-serif;
 	font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
 	
 	font-size:15px;
 	width:100%;
 	background-color:#ccc;
+	
 }
 
 header {
-	background-color:#000;	
+	background-color:#000;
 }
 
 header h1 {
@@ -72,18 +83,17 @@ h1{
     -o-transition: .2s height linear;
     transition: .2s height linear;
 }
-.main-content {
-	margin-bottom:210px;
-}
-.main-content,.main-content-post {
+
+.main-content, .main-content_post {
 	margin-top:10px;
 	background-color:white;
 	border:1px  solid rgba(204, 204, 204,1);
 	min-height:100%;
+	margin-bottom:210px;
 	box-shadow:1px 2px 1px 1px #ccc;
-	
 }
-.main-content h1{
+
+.main-content h1, .main-content_post h1{
 	text-align:center;
 }
 
@@ -93,14 +103,18 @@ table thead tr td {
 	font-weight:bold;
 	font-size:20px;
 }
+.masterheader {
+	padding:0 !important;
+	margin:0 !important;
+}
 
-.header-cap {
-	
-	height:2px;
+.header-cap {	
+	min-height:2px !important;
+	max-height:2px !important;
 	background:#b63b4d;
 	background:rgba(247, 201, 58,1);
-	background:rgba(228, 78, 64,.9)
-	
+	background:rgba(228, 78, 64,.9)	
+	/*border-bottom:1px solid red;*/
 }
 
 .header-content {
@@ -124,20 +138,22 @@ table thead tr td {
 }
 
 .page-wrapper {
-	
+	margin:0;
+	padding:0;
 	min-height:100%;
 	position:relative;
 	background-color:rgba(255, 255, 255,.6);
 	border-top:#bbb;
+	
 }
 .container-fluid {
-	margin:0;
-	padding:0;
+	margin:0 !important;
+	padding:0 !important; 
 	min-height:800px;
 }
 .content-wrapper {
-	margin:0;
-	padding:0;
+	margin:0 !important;
+	padding:0 !important;
 	/*border-top:1px solid #ccc;*/
 	background-color:rgba(255, 255, 255,.6);
 	margin-bottom:200px;
@@ -177,8 +193,8 @@ table thead tr td {
 .topic_link a, .topic_link a:hover, .topic_link a:active, .topic_link a:visited{
 	display:box;
 	text-decoration:none;
-	font-size: 25px;
-	color:#444359;
+	font-size: 18px;
+	/*color:#444359;*/
 	margin:20px 0; !important;
 }
 

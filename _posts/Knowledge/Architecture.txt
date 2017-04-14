@@ -1,0 +1,8 @@
+
+Architectural Patterns
+-----------------------
+
+1. Layered Architecture
+2. Event driven Architecture
+3. Service Oriented Architecture
+4. 

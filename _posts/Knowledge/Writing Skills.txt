@@ -1,0 +1,162 @@
+
+Email types
+1. Formal - condolence mail
+2. Informal
+
+Parts:
+	Header 	
+		- Subject
+			- Brief(As short as possible)
+			- Should give clear clue about the content
+			- Need not be a complete sentence
+			
+			
+	Body
+		Salutation
+			- Dear sir/madam/First Name, 
+		Opening statement:
+			- Open with greating or pleasent statement
+			- On replying thank you
+		Clarity and tone:
+			- when reply is expected ( Please let me know)
+			- When assistence is needed/help ( Please/Kindly )
+			
+		Paragraph:
+			- Main idea seperate paragraph
+			- Use complete sentence ( dont use SMS language)
+			- do not use Bold letters
+		Complementary close:
+			- Regards/Thanks & Regards
+			
+Email expressions:
+------------------
+	1. Please find attached __________(PFA) ex: my resume, Photos from the conference
+	2. I have forwarded  ________ to you. Ex: Bill's resume, John's email
+	3. I am forwarding _________  to you.
+	4. I have CC'ed/CC'd/Copied _________ on this mail. (name Ex: Umar)
+	5. If you have any questions please don't hesitate to contact me. ( good to use at the end of a email)
+	6. I look forward to ______ing from you.  (hearing, meeting)
+	
+	
+Common mistakes in Bussiness emails:
+------------------------------------
+1. Forgetting to greating / Without closing ( Hi/ Hello/ Dear)/ (Thanks /Regards)
+	- Lead to lot of confusion about who you are addressing email to.
+	- Considered rude
+	
+2. Being too formal
+	- The way you write email/ the tone of the email should reflect the relation between you and the person you writing to.
+	- Address the people with respect to the relationship 
+		Ex:
+			- If you are writing it for first time we can say Dear Mrs White
+			- Once you are aquented with person you can say  Hello/Dear sussan ( drop Mrs)
+3. Being too informal
+	- If you are writing to your client whom you know from a month does not mean that we can write in very informal way. ( Ex: Hey Johni)
+	- Avoid nicknames/endearments
+	
+4. Forgetting the subject
+	- This is considered very crude and rude and very careless 
+	- It should tell what the email is about.  
+	- It should be crisp and clear.
+	- It should be somthing like "Regarding the quarterly presentation"
+	
+5. Hitting reply all
+	- Would irritate/disterb/oversharing with others.
+	
+6. Not punctuating
+	- punctuations like commas, fullstops, semicolons, if not used in properplace would change the meaning of the sentence.
+	-
+7. Including too many personal details
+	- Do not include too many personal details noone is cared about.
+	- Keep it breif , to the point and formal
+	
+8. Not correcting typos/errors
+	- Errors tend to happen correct them
+	- Read the mail twice and review the content before sending it and correct spelling, punctuations, and details.
+
+9. Repeating questions
+	- If you are not satisfied with the answer provided then you can always say 
+		"Well I am glad that you addressed my query, but I am still not clear. Can I request you to clarify?".  But do not repeat the same questions all over again.  That would be considered rude.
+
+10. Do not use Emojis
+	- Do not forget that you are writing business email and not whatsapp chat message. Using emojis would set friendly/too casual/and unprefessional tone.
+	
+Tips writing formal / business emails:
+--------------------------------------
+Do not use very, really, totally.  instead use strongly.
+Do not use "on top of it, all"/"on top it all off". Instead use Furthermore / Moreover
+Do not use abbreviation (TV). Instead use Television.
+Do not use !.
+Do not ue "a lot". Instead use much / many.
+https://www.engvid.com/english-resource/formal-informal-english/
+
+
+Improving writing skills:
+-------------------------
+tip 1: Do not use contractions
+	- As they make sentence too fast and the sentence loose the politeness.
+		Ex: Don't , Shouldn't, Couldn't , Wasn't.... 
+		
+tip 2: Avoid using {there is / there are}
+	- 
+tip 3: avoid using very, really, a lot
+	- use difficult in place of "very hard"
+	- use controversial in place of really controversial
+	- use many/much in place of "A lot of"
+	
+tip 4: Use stong verbs
+	- Use assisted in place of "gave assistance"
+	- Use objected in place of "made an objection"
+	- Use audited in place of "did an audit"
+	- Use investigated in place of "conducted investigation"
+	
+	
+tip 5: Use active void in place of passive voice
+	- 
+-----------	
+Vocabulary
+-----------
+	
+Talking about similarities:
+-----------------------------	
+	
+	
+Grammer:
+--------
+1. When speaking about nationality/Religion we do not use people.
+		Wrong : Many Brazillian people learning english
+		Correct : Many Brazillians are learning english
+		- remove people and add s to the nationality
+		
+2. 
+	Wrong: Most of people have cell phones these days
+	Correct: Most people have cell phones these days
+	
+	Wrong: A lot people study english
+	Correct: A lot of people study english
+	
+Use of Have/Has/Had
+-------------------
+
+Have is irregular verb.  It changes with tenses
+Have as Main Verb
+-----------------
+Use when you want to tell about possession of (tangible item/ feeling/ something that you do)
+	Ex: I have a TV
+		I have a feeling that emy would marry john
+		I have a job
+Helping Verb
+------------
+	When you want o use perfect tense (started something that started in the past and losted for some time) use Have with verb
+	
+	When you want o use past partisipel (something that is already done)
+	Ex: I have been watching you.
+		I have done washing dishes.
+		I have seen the movie.
+		
+	Pronouns( I , We, they)  use Have
+	He, she , it, John use Has
+	Past action use Had
+		
+		
+	

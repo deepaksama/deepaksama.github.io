@@ -4,6 +4,7 @@ title: Chain of Responsibility Design Pattern
 meta: Spring framework has its featured spread accross 20 modules.  These modules are grouped into 
 category: behaviouraldesignpatterns
 published: true
+comments: true
 ---
 
 <div id="tableofcontents" class="col-md-6 pull-right">	
@@ -32,7 +33,7 @@ The set of objects that can handle request need to be specified dynamically.
 ### **Consequences**
 
 Chain of responsibility has following benefits and liabilities: 
-* Reduced Coupling : 
+* Reduced Coupling :
 This pattern frees an object from knowing which object handles the request. Both receiver and sender have no explicit knowledge of each other. Objects in the chain does not have to know about the chain structure. As a result, instead of objects maintaining reference to all candidate receivers, they keep a single reference to their successor.
 * Added Flexibility in assigning responsibilities to objects: 
 Chain of responsibility gives added flexibility in distributing responsibilities among objects. We can add or change responsibilities for handling requests by adding new objects to chain or changing the chain at runtime
