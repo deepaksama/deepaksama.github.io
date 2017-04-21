@@ -1,0 +1,7 @@
+
+
+Default methods in Interface
+-----------------------------
+	https://javax0.wordpress.com/2014/03/26/the-true-nature-of-java-8-default-methods/
+	http://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html
+	http://docs.oracle.com/javase/tutorial/java/IandI/multipleinheritance.html

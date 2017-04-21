@@ -6,7 +6,7 @@ Software Architecture
 	* Software Architect work before the coding begins
 
 
-Software Desing:
+Software Design:
 	* Is the How of the software development process.
 	* The level of details that are worked at this step are 
 		- Design patterns

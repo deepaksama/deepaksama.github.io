@@ -6,3 +6,51 @@ Architectural Patterns
 2. Event driven Architecture
 3. Service Oriented Architecture
 4. 
+
+
+Business architecture
+Data architecture
+Applications architecture
+Technology architecture
+
+
+Good links:
+
+https://www.linkedin.com/pulse/what-modern-software-architecture-logically-speaking-brian-buikema
+
+Solutions Architecture
+----------------------
+https://www.linkedin.com/pulse/software-architecture-creating-solutions-brian-buikema?trk=v-feed&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_details_shares%3BSim7M8ddZRjqSAsiQ3O4KA%3D%3D
+
+Definitions:
+------------
+
+Solutions Architecture
+----------------------
+A Solutions Architecture aims to address specific problems and requirements, usually through the design of specific information systems or applications, and typically accommodates many different audiences as it addresses direct business and technical concerns without dropping down to the nuts and bolts of the software architecture.
+
+Typical items found in a Solutions Architecture are
+
+Statement of Work (SOW)
+Goals
+Considerations
+Use Cases
+Conceptual Architecture
+Logical Architecture
+Security Architecture
+Information Architecture
+Physical Architecture
+Network Operations Center (NOC) Requirements
+CURRENT STATE:  Discussion of Business and Technical Gaps
+FUTURE STATE:  Solutions to Business and Technical Gaps
+Non-Functional Requirements (NFR’s)
+Engineering Development Staffing Requirements (e.g., roles/skills)
+NOC Staffing Requirements (e.g., roles/skills)
+Operations Staffing Requirements (e.g., roles/skills)
+
+
+Links
+--------
+
+http://www.fromdev.com/2008/09/building-faster-and-efficient-cache.html
+http://www.fromdev.com/2013/07/architect-interview-questions-and-answers.html

@@ -139,7 +139,7 @@
 		
 		Refer : http://docs.oracle.com/javase/tutorial/java/IandI/abstract.html
 	
-9.  When do you abstract classes and when do you use interfaces? 
+9.  When do you use abstract classes and when do you use interfaces? 
 	(or) Which one should i use abstract class or interface? ( the question with respect to java technology)
 	
 	Keeping in mind the difference that stated in above question.
@@ -169,11 +169,3 @@ Favour Abstract classes in below cases:
 	* Takeout the common behavior of related classes. ( for reuseability)
 	* Provide default implementation for interfaces with long list of methods so that the implementor does not have to implement every method of the interface.  ( Like ListenerWrapper classes) 
 	
-
-
-
-
-9. What is the difference between MVC and N-tier architecture?
-
-Refer:
-http://javarevisited.blogspot.in/2012/06/20-design-pattern-and-software-design.html

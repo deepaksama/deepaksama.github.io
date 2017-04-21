@@ -5,5 +5,5 @@ What are JAXB and JAXRS?
 	JAXB : Defines standards for converting Java objects from/to XML
 	JAXRS : Defines standards for runtime API for creation of RESTFull services. JAX-RS, defined in JSR 311). 
 	
-	
-	
+https://www.quora.com/What-is-the-best-way-of-session-management-in-REST-architecture
+https://www.toptal.com/java/rest-security-with-jwt-spring-security-and-java
