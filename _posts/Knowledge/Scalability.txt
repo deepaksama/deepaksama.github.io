@@ -1,0 +1,101 @@
+
+1. What Do You Mean By High Availability?
+
+High Availability refers to the ability of the system to provide consistent and uninterrupted services even in the event of hardware or software failures.
+
+Highly available systems typically have redundant hardware and software that makes the system available despite failures.  Any hardware or software component that can fail has a redundant component of the same type.
+
+When failure occurs, the "failover process" moves procssing performed by failed component to the backup component and restores the system to normal, generally in matter of microseconds.
+
+The more transparent is the failover to the users, the higher the availability of the system.
+
+Ref: https://docs.oracle.com/cd/A91202_01/901_doc/rac.901/a89867/pshavdtl.htm#6062
+
+2. What is Scalability?
+
+Scalability is the ability of the system to expand to meet business needs. 
+
+Scalability is not a design consern of stand-alone application,  its a concern of distributed applications.  Distributed appications are a step beyond traditional client-server applications.  Distributed appications are designed as n-tier applications. 
+
+We can scale system by adding extra resources.  This can be done in two ways
+
+1. Scaling up (Vertical Scaling)
+	
+	Refers to Scalability achieved by using better, faster hardware.  Like adding RAM, or memory, or faster processor.  Administratively things will not change since it is still only one machine to manage.
+	
+2. Scaling out (Horizontal Scaling)
+	
+	Scaling out refers to increasing the number of nodes to distribut the processing load across more than one server.  Although scaling out is achieved using many machines, the collection essentailly function as a single machine.  By dedicating several machines to toa a common task, appication fault tolerance is increased.  From administrative perspective , scaling out presents a greater challenges due to the increased number of machines.
+	
+	Each additon of server provides a near linear increase in scalability.
+	
+	The key to successfully scaling out an application is location transparency.  If any one of the application code depends on knowing what server is running the code, then location transparency is not achieved and scaling out will be difficult.  This situation is called location affinity.  Location affinity requires code changes to scale out an application.
+
+https://msdn.microsoft.com/en-us/library/aa292203(v=vs.71).aspx
+
+
+3. What is Cluster?
+
+	A cluster is two or more computing devices working together foa a common computing purpose and are aware of one another. Clustering usually involves setting up the resources to exchange details on a particular channel(port) and keep excahanging their states, so resource's state is replicated at other places as well.  It usally includes load balancing, wherein, the request is routed to one of the resources in cluster as per the load balancing policy.
+	
+	
+	There are 3 types of computing clusters:
+	* load-balancing clusters (Network load-balancing clusters)
+	* high availability clusters ( server clusters)
+	* high performance clusters.
+	
+
+4. Why do you need clustering?
+
+	Clusters provide scalability, high availability, and failover capabilities.
+
+	From a user’s perspective, it means that if the user is doing something on the application, and that server goes down, then depending upon whether the system is doing clustering or load balancing, the user observes different behavior. If the system is clustered, the user may be able to continue doing the transaction, and may not even realize that the server has gone down. If the system is load balanced without clustering, that means that the user’s state will likely be lost, and the user will be simply sent to the other server(s) to restart transaction. The user has lost some work.
+
+
+5 What is Middle Tier clustering?
+
+Middle Tier clustering is clustering of Middle tier in an Application. Middle Tier clustering is popular as lot of heavy load is servled by middle tier that requires to be highly available.
+	
+
+6. What is load balancing?
+
+	Load balancing is simple technique for distributing workload across multiple machines or clusters.
+	Purpose of load balancing:
+	* Optimize resource usage
+	* Achieve maximum trhoughput
+	* Minimize response time.
+	Most common load balancing techniques in web based applications:
+	* Round robin
+	* Session affinity or sticky session
+	* IP address afinity
+		
+	Load balancing can also happen without clustering when we have multiple independent servers that have same setup, but other than that, are unaware of each other. Then, we can use a load balancer to forward requests to either one server or other, but one server does not use the other server’s resources. Also, one resource does not share its state with other resources.
+
+	Each load balancer basically does following tasks:
+
+	Continuously check which servers are up.
+	When a new request is received, send it to one of the servers as per the load balancing policy.
+	When a request is received for a user who already has a session, send the user to the *same* server (This part is important, as otherwise user would keep going between different servers, but not able to really do any work). This part is not required for serving static pages, in that case, there are no user sessions.
+	
+https://www.ibm.com/developerworks/aix/tutorials/clustering/clustering.html	
+Ref: http://www.wisegeek.com/what-is-a-cluster-network.htm
+
+
+7. What is sticky session (Session afinity) load balancing?
+
+In clustered environment, request associated with a Http Session are always routed to the same application component in the same machine where session is created and is called Session Afinity / Sticky session.
+
+
+8. Why Sticky session?
+
+	In a load balanced environment user session required to be available to all the machine. This can be avoided by serving a particular session by same machine which created the session.
+	
+9. How Sticky session works?
+
+	In java world session affinity is done by using jessionid cookie. The cookie is sent to the client for the first request and client sends the cookie back to server in every subsequent request to identify the session.
+
+10. What are the issue with session affinity?
+
+	
+	
+	

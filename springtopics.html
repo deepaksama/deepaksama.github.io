@@ -2,10 +2,14 @@
 layout: archives-by-category
 title : Spring Topics
 ---
-
-<!-- <h1 class="center"> Topics </h1> -->
-
+	
+	<div class="topic_link col-md-10">
+		<ul>
 	{% for post in site.categories.spring %}
+			<li>	
+				<a class="" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+			</li>
+		<!--
 			<div class="row">			
 				<div class="col-md-1"> </div>
 				<div class="topic-wrapper1 col-md-10">
@@ -22,47 +26,32 @@ title : Spring Topics
 							</div>
 
 						</div>
+						
 						<div class="topic_link col-md-10">
 							<a class="" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
 						</div>
 					</div>
 					<div class="topic-content-wrapper col-md-12">
-						<!--
-						<div class="topic_link ">
-							<a class="topic_link" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-						</div>
-						-->
 						<div class="col-md-2">
 						</div>
 						<div class="topic-desc col-md-9">
-							<div class="">
-								<span >{{post.meta}}</span> 
-							</div>
 							<div class="col-md-12">
-								<div class="col-md-9">
+								<div class="col-md-9 col-sm-9 col-xs-6">
 								</div>
-								<div class="col-md-3 readmorelink-wrapper">
+								<div class="col-md-3 col-sm-3 col-xs-6 readmorelink-wrapper">
 									<a class="readmorelink " href="{{site.baseurl}}{{post.url}}">read..</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-1"> </div>
-					<!--
-					<div class="topic-image col-md-4">
-						{% assign timage = 'no-image.JPG' %}
-						{% if post.topic-image %}
-							{% assign timage = post.topic-image %}
-						{% endif %}
-						<img class="img-thumbnail" src="{{site.baseurl}}/resources/images/{{timage}}" width="100%" height="100%"/>
+					<div class="col-md-1"> 
 					</div>
-					-->
-					
 				</div>
 				<div class="col-md-1"> </div>
 			</div>
-		
+			-->			
 		{% endfor %}
-		
+			</ul>
+		</div>
 
 

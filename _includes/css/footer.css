@@ -15,8 +15,10 @@ footer {
 	background-color:#b63b4d;
 	background-color:rgba(247, 201, 58,1);
 	background-color:rgba(228, 78, 64,.9);
+	background-color:rgba(247, 201, 58,.9);
 }
 
 .footer-content {
 	padding:25px 0;
+	
 }

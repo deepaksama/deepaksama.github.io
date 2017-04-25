@@ -1,4 +1,4 @@
-			<div class="header-cap col-md-12">
+			<div class="header-cap col-md-12 col-sm-12 col-xs-12">
 			</div>
 			<div class="header-content col-md-12">
 				<div class="col-md-2">
@@ -25,27 +25,26 @@
 						<a href="{{site.baseurl}}/javatopics.html" class="{% if page.url contains 'javatopics.html' %}current{% endif %}">
 							Java
 						</a>
-					</li>		
-					<li> 
+					</li><!--  	
+					 --><li> 
 						<a href="{{site.baseurl}}/springtopics.html" class="{% if page.url contains 'springtopics.html' %}current{% endif %}">
 							Spring
 						</a>
-					</li>
-					<li> 
+					</li><!--  
+					 --><li> 
 						<a href="#" class="{% if page.url contains 'hibernate.html' %}current{% endif %}">
 							Hibernate
 						</a>
-					</li>							
-					<li>
+					</li><!-- 									
+					--><li>
 						<a href="{{site.baseurl}}/designpatterns.html" class="{% if page.url contains 'designpatterns.html' %}current{% endif %}">
 							Design Patterns
 						</a>
-					</li>
-					<li>
-						{% unless page.url contains 'about.html' %}
-						<a href="/about.html"> About Me</a>
-						{% endunless %}					
-						
-					</li>
+					</li><!-- 					
+					--><li> 	
+						<a href="{{site.baseurl}}/about.html" class="{% if page.url contains 'about.html' %}current{% endif %}"> 
+							About Me
+						</a>												
+					</li><!--   -->
 				</ul>
 			</div>

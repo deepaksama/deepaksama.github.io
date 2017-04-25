@@ -1,0 +1,179 @@
+
+
+1. Why multiple inheritance not supported in Java? 
+	
+	From java doc :
+
+	One reason why the Java programming language does not permit you to extend more than one class is to avoid the issues of multiple inheritance of state, which is the ability to inherit fields from multiple classes. For example, suppose that you are able to define a new class that extends multiple classes. When you create an object by instantiating that class, that object will inherit fields from all of the class's superclasses. What if methods or constructors from different superclasses instantiate the same field? Which method or constructor will take precedence? Because interfaces do not contain fields, you do not have to worry about problems that result from multiple inheritance of state.
+
+	Multiple inheritance of implementation is the ability to inherit method definitions from multiple classes. Problems arise with this type of multiple inheritance, such as name conflicts and ambiguity. When compilers of programming languages that support this type of multiple inheritance encounter superclasses that contain methods with the same name, they sometimes cannot determine which member or method to access or invoke. In addition, a programmer can unwittingly introduce a name conflict by adding a new method to a superclass. Default methods introduce one form of multiple inheritance of implementation. A class can implement more than one interface, which can contain default methods that have the same name. The Java compiler provides some rules to determine which default method a particular class uses.
+
+	The Java programming language supports multiple inheritance of type, which is the ability of a class to implement more than one interface. An object can have multiple types: the type of its own class and the types of all the interfaces that the class implements. This means that if a variable is declared to be the type of an interface, then its value can reference any object that is instantiated from any class that implements the interface. This is discussed in the section Using an Interface as a Type.
+
+	As with multiple inheritance of implementation, a class can inherit different implementations of a method defined (as default or static) in the interfaces that it extends. In this case, the compiler or the user must decide which one to use.
+	
+	https://docs.oracle.com/javase/tutorial/java/IandI/multipleinheritance.html
+
+2. What is the difference b/w factory pattern and strategy
+	If viewed from distance both looks same as they try to create/use different objects depending on the need.
+	But they are completly different and quiet often used together to achieve a solution. Following are the difference:
+	1. They solve different problems.  
+		Factory pattern solves creational problem. where it defines an interface for creating an object, but lets subclass decide which class to instantiate.
+				
+		Strategy solves behavioral problem, where it defines a family of algrorithms , encapsulates each one and make them interchangeable.  Strategy lets algorithm vary independently from clients that use it.
+		
+	2. 	Factory helps creating an un anticipated object with only knowledge of helper sub classes.
+		Strategy provide a way to configure a class with one of may behaviours to solve a problem.
+		
+	
+3. What is difference b/w Dependency injection and Inversion of control
+
+4. Implement singleton class and asked to make it thread safe. 
+	They asked whether double locking is thread safe? What are situation where double locking fails.
+	
+	I assume here you are talking about double checked locking.  Below is double checked locked code:
+	class Singleton {
+		private static Singleton instance = null;	  
+		public Singleton getInstance() {
+			if (instance == null) {
+				synchronized(Singleton.class) {
+					if (instance == null) 
+						instance = new Singleton();
+				}
+			}
+			return resource;
+		}
+	}
+	
+	Well this code can still fail in one use case.  Let say a thread calls getInstance() methods and acquires a lock and checks that the instance is null and creates and instence Singleton object and assigns it to the variable instance and the object is initialized.  As all these operations are not atomic and compiler is free to optimize to execute in any order.  Lets say the compiler executes first assigning to object created to varible and initializing the object later then there is a chance that a thread T2 executing in parallel check for the if(instance == null) will see the uninitialized object and may return a half cooked instance.
+
+	To fix this issue :
+	1. You can choose to create instance eagerly than creating it lazyly when first request comes.
+	2. Not sure but java documents says volatile will ensure that a variable will slolve visibility issues but not sure whether declaring it volatile should resolve this issue.
+	3. Instantiate the object as static.  JVM will automatically performs lazy initialization.
+	class Singleton {
+		private static Singleton instance = new Singleton();	  
+	}
+	It gets intialized only when class is referenced and class loader loads it.
+	
+	
+5. We can achieve singleton behavior using a static class then why singleton pattern required.
+	
+	Differences:
+	-------------
+	1. Static class gives better performance than Sigleton as the calls to static methods are resolved at compile time itself.
+	2. We can lazy load singleton classes if the class is too heavy. Which is not possible with static classes.
+	
+	Advantages of Singleton over Static:
+	------------------------------------
+	
+	1. With Singleton we can use inheritence and extend the behaviour. Static classes are rigid and cannot be extended.
+	
+	2. Singletion can implement an interface if required and provide implementation. 
+	Ex: JDK has java.lang.Runtime class which is singleton and getRuntime() can return different implementation of Runtime depending upon the different JVM being used.
+	With static class we cannot implement any interface.
+	
+	
+	
+	
+6. What is http, How sessions are maintained over http. 
+	
+	HTTP is a resquest/response based protocol and is basis for communication over world wide web.  HTTP is stateless protocol. Session tacking can be done in 5 ways
+	1. User Athentication
+	2. Hidden fields
+	3. URL Rewriting
+	4. Cookies
+	3. Session identity.
+	
+	1. User Athentication :
+		User need to provide his identity everytime he makes a request.  Like username and password.
+	
+	2. Hidden fields
+		Hidden fields with unique value for the user can we inserted into the page which is sent as response to the user. Which is then Posted back to server in consecutive requests.  
+		Advantage:
+			1. Do not require any special configuration at client side.
+		Drawback :
+			1. Cannot be feasible in case of static pages as the content cannot be changed to insert hidden fileds.
+	3. URL Rewriting:
+		In this technique an addition parameter is added at the end of the url which will be used to identify the user.  
+			URL : http://server:port/servlet/ServletName
+			Rewritten URL: http://server:port/servlet/ServletName?sessionid=7456
+		Advantage:
+			Does not need any support from the browser.
+		Disadvantage: 
+			we need to keep track of the parameter till the end of the conversation completes.
+		
+	4. Cookies :
+		This technique is frequently used for session tracking. Cookie is key value pair of information which will be sent by server to a client browser.  This will be saved by the browser in its client machine. Whenever browser sends next requests it sends the cookie in the request.  
+		
+		Disadvantage : If client opts to disble in browser preferences, the cookie will not be saved and session tracking fails.
+	
+	5. Session identity
+		
+		Technique is build on top of all the above techniques.  To help developers in minimizing the effort to implement session tracking, this type of tracking is provided by underlying technology.
+		
+		In this technique session id is created by server on first athentication and sent to the client browser.  This session id is sent back to server by browser with every further request made to identify the user.
+		
+		
+	
+7. How sessions are maintained in REST web services?
+
+	In my view this question is to check whether candidate is having knowledge on how to securing RESTfull APIs.
+	
+	We typically do not want session management in REST as the REST is not stateless. The stateless ness comes from the point that we can pass the authentication data in HTTP headers.
+	After validating the authentication information rest of the information is available as part of the resource ( user profile).
+	
+	Doing authentication on every request has downside of lookup for username and password on every request.  This can be avoided by issueing a token after first authentication request. Internally this token can be mapped to user identity somewhere or alternatively we can encrypt identity information in token itself.
+
+
+8. We have interface and abstract class in java. Abstract class can have state and default implementation. If we exclude state and default behavior what could be the other reasons to use abstract class.
+
+	Well with Java 8 the default behavior is also not the diffence, as Java 8 allows default methods and static methods.														
+		As per the the java documentaion abstract classes and interfaces differ only in the aspect of "Accessibility of data members and methods". i.e 
+	
+		With abstract classes, you can declare fields that are not static and final, and define public, protected, and private concrete methods. 
+		
+		With interfaces, all fields are automatically public, static, and final, 
+		
+		In addition, you can extend only one class, whether or not it is abstract, whereas you can implement any number of interfaces (multiple inheritance of type).
+		
+		Refer : http://docs.oracle.com/javase/tutorial/java/IandI/abstract.html
+	
+9.  When do you abstract classes and when do you use interfaces? 
+	(or) Which one should i use abstract class or interface? ( the question with respect to java technology)
+	
+	Keeping in mind the difference that stated in above question.
+	
+	Below are the some pointers to decide which one to use:
+	* Consider using abstract classes if any of these statements apply to your situation:
+		* When you want to share code among several related classes
+			JDK Example : AbstractMap is an abstract class. HashMap, TreeMap, and ConcurrentHashMap extend from AbstractMap to share some common code.
+		* When you want to have common methods and fields or require modifiers other than public.
+			General Example : If you write a drawing application where you can draw line, circle, rectangle and so on... All these objects Line, Circle, Rectangle have certain common states or fields ( like position, orientation, line color, fill color) which need to be private.  Also some common behaviours like moveTo, rotate, resize... and so on in common.  So these common states and behaviours can be implementated in a Graphic Class and inherit all the drawing classes from it.
+		* When you want to declare non-static fields.
+	
+	* Consider using interfaces if any of these statements apply to your situation:
+		* You expect that unrelated classes would implement the common behavior.  (i.e Contract)
+			* JDK Example:  the interfaces Comparable and Cloneable are implementated by many unrelated classes.
+			* General Example : Let say as a standards body you want to define a Database connectivity contract for all the implementors. So you will create an interface Connection with connect method in it which every implementor should provide.
+		
+		* You want to take advantage of multiple inheritance of type
+			
+10. The above question can be asked irrespective of technology ( Java / C++) as a design question like Interface or abstract class how to do you decide?
+Above answer is with respect to java as reference to lot extent.  So it can be stated in general priciple also as below:
+
+Favour Interface in below cases:
+	* When you want to define a contract for un related classes. (Could be as a standards body)
+
+Favour Abstract classes in below cases:
+	* Takeout the common behavior of related classes. ( for reuseability)
+	* Provide default implementation for interfaces with long list of methods so that the implementor does not have to implement every method of the interface.  ( Like ListenerWrapper classes) 
+	
+
+
+
+
+9. What is the difference between MVC and N-tier architecture?
+
+Refer:
+http://javarevisited.blogspot.in/2012/06/20-design-pattern-and-software-design.html

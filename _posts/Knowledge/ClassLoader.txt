@@ -1,0 +1,48 @@
+
+There are 3 types of class loaders
+1. Bootstrap Class Loader or Primodial Class Loader
+	- Responsible for loading classes from bootstrap path ( <jdk>/jre/lib/rt.jar ).  
+	- Oracle implementation of Bootstrap Class Loader is implemented in native laguage (C++) not in Java.
+	
+2. Extension Class Loader
+	- Responsible for loading classes from extension path ( <jdk>/jre/lib/ext/*.jar ). 
+	- This is implemented in java and the implementation class is sun.misc.Launcher$ExtLoader
+	
+3. Application Class Loader or System Class Loader
+	- Responsible for loading classes from application class path.  
+	- Class path is specified by CLASSPATH environement variable. It also take the path specified by -cp argument to JVM.
+
+
+Class loading Mechanism:
+
+Java platform uses delegation model for class loading. 
+When loading a class, a class loader first delegates the search for class to its parent class loader. If parent class loader does not find the specified class then it delegates to child do it.
+
+
+User defined class loaders
+
+- Constructors in java.lang.ClassLoader and its subclasses allow you to specify the parent class loader when you instantiate a new class loader.
+- If you do not explicitly specify a parent, JVM's System class loader will be assigned as the default parent.
+- The loadClass method of ClassLoader performes the below tasks in order
+	- If class is already loaded it returns it.
+	- Otherwise, it delegates the search for the new class to the parent class loader.
+	- if the parent does not find the class, loadClass method calls the findClass to find and load class
+- We will be overloading the findClass method of ClassLoader when you we create subclass of ClassLoader in our application.
+
+
+public abstract class ClassLoader {
+	public Class loadClass(String name); //package name + class name
+	public Class defineClass(byte[] b);
+	public URL getResource(String name);
+	public Enumeration getResource(String name);
+	public ClassLoader getParent();
+}
+
+Ex:
+
+public class A{
+	public void doSomething() {
+		B b = new B();  // Results to A.class.getClassLoader().loadClass("B");
+		b.doSomethingElse();
+	}
+}
