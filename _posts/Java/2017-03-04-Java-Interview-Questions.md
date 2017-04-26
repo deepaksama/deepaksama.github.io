@@ -111,9 +111,9 @@ Both Enumeration and Iterator are used for traversing and fetching elements from
 </table>
 ### **12.	 What are differences between Iterator and ListIterator?**
 
-a.	We can use Iterator to traverse Set and List collection.  Whereas ListIterator can be used with Lists only
-b.	Iterator can traverse in forward direction only.  Whereas ListIterator can be used to traverse in both directions.
-c.	ListIterator inherits from Iterator interface and comes with extra functionalities like adding an element, replacing an element, getting index positon for previous and next elements.	
+* We can use Iterator to traverse Set and List collection.  Whereas ListIterator can be used with Lists only
+* Iterator can traverse in forward direction only.  Whereas ListIterator can be used to traverse in both directions.
+* ListIterator inherits from Iterator interface and comes with extra functionalities like adding an element, replacing an element, getting index positon for previous and next elements.	
 
 ### **13.	What are the different ways to iterate over list?**
 
