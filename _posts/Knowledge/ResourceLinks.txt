@@ -1,0 +1,72 @@
+
+	Scalability:
+	
+	http://www.lecloud.net/tagged/scalability
+	
+	Soft Skills
+	
+	https://www.hiredintech.com/classrooms/interview-strategies/lesson/88 - course
+	
+	
+	
+	System design:
+	
+	https://github.com/checkcheckzz/system-design-interview
+	https://www.hiredintech.com/classrooms/system-design/lesson/53 - Course
+	http://blog.gainlo.co/index.php/2015/10/22/8-things-you-need-to-know-before-system-design-interviews/
+	https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview?redirected_qid=1500023 -discussion
+	https://youtu.be/-W9F__D3oY4
+	
+	
+	Solution architecture
+	
+	
+	
+	Roles Example:
+	-------------
+	1
+		•	Responsible for Continental Europe wide Business on Architectural and Design Solution. 
+		•	E2E System/Application architecture and Design.
+		•	Designing application with Open source and Foundation reusable framework.
+		•	Architecture Solution to Business Requirement on multiple projects across Continental Europe
+		•	Technical Solution to Client and Development Team.
+		•	Creating road map and mentoring for Performance, Productivity and Quality.
+		•	Project/System Due Diligence, RFP, Pre-Sales
+		•	Industrialization, Productivity/Process improvement.
+	2. 
+	
+		Responsible for defining, documenting and articulating functional scope. Also involved in technical analytical, problem-solving and identifying, analyzing, tracking and managing customer and application data flow issues throughout a software system.
+
+		Develop architecture solutions using industry standard architecture frameworks with specialisms in the following:
+
+		Information architecture
+		Application architecture
+		Technical architecture
+		Information assurance and security
+		Resilience and performance
+
+		New and existing Project implementation
+		Help clients and reseller partners utilise the best potential
+		Defining the web architecture blueprint for both clients and reseller partners
+		Liaising with Pre-sales and Sales teams
+	
+	3. 
+	
+	
+	Data science
+	 https://www.linkedin.com/learning/data-science-and-analytics-career-paths-and-certifications/welcome
+	 
+	 
+	Linked in courses:
+		https://www.linkedin.com/learning/learning-design-thinking-lead-change-in-your-organization/about-this-course-and-our-linkedin-group
+		https://www.linkedin.com/learning/programming-foundations-databases
+		https://www.linkedin.com/learning/developing-secure-software
+		https://www.linkedin.com/learning/human-resources-pay-strategy/designing-a-pay-system
+		
+	Dev tips:
+	------------
+	https://simpleprogrammer.com/2016/12/28/software-design-patterns-hiding/
+	https://simpleprogrammer.com/2016/11/23/side-projects/
+	https://simpleprogrammer.com/2016/11/09/10-tips-junior-dev-role/
+	
+		
