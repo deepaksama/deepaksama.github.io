@@ -1,0 +1,197 @@
+	Architectural Design:
+	--------------------
+	Software Architecture & Design Tutorial
+		https://www.tutorialspoint.com/software_architecture_design/index.htm
+
+
+	Scalability:
+	-------------
+	
+	http://www.lecloud.net/tagged/scalability
+	
+	Soft Skills
+	-------------
+	
+	https://www.hiredintech.com/classrooms/interview-strategies/lesson/88 - course
+	
+	
+	
+	System design:
+	------------------
+	
+	https://github.com/checkcheckzz/system-design-interview
+	https://www.hiredintech.com/classrooms/system-design/lesson/53 - Course
+	http://blog.gainlo.co/index.php/2015/10/22/8-things-you-need-to-know-before-system-design-interviews/
+	https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview?redirected_qid=1500023 -discussion
+	https://youtu.be/-W9F__D3oY4
+	
+	https://github.com/shashank88/system_design
+	
+	System design Training:
+	-----------------------
+		https://www.hiredintech.com/system-design/the-system-design-process/
+		https://msdn.microsoft.com/en-in/library/ee658084.aspx
+	
+	Data science
+	------------- https://www.linkedin.com/learning/data-science-and-analytics-career-paths-and-certifications/welcome
+	 
+	 
+	Linked in courses:
+	------------------
+		https://www.linkedin.com/learning/learning-design-thinking-lead-change-in-your-organization/about-this-course-and-our-linkedin-group
+		https://www.linkedin.com/learning/programming-foundations-databases
+		https://www.linkedin.com/learning/developing-secure-software
+		https://www.linkedin.com/learning/human-resources-pay-strategy/designing-a-pay-system
+		
+	Dev tips:
+	------------
+	https://simpleprogrammer.com/2016/12/28/software-design-patterns-hiding/
+	https://simpleprogrammer.com/2016/11/23/side-projects/
+	https://simpleprogrammer.com/2016/11/09/10-tips-junior-dev-role/
+	
+	Developer Best practices:
+	-------------------------
+	https://www.tutorialspoint.com/developers_best_practices/index.htm
+	
+	Messaging middleware:
+	--------------------
+	ALSO CALLED: MOM, Message Brokers, Messaging Brokers, Message-Oriented Middleware 
+
+	http://www.pcmag.com/encyclopedia/term/46835/messaging-middleware
+
+
+	Testing:
+	----------
+		https://www.quora.com/What-is-the-difference-between-unit-testing-functional-testing-and-integration-testing
+		
+		Unit testing:
+		-------------
+			http://stackoverflow.com/questions/473561/unit-testing-beginner-questions
+			http://stackoverflow.com/questions/652292/what-is-unit-testing-and-how-do-you-do-it
+			http://softwaretestingfundamentals.com/unit-testing/
+			https://developer.salesforce.com/page/How_to_Write_Good_Unit_Tests
+			https://semaphoreci.com/community/tutorials/how-to-split-junit-tests-in-a-continuous-integration-environment
+			https://www.tutorialspoint.com/junit/junit_interview_questions.htm
+			
+
+	--------------------------------------------------------------------------------------------------------------------------------
+
+	DevOps ( Development and Operations)
+	--------------------------------------
+		Its paractice of opearations and development engineers participating together in entire service lifecycle, 
+		from design through the development process to production support.
+		
+		DevOps replaces the model where one teams writes the code and another team tests it and another team deploys it and another team operates it.
+		
+		In old way of delivering software, most of the time is spent in development is built and it is deployed and submit it for test phase at the end.
+		Which get the bug report in large batches late in the project.
+		
+		In Continuous delivery every code commit on your application code is build automatically. 
+		Unit tests are run and application is deployed in production like environment.
+		Also automated acceptence tests are run and changes are passed or failed in minutes after code is checkedin.
+		Code is always in working state with continuous delivery.
+		
+		Continuous Integration
+		----------------------
+			Is practice of automatically building and unit testing the entire application ideally on each code check-in.
+			
+		Continuous Delivery
+		-------------------
+			Is a practice of deploying every change to a production like environment and performing automated integration and acceptence testing.
+			
+		Continuous Deployment
+		-----------------------
+			Every change that goes through full enough automated testing is deployed automatically to production.
+			
+		
+		Benefit:
+		--------
+			Huge decrease in time to market the product.
+			Increase in Quality
+			Continuous delivery limits your work in progress
+			Improves mean time to recover
+
+
+	Spring Framework for JMS
+	--------------------------
+
+	Message :
+	--------
+				Its data that is meaningful between two applications which use it.  
+		Messages are used to transfer information from one application to another which may not be running in same platform.
+
+	What is messaging :
+	------------------
+			Messaging is communication between two components or applications ( in distributed environment)
+			which are loosly coupled unlike its peers like TCP sockets, CORBA or RMI.  Often between dissimilar systems or written in different programming languages.
+			
+			
+	Advantages of messaging:
+	-----------------------
+		Ability to integrate different platforms.
+		Asynchronous message.
+		Reliability of message delivery.
+		increases the scalability.
+		
+	JMS:(Java Message Service:
+	--------------------------
+		JMS is Message Oriented  Middleware (MOM) API for sending and receiving messages between two or more clients. 
+		JMS is part of the Java Enterprise Edition (JEE)
+		Using JMS programmer can invoke messaging services of different Message Brokers like ActiveMQ, MQSeries, SonicMQ.
+		JMS supports messages that contain Serialized Java Objects and also XML.
+		
+	Components of JMS:
+	------------------
+		JMS Provider
+		JMS Client
+			JMS Producer/Publisher:
+			JMS Consumer/Subscriber:
+		
+		
+	MOM Providers:
+	--------------
+		WebLogic	- 	Oracle 
+		MQSeries	-	IBM
+		JBossMQ		-	JBoss
+		SonicMQ		-	Progress
+		TIBCO EMS	-	TIBCO
+		ActiveMQ	-	Apache
+		
+
+	Messaging Models:
+	-----------------
+		There are two messesging models:
+		1. Point to Point
+			Built around the concept Message queues. Each message has only one consumer. We might have more than one sender and more than one receiver, 
+			but only one receiver may consume any message.
+		
+		
+		2. Publisher/Subscriber
+				- Durable/Persistent
+				- NonDurable/Non-Persistent
+
+			Built around the concept topics. Each message has multiple consumers. 
+			Each message published to topic is broadcast to all clients that subscribed to the topic.
+			
+	Programmer Model:
+	-----------------
+			ConnectionFactory --> Connection --> Session --> Message Producer/Subscriber
+		
+	------------------------------------------------------------------------------------------------------------------------------------------------
+
+	Multi threading
+
+	Dead Lock:
+	----------
+
+	Live Lock :
+	----------
+
+
+	Thread interruption:
+	-------------------
+			
+	Interview Tips:
+	-------------------
+		http://architecturelinked.com/profiles/blogs/10-critical-interview
+		

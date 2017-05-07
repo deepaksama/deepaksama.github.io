@@ -2,8 +2,13 @@
 layout: default
 title : Topics
 ---
-
+		<div class="topics-list col-md-10">
+		<ul>
 {% for post in site.categories.java %}
+			<li>	
+				<a class="" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+			</li>
+			<!--
 			<div class="row">			
 				<div class="col-md-1"> </div>
 				<div class="topic-wrapper1 col-md-10">
@@ -25,11 +30,6 @@ title : Topics
 						</div>
 					</div>
 					<div class="topic-content-wrapper col-md-12">
-						<!--
-						<div class="topic_link ">
-							<a class="topic_link" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-						</div>
-						-->
 						<div class="col-md-2">
 						</div>
 						<div class="topic-desc col-md-9">
@@ -46,23 +46,18 @@ title : Topics
 						</div>
 					</div>
 					<div class="col-md-1"> </div>
-					<!--
-					<div class="topic-image col-md-4">
-						{% assign timage = 'no-image.JPG' %}
-						{% if post.topic-image %}
-							{% assign timage = post.topic-image %}
-						{% endif %}
-						<img class="img-thumbnail" src="{{site.baseurl}}/resources/images/{{timage}}" width="100%" height="100%"/>
-					</div>
-					-->
 					
 				</div>
 				<div class="col-md-1"> </div>
 			</div>
-		
+			-->
 		{% endfor %}
 
 		{% for post in site.categories.spring %}
+			<li>	
+				<a class="" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+			</li>
+			<!--
 			<div class="row">			
 				<div class="col-md-1"> </div>
 				<div class="topic-wrapper1 col-md-10">
@@ -84,11 +79,6 @@ title : Topics
 						</div>
 					</div>
 					<div class="topic-content-wrapper col-md-12">
-						<!--
-						<div class="topic_link ">
-							<a class="topic_link" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-						</div>
-						-->
 						<div class="col-md-2">
 						</div>
 						<div class="topic-desc col-md-9">
@@ -104,24 +94,18 @@ title : Topics
 							</div>
 						</div>
 					</div>
-					<div class="col-md-1"> </div>
-					<!--
-					<div class="topic-image col-md-4">
-						{% assign timage = 'no-image.JPG' %}
-						{% if post.topic-image %}
-							{% assign timage = post.topic-image %}
-						{% endif %}
-						<img class="img-thumbnail" src="{{site.baseurl}}/resources/images/{{timage}}" width="100%" height="100%"/>
-					</div>
-					-->
-					
+					<div class="col-md-1"> </div>			
 				</div>
 				<div class="col-md-1"> </div>
 			</div>
-		
+			-->
 		{% endfor %}
 									    
 		{% for post in site.categories.designpatterns %}
+			<li>	
+				<a class="" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+			</li>
+			<!--
 			<div class="row">			
 				<div class="col-md-1"> </div>
 				<div class="topic-wrapper1 col-md-10">
@@ -143,11 +127,6 @@ title : Topics
 						</div>
 					</div>
 					<div class="topic-content-wrapper col-md-12">
-						<!--
-						<div class="topic_link ">
-							<a class="topic_link" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-						</div>
-						-->
 						<div class="col-md-2">
 						</div>
 						<div class="topic-desc col-md-9">
@@ -164,20 +143,12 @@ title : Topics
 						</div>
 					</div>
 					<div class="col-md-1"> </div>
-					<!--
-					<div class="topic-image col-md-4">
-						{% assign timage = 'no-image.JPG' %}
-						{% if post.topic-image %}
-							{% assign timage = post.topic-image %}
-						{% endif %}
-						<img class="img-thumbnail" src="{{site.baseurl}}/resources/images/{{timage}}" width="100%" height="100%"/>
-					</div>
-					-->
 					
 				</div>
 				<div class="col-md-1"> </div>
 			</div>
-		
+			-->
 		{% endfor %}
 		
-
+		</ul>
+	</div>

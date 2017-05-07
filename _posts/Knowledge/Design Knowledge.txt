@@ -177,3 +177,27 @@ Favour Abstract classes in below cases:
 
 Refer:
 http://javarevisited.blogspot.in/2012/06/20-design-pattern-and-software-design.html
+
+
+
+System Design Process:
+----------------------
+
+
+1. Step 1: System design questions are weakly defined. So get ample information on below to define scope of the problem.
+	* Constraints
+		* Amount of data it should handle
+		* Amount of trafic it should handle
+		* types of requsts
+			* Number of reads 
+			* Numbber of Writes
+	* Use cases the system need to satisfy
+		* Write obvious use cases.
+2. Step 2: High-level astract design (impotant components of system)
+3. Step 3: Understand the bottlenecks.
+4. Step 4: Scaling the design
+
+		
+
+	
+		
