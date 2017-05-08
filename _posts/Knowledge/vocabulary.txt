@@ -1,0 +1,12 @@
+---
+layout: post
+title: Vocabulary
+meta: 
+category: english
+published: true
+---
+
+* 1. Articulate  *
+	- ___verb___ : express ( an idea or feeling ) fluently.
+		- ___Ex: :____ They are unable to articulate their emotions.
+		

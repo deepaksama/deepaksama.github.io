@@ -54,3 +54,11 @@ Links
 
 http://www.fromdev.com/2008/09/building-faster-and-efficient-cache.html
 http://www.fromdev.com/2013/07/architect-interview-questions-and-answers.html
+
+
+Architectural Patterns and Styles
+-------------------------------
+	https://msdn.microsoft.com/en-in/library/ee658117.aspx
+
+Interviewing Architect
+----------------------				https://codeground.in/blog/index.php/2016/08/16/the-best-way-to-recruit-software-system-architects/?utm_source=Linkedin-Campaign&utm_campaign=Campaign0&utm_medium=Linkedin&utm_content=C0_13

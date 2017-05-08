@@ -171,6 +171,19 @@ table thead tr td {
 	
 }
 
+.topics-list li {
+	list-style:none;
+	line-height:2;
+}
+.topics-list a{
+	text-decoration:none;
+	font-size:17px;
+}
+
+.topics-list a:before {
+	
+}
+
 .topic_link {
 	/*border-left:3px solid #ccc;*/
 }
