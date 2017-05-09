@@ -1,0 +1,32 @@
+
+.menubar {
+	margin:0;
+	padding:0;
+}
+
+.menubar li {
+	display:inline-block;
+	margin:0;
+	padding:0;
+	
+}
+.menubar li .current{
+	background-color:rgba(247, 201, 58,.7);
+
+}
+.menubar li a{
+	margin:0;
+	padding:0;
+	/*border-right: 1px solid #ccc;*/ /*rgba(182, 59, 177,1);*/
+	display:block;
+	padding:10px 25px 10px 25px;
+	text-decoration:none;
+	color:white;
+	/*border:1px solid red;*/
+}
+
+.menubar li a:hover{
+	background-color:rgba(247, 201, 58,.7);
+	border-right:1px solid rgba(228, 78, 64,.9);
+	border-left:1px solid rgba(228, 78, 64,.9);
+}

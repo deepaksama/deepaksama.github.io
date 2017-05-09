@@ -10,6 +10,7 @@ title: none
 /*
 	Header related
 */
+{% include css/header.css %}
 
 body, html {
 	margin:0;
@@ -22,32 +23,7 @@ body, html {
 	background-color:#ccc;
 }
 
-header {
-	background-color:#000;	
-}
 
-header h1 {
-	font-weight:bold;
-	
-	font-family: 'Tangerine', cursive;
-	font-family: 'Great Vibes', cursive;
-	font-family: 'Sacramento', cursive;
-	font-family: 'Fredericka the Great', cursive;
-	font-family: 'Parisienne', cursive;
-	font-family: 'Italianno', cursive;
-	font-family: 'Kranky', cursive;
-	font-family: 'Bilbo Swash Caps', cursive;
-	font-family: 'Chau Philomene One', sans-serif;
-	font-family: 'Amatic SC', cursive;
-	
-}
-
-header h1 a, header h1 a:hover, header h1 a:visited{
-	text-decoration:none;
-	color:#b63b4d;
-	color:rgba(247, 201, 58,1);
-	color:rgba(228, 78, 64,.9);
-}
 
 h1,h2,h3 {
 	/*font-family: 'Rancho', cursive;
@@ -94,34 +70,7 @@ table thead tr td {
 	font-size:20px;
 }
 
-.header-cap {
-	
-	height:2px;
-	background:#b63b4d;
-	background:rgba(247, 201, 58,1);
-	background:rgba(228, 78, 64,.9)
-	
-}
 
-.header-content {
-	height:30%;
-	background-color:#000;
-	background-image: url('{{ site.baseurl }}/resources/images/header/headerbg.jpg');
-	background-size:100%;
-	/* border-bottom:1px solid #ccc;*/
-}
-
-.header-bottom {
-	/*height:6%;*/
-	/*border-bottom:2px dashed #444359;*/
-	margin:0;
-	padding:0;
-	background-color:#444359;
-	background-color:rgba(182, 59, 77,.9);
-	background-color:rgba(228, 78, 64,1);
-	/*border-top:4px solid rgba(247, 201, 58,.6);*/
-	/*background-color:rgba(247, 201, 58,1);*/	
-}
 
 .page-wrapper {
 	
@@ -366,37 +315,10 @@ table thead tr td {
 */
 
 
-.menubar {
-	margin:0;
-	padding:0;
-}
-
-.menubar li {
-	display:inline-block;
-	margin:0;
-	padding:0;
-	
-}
-.menubar li .current{
-	background-color:rgba(247, 201, 58,.7);
-
-}
-.menubar li a{
-	margin:0;
-	padding:0;
-	/*border-right: 1px solid #ccc;*/ /*rgba(182, 59, 177,1);*/
-	display:block;
-	padding:10px 25px 10px 25px;
-	text-decoration:none;
-	color:white;
-	/*border:1px solid red;*/
-}
-
-.menubar li a:hover{
-	background-color:rgba(247, 201, 58,.7);
-	border-right:1px solid rgba(228, 78, 64,.9);
-	border-left:1px solid rgba(228, 78, 64,.9);
-}
+/*
+	Menu related
+*/	
+{% include css/menu.css %}
 
 .panel-title a {
 	text-decoration:none;
