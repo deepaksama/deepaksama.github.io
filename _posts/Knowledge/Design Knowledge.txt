@@ -102,6 +102,7 @@ Variations
 	https://docs.oracle.com/javase/tutorial/java/IandI/multipleinheritance.html
 
 2. What is the difference b/w factory pattern and strategy
+
 	If viewed from distance both looks same as they try to create/use different objects depending on the need.
 	But they are completly different and quiet often used together to achieve a solution. Following are the difference:
 	1. They solve different problems.  
@@ -114,7 +115,7 @@ Variations
 		
 	
 3. What is difference b/w Dependency injection and Inversion of control
-
+	
 4. Implement singleton class and asked to make it thread safe. 
 	They asked whether double locking is thread safe? What are situation where double locking fails.
 	
@@ -208,7 +209,7 @@ Variations
 	In my view this question is to check whether candidate is having knowledge on how to securing RESTfull APIs.
 	
 	We typically do not want session management in REST as the REST is not stateless. The stateless ness comes from the point that we can pass the authentication data in HTTP headers.
-	After validating the authentication information rest of the information is available as part of the resource ( user profile).
+	After validating the authentication information rest of the information is available as part of the resource (user profile).
 	
 	Doing authentication on every request has downside of lookup for username and password on every request.  This can be avoided by issueing a token after first authentication request. Internally this token can be mapped to user identity somewhere or alternatively we can encrypt identity information in token itself.
 

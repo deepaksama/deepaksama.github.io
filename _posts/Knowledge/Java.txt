@@ -1,7 +1,29 @@
 
-
+Java topics:
+------------
+	http://www.dineshonjava.com/p/home-page.html
+	http://www.javamadesoeasy.com/
+	
+Java Interview Questions:
+---------------------
+	http://www.javamadesoeasy.com/2015/07/core-java-top-120-most-interesting-and_21.html#at_pco=smlwn-1.0&at_si=57eedd11366b88c6&at_ab=per-2&at_pos=0&at_tot=1
+	
 Default methods in Interface
 -----------------------------
 	https://javax0.wordpress.com/2014/03/26/the-true-nature-of-java-8-default-methods/
 	http://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html
 	http://docs.oracle.com/javase/tutorial/java/IandI/multipleinheritance.html
+	
+Serialization:
+-----------------
+	http://www.javamadesoeasy.com/2015/04/serialization-and-deserialization.html
+	https://www.javacodegeeks.com/2013/03/serialization-in-java.html
+	https://www.javacodegeeks.com/2010/07/java-best-practices-high-performance.html
+	http://www.techbeamers.com/java-serialization-tutorial/
+	http://www.dineshonjava.com/2014/11/serialization-in-java.html
+	
+	
+Theme:
+---------
+
+http://www.techbeamers.com/java-serialization-tutorial/	
