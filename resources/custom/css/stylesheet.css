@@ -116,21 +116,16 @@ table thead tr td {
 }
 .postlistheader {
 	padding:0;
-	margin:0;
-	
+	margin:0;	
 }
 
 .topics-list li {
-	list-style:none;
+	/*list-style:none;*/
 	line-height:2;
 }
 .topics-list a{
 	text-decoration:none;
 	font-size:17px;
-}
-
-.topics-list a:before {
-	
 }
 
 .topic_link {
