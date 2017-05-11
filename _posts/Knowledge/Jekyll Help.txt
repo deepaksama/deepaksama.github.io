@@ -6,3 +6,8 @@ How to Pointing/Refering another post in a post
 {% post_url <post_file_name> %}
 Ex: <a href='{{site.baseurl}}{% post_url 2017-03-04-prototype.md %}'>prototype</a>
 
+Code highlight:
+----------------
+{% highlight java linenos %}
+
+{% endhighlight %}

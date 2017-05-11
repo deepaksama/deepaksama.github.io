@@ -54,6 +54,7 @@ Links
 
 http://www.fromdev.com/2008/09/building-faster-and-efficient-cache.html
 http://www.fromdev.com/2013/07/architect-interview-questions-and-answers.html
+http://www.johnheale.com/high-level-design/
 
 
 Architectural Patterns and Styles
