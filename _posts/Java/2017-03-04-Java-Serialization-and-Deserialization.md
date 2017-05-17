@@ -408,10 +408,4 @@ Developer can enhance the default serialization by providing below above private
 
 
 
-### **Externalization**
-
-
-
-
-
 

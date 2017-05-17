@@ -1,0 +1,40 @@
+Java
+		Collections
+		Serialization & Externalization
+		(Streams and Lambdas)
+		Innner classes
+		Multi threading - Executor framework
+		Generics
+	
+JEE
+		Servlets
+		JSP
+		JDBC
+Spring:
+		Core
+		MVC
+		Data
+		
+Hibernate
+
+Webservices
+		SOAP
+		REST
+		
+Scaling
+		Types
+		Microservices
+	
+
+Data Structure
+
+Design Patterns
+
+Design principles
+
+----
+Spring security
+SSO + JWT
+
+Spring Boot
+Spring cloud

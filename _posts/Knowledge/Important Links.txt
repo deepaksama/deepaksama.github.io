@@ -194,4 +194,9 @@
 	Interview Tips:
 	-------------------
 		http://architecturelinked.com/profiles/blogs/10-critical-interview
-		
+	
+	Micro Services
+	---------------
+	
+		http://www.dineshonjava.com/2017/01/microservices-with-spring-boot.html
+	
