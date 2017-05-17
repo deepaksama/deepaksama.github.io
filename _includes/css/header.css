@@ -23,6 +23,7 @@ header h1 a, header h1 a:hover, header h1 a:visited{
 	color:#b63b4d;
 	color:rgba(247, 201, 58,1);
 	color:rgba(228, 78, 64,.9);
+	color:rgba(99, 177, 117,.9);
 	/*color:black;*/
 }
 
@@ -31,8 +32,8 @@ header h1 a, header h1 a:hover, header h1 a:visited{
 	height:2px;
 	background:#b63b4d;
 	background:rgba(247, 201, 58,1);
-	background:rgba(228, 78, 64,.9)
-	
+	background:rgba(228, 78, 64,.9);
+	background:rgba(99, 177, 117,.9);
 }
 
 .header-content {
@@ -52,6 +53,7 @@ header h1 a, header h1 a:hover, header h1 a:visited{
 	background-color:#444359;
 	background-color:rgba(182, 59, 77,.9);
 	background-color:rgba(228, 78, 64,1);
+	background-color:rgba(99, 177, 117,1);
 	/*background-color:black;*/
 	/*border-top:4px solid rgba(247, 201, 58,.6);*/
 	/*background-color:rgba(247, 201, 58,1);*/	

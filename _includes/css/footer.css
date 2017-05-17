@@ -9,6 +9,7 @@ footer {
 	left:0;
 	color:white;
 	text-align:center;
+	background-color:rgba(50, 50, 50,.9);
 }
 .footer-top{
 	height:4px;	
@@ -16,6 +17,7 @@ footer {
 	background-color:rgba(247, 201, 58,1);
 	background-color:rgba(228, 78, 64,.9);
 	background-color:rgba(247, 201, 58,.9);
+	
 }
 
 .footer-content {

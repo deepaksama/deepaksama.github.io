@@ -138,7 +138,8 @@ Grammer:
 Use of Have/Has/Had
 -------------------
 
-Have is irregular verb.  It changes with tenses
+Have is irregular verb.  It changes with tenses.
+
 Have as Main Verb
 -----------------
 Use when you want to tell about possession of (tangible item/ feeling/ something that you do)
