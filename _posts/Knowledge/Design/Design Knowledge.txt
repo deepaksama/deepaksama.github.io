@@ -1,3 +1,90 @@
+SOLID principles (By Robert martin/Uncle bob)
+--------------------------------------------------
+
+S is for the Single Responsibility Principle; 
+O, the Open/Closed Principle; 
+L, the Liskov Substitution Principle; 
+I is the Interface Segregation Principle; and 
+D is the Dependency Inversion Principle.
+
+Single Responsibility Principle
+
+Every object should have a single responsibility.  Each responsibility is an axis of change.
+When requirements change, that change will manifest through a change in responsibility.  
+If a class assumes one responsibility then there will be only one reason to change.
+
+
+Open / Closed Principle (OCP) 
+
+Modules that confirm to OCP should have two primary attributes
+1. Open for extension
+	This means that as the requirements of the application change we can extend the current module and override the functionality to meat the requirements.
+	
+2. Closed for modification
+	Modification to the code is not permitted.
+	
+	
+	To understand take an example scenario where we have write a Client and Server applications where client would connect to a server to interact with DB.
+	
+	If we implement Client and server as concrete classes it would be very tightly coupled settup. Neither it is open for extension nor closed for modification.
+	
+	If we write Server as an interface/abstract class and the client class can use the reference of interface/abstract class of the server to call methods on concrete implementation of server.
+	In this kind of design client is using server reference and reference can point to any implementation of its type we can change the implementation to connect to any server.
+	This kind of implementation adheres to the Open/Closed principle.
+	
+3. Liskov Substitution Principle (LSP):
+
+	This principle says functions that use pointers or references to base classes must be able to use objects of derived  type without knowing it.
+	In other words you should be able to replace base types with their sub types in your algorithms without actully doing any type check.
+
+	We can identify the violation of LSP in a code by checking for logic implemented on the basis of type of related classes.
+	Ex:
+	public class Connection
+	{
+		publicint Connect(ConnectionManager c)
+	   {  
+	 
+		  If(c.type == ConnectionType.DialUp)
+			  (C as DialupConnection).makeConnection();
+		 If(c.type == ConnectionType.WIFI)
+		   (c as WifiConnection).makeConnection();
+		//… 
+	   }    
+	}
+ 	
+4. Interface segregation principle (ISP):
+
+The ISP says that we should focus on creating thin interfaces and try to avoid a tendency of keep on adding functionalities to existing interface.
+
+
+5. Dependency Inversion Principle (DIP):
+
+	
+	Dependency inversion principle is a software design principle which provides us the guidelines to write loosely coupled classes. 
+	According to the definition of Dependency inversion principle:
+	
+	a. High-level modules should not depend on low-level modules. Both should depend on abstractions.
+	b. Abstractions should not depend upon details. Details should depend upon abstractions.
+
+------
+
+
+GRASP (General Responsibility Assignment Software Patterns)Principles
+
+Creator 
+Controller 
+Pure 
+Fabrication
+Information 
+Expert 
+High Cohesion 
+Indirection
+Low Coupling
+Polymorphism 
+Protected 
+Variations 
+
+---------
 
 
 1. Why multiple inheritance not supported in Java? 
