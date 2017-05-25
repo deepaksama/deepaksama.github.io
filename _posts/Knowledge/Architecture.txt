@@ -1,3 +1,8 @@
+What is Software Architecture
+-----------------------------
+Software Architecture is a discipline governed by patterns used for
+* Partitioning a problem and system to be built into descrete pieces
+* Techniques used to create interface between these pieces
 
 Architectural Patterns
 -----------------------
@@ -51,7 +56,7 @@ Operations Staffing Requirements (e.g., roles/skills)
 
 Links
 --------
-
+https://www.codeproject.com/Articles/22769/Introduction-to-Object-Oriented-Programming-Concep
 http://www.fromdev.com/2008/09/building-faster-and-efficient-cache.html
 http://www.fromdev.com/2013/07/architect-interview-questions-and-answers.html
 http://www.johnheale.com/high-level-design/
