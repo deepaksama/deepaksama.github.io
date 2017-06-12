@@ -25,7 +25,7 @@ We can scale system by adding extra resources.  This can be done in two ways
 	
 2. Scaling out (Horizontal Scaling)
 	
-	Scaling out refers to increasing the number of nodes to distribut the processing load across more than one server.  Although scaling out is achieved using many machines, the collection essentailly function as a single machine.  By dedicating several machines to toa a common task, appication fault tolerance is increased.  From administrative perspective , scaling out presents a greater challenges due to the increased number of machines.
+	Scaling out refers to increasing the number of nodes to distribute the processing load across more than one server.  Although scaling out is achieved using many machines, the collection essentailly function as a single machine.  By dedicating several machines to toa a common task, appication fault tolerance is increased.  From administrative perspective , scaling out presents a greater challenges due to the increased number of machines.
 	
 	Each additon of server provides a near linear increase in scalability.
 	
@@ -54,7 +54,7 @@ https://msdn.microsoft.com/en-us/library/aa292203(v=vs.71).aspx
 
 5 What is Middle Tier clustering?
 
-Middle Tier clustering is clustering of Middle tier in an Application. Middle Tier clustering is popular as lot of heavy load is servled by middle tier that requires to be highly available.
+Middle Tier clustering is clustering of Middle tier in an Application. Middle Tier clustering is popular as lot of heavy load is served by middle tier that requires to be highly available.
 	
 
 6. What is load balancing?

@@ -1,0 +1,12 @@
+System Testing
+--------------
+
+
+
+
+Boundary value analysis (BVA):
+* Its is a test design technique
+* Related to equivalence partitioning
+* Test both sides of each boundary 
+	* The valid partition will have two boundries called lower boundary and upper boundary.
+	0 1 31 32 are the values tested for date values

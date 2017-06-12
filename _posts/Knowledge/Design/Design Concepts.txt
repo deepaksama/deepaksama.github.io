@@ -1,0 +1,16 @@
+
+Basic principles or Pillars of OOP(Object oriented Programming)
+
+There are four principles/concept of OOP:
+1. Abstraction
+2. Polymorphism
+3. Inheritance 
+4. Encapsulation
+
+The above can be remembered with word A-PIE.
+
+Abstraction
+
+Abstraction is about emphasis on idea ignoring the details.  The basis idea of the abstraction is to simply the complexity of a system.
+
+

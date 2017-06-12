@@ -174,13 +174,12 @@ import com.example.bean.Rectangle;
 import com.example.bean.Circle;
 
 @Configuration
-@
 public class MyAppConfig {
 	
-    @Bean(name="rectangle")
-    public Rectangle getRectangle(int length,int breadth){
-        return new Rectangle(length,breadth);
-    }
+	@Bean(name="rectangle")
+	public Rectangle getRectangle(int length,int breadth){
+		return new Rectangle(length,breadth);
+	}
 }
 {% endhighlight %}
 

@@ -2,7 +2,7 @@
 layout: post
 title: Java Message Service (JMS)
 meta: Java Message Service (JMS) is a Java Message Oriented Middleware (MOM) API for sending messages between two or more clients.
-topic-image: java-serialization.jpg
+topic-image: 
 category: java
 ---
 

@@ -16,13 +16,13 @@ published: true
 
 ### **1.2	What are benefits for Spring framework?**
 
-* Lightweight:  Spring is light weight when it comes to size.  The basic version of Spring framework is around 2MB
-* Inversion of Control (IoC): Loose couple can be achieved in Spring with the Inversion of Control technique.  The objects are given their dependencies instead of creating or looking for dependent objects.
-* Container:  Spring contains and manages the life cycle and configuration of application objects.
-* Exception Handling: Spring provides a consistent API to translate technology specific exceptions (thrown by JDBC, Hibernate, or JDO) into consistent, unchecked exceptions.
-* Aspect oriented Programming: Spring supports Aspect oriented programming and separates applications business logic from system services.
-* MVC Framework: Springs web framework is well designed web MVC framework, which provides a great alternative to other frameworks like struts 2.
-* Transaction Management: Spring provides a consistent transaction management interface which can scale up from local transaction to global transaction (JTA)
+* __Lightweight:__  Spring is light weight when it comes to size.  The basic version of Spring framework is around 2MB
+* __Inversion of Control (IoC):__ Loose coupling can be achieved in Spring with the Inversion of Control technique.  The objects are given their dependencies instead of creating or looking for dependent objects.
+* __Container:__  Spring contains and manages the life cycle and configuration of application objects.
+* __Exception Handling:__ Spring provides a consistent API to translate technology specific exceptions (thrown by JDBC, Hibernate, or JDO) into consistent, unchecked exceptions.
+* __Aspect oriented Programming:__ Spring supports Aspect oriented programming and separates applications business logic from system services.
+* __MVC Framework:__ Springs web framework is well designed web MVC framework, which provides a great alternative to other frameworks like struts 2.
+* __Transaction Management:__ Spring provides a consistent transaction management interface which can scale up from local transaction to global transaction (JTA)
 
 
 ### **1.3	Which are the spring framework modules?**
@@ -265,7 +265,7 @@ The &lt;bean&gt; tag has two important attributes ___init-method___ and ___destr
 
 ### **3.9	What are inner beans in Spring?**
 
-Inner beans are beans that are defined within the scope of bean.  Thus, a <bean> element inside <property> or <constructor-arg> elements is called inner bean and can be declared as below:
+Inner beans are beans that are defined within the scope of bean.  Thus, a ___&lt;bean&gt;___ element inside ___&lt;property&gt;___ or ___&lt;constructor-arg&gt;___ elements is called inner bean and can be declared as below:
 
 {% highlight xml linenos %}
 <bean id="outerBean" class="...">
@@ -414,7 +414,7 @@ Limitations of auto wiring are:
 		</tr>
 		<tr>
 			<td>Primitive data types</td>
-			<td>You cannot autowire simple properties such as primitives, Strings and Classes</td>
+			<td>You cannot autowire simple properties such as primitives, Strings and Integer  Classes</td>
 		</tr>
 		<tr>
 			<td>Confusing nature</td>
@@ -476,15 +476,15 @@ Instead of using XML to describe bean wiring, the developer moves the configurat
 
 ### **4.2	How do you turn on annotation wiring in spring?**
 
-Annotation wiring is not turned on in the spring container by default.  In order to user annotation based wiring we must enable it in our spring configuration file by configuring <context:annotation-config/> element.
+Annotation wiring is not turned on in the spring container by default.  In order to user annotation based wiring we must enable it in our spring configuration file by configuring ___&lt;context:annotation-config/ &gt;___ element.
 
-### **4.3	What is spring Java Based configuration? Give example?**
+### **4.3	What is spring's Java Based configuration? Give example?**
 
-Java based configuration is an alternate approach provided by spring to write your spring configuration without XML but with the help of some annotations.  The @Configuration annotation is used to indicate a class that can be used by Spring IoC container as a source of bean definitions.  The @Bean annotation is used to mark a method inside configuration class as method which returns an object which should be registered as bean in spring application context.
+Java based configuration is an alternate approach provided by spring to write your spring configuration without XML but with the help of some annotations.  The __@Configuration__ annotation is used to indicate a class that can be used by Spring IoC container as a source of bean definitions.  The __@Bean__ annotation is used to mark a method inside configuration class as method which returns an object which should be registered as bean in spring application context.
 
 ### **4.4	Explain _@Required_ annotation?**
 
-The _@Required_ annotation is applied to a bean property setter method and it indicates that the bean property must be populated in XML configuration file at the time of configuration otherwise the container throws a BeanInitializationException exception.
+The __@Required__ annotation is applied to a bean property setter method and it indicates that the bean property must be populated in XML configuration file at the time of configuration otherwise the container throws a __BeanInitializationException__ exception.
 
 
 {% highlight java linenos %}
@@ -527,9 +527,9 @@ The above should throw __BeanInitializationException__ as age is not configured.
 		
 ### **4.5	Explain _@Autowired_ annotation?**
 
-The _@Autowired_ annotation provides more fine grained control on where and how autowiring should be accomplished.  @Autowired annotation can be used  
+The __@Autowired__ annotation provides more fine grained control on where and how autowiring should be accomplished.  @Autowired annotation can be used  
 
-•	On setter method just like @Required annotation to get rid of <property> tag in XML configuration file.  When spring finds an @Autowired annotation used with setter method it performs autowiring byType on method. 
+* __On setter method:__ Just like @Required annotation to get rid of <property> tag in XML configuration file.  When spring finds an @Autowired annotation used with setter method it performs autowiring byType on method. 
 
 {% highlight java linenos %}
 
@@ -559,8 +559,7 @@ public class TextEditor {
    
 {% endhighlight %}
 
-•	On constructor
-You can apply _@Autowired_ to constructor also.  This would indicate that constructor injection is used when creating the bean, even if no <constructor-arg> element is used while configuring the bean in XML file.
+* __On constructor:__ You can apply _@Autowired_ to constructor also.  This would indicate that constructor injection is used when creating the bean, even if no <constructor-arg> element is used while configuring the bean in XML file.
 
 {% highlight java linenos %}
 public class Customer 
@@ -577,7 +576,7 @@ public class Customer
 }
 {% endhighlight %}
 
-•	On a property 
+* __On a property:__
 You can use @Autowired annotation on property to get rid of setter methods.
 
 {% highlight java linenos %}
@@ -606,10 +605,13 @@ XML config:
 	</bean>
 {% endhighlight %}
 
-•	On a method with arbitrary name and/or multiple arguments.
-Note:
+* On a method with arbitrary name and/or multiple arguments.
+<br/>
+
+__Note:__
 Even if we have used utmost care in autowiring bean dependencies, still you may find strange lookup failures.  So, to solve this problem you will need to make autowiring optional so that if no dependency found, application should not throw any exception and autowiring should be simply ignored.  This can be done in two ways.
-•	If you want specific bean autowiring optional for a specific bean property user required=false attribute in @Autowired
+
+* If you want specific bean autowiring optional for a specific bean property user __required=false__ attribute in __@Autowired__
 
 {% highlight java linenos %}
 public class Student {
@@ -636,7 +638,7 @@ public class Student {
 }
 {% endhighlight %}
 
-•	If you want to apply optional autowiring at global level for all properties in all beans, then use below configuration.
+* If you want to apply optional autowiring at global level for all properties in all beans, then use below configuration.
 
 {% highlight xml linenos %}
 <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor">
@@ -685,22 +687,23 @@ public class Customer
 ### **5.1	How can JDBC be used more efficiently in the Spring framework?**
 
 With Spring JDBC framework user is freed from the burden of 
-•	Opening and closing of connection
-•	Writing unnecessary code to handle exceptions
+* Opening and closing of connection
+* Writing unnecessary code to handle exceptions
+<br>
 The developer has to just define connection parameters and specify the SQL statements to be executed and do the required work for each iteration while fetching the data.
 
 ### **5.2	What are the problem of JDBC API which lead to Spring JDBC support?**
 
 Problems with the JDBC API are as follows:
-•	We need to write lot of boilerplate code before and after execution of query, such as creating connection, statement and closing connection and result set.
-•	We need to perform exception handling code on the JDBC code
+* We need to write lot of boilerplate code before and after execution of query, such as creating connection, statement and closing connection and result set.
+* We need to perform exception handling code on the JDBC code
 
 ### **5.3	Explain JdbcTemplate?**
 
 JdbcTemplate is a central class in Spring JDBC support classes.  
-•	It takes care of creation and releasing of database resources and saving lot of work and time for us.  
-•	It converts the vendor specific error messages to better understandable error messages.
-•	More convenience is the usage of RowMapper which allows us to translate the SQL results into an Object(ResultSetExtractor) or List of objects(RowMapper)
+* It takes care of creation and releasing of database resources and saving lot of work and time for us.  
+* It converts the vendor specific error messages to better understandable error messages.
+* More convenience is the usage of RowMapper which allows us to translate the SQL results into an Object(ResultSetExtractor) or List of objects(RowMapper)
 	
 ### **5.4	What is Spring DAO support?**
 
@@ -708,15 +711,19 @@ The Spring DAO support is aimed at making it easy to work with data access techn
 
 ### **5.5	What are the ways to integrate with Hibernate using Spring?**
 There are two ways to integrate Hibernate with Spring:
-•	Inversion of Control with a HibernateTemplate and callback
-Step 1: Configure data source and SessionFactory in configuration
+
+* Inversion of Control with a __HibernateTemplate__ and callback
+
+__Step 1:__ Configure data source and SessionFactory in configuration
+
 {% highlight xml linenos %}
 <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+	<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
 	<property name="url" value="jdbc:mysql://localhost/test"/>
 	<property name="username" value="root"/>
 	<property name="password" value="root"/>
 </bean>
+
 <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 	<property name="dataSource" ref="dataSource"/>
 	<property name="packagesToScan" value="org.javabrain.model"/>
@@ -760,7 +767,8 @@ public class CircleDAOImpl implements CircleDAO{
 	}
 }
 {% endhighlight %}
-•	Extending HibernateDAOSupport and applying an AOP interceptor node.
+
+* Extending HibernateDAOSupport and applying an AOP interceptor node.
 Both Step 1& 2 remains same
 
 Step 3: Extend the DAO implementation class from HibernateDaoSupport and implement DAO interface
@@ -786,6 +794,7 @@ Application logic can be divided into two distinct areas.
  	There are two challenges with cross cutting concerns:
 * 	They are scattered across the application which lead to considerable duplicate code
 * 	They become mixed with business logic and results in code that is difficult to maintain as there is no clear separation of concerns.
+
 AOP is a programming paradigm that aims at addressing these issues by providing a means of modularizing application logic, so that each module addresses a distinct concern.
 
 ### **6.2	Explain AOP Concepts and Terminology?**
@@ -815,10 +824,10 @@ WebApplicationContext is an extenstion of ApplicationContext that has some extra
 
 ### **7.4	What are the advantages of Spring MVC over Struts MVC?**
 
-•	Spring can be configured with different view technologies like Freemaker, Tiles, velocity, JSP etc. and also we can create our own custom view mechanism by implementing Spring View interface.
-•	In spring MVC controllers can be configured using DI (IoC) that makes testing and integration easy
-•	Struts force your controller to extend a Structs Class but spring doesnot. 
-•	With struts validation is usually performed (implemented) in the validate method of an Action.  In Spring MVC validators are business objects that are not dependent on the Servlet API which makes these validators to be reused in your business logic before persisting domain object to DB.
+* Spring can be configured with different view technologies like Freemaker, Tiles, velocity, JSP etc. and also we can create our own custom view mechanism by implementing Spring View interface.
+* In spring MVC controllers can be configured using DI (IoC) that makes testing and integration easy
+* Struts force your controller to extend a Structs Class but spring doesnot. 
+* With struts validation is usually performed (implemented) in the validate method of an Action.  In Spring MVC validators are business objects that are not dependent on the Servlet API which makes these validators to be reused in your business logic before persisting domain object to DB.
 
 ### **7.5	What is Controller in Spring MVC framework?**
 
