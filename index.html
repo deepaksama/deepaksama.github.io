@@ -2,7 +2,8 @@
 layout: default
 title : Topics
 ---
-		<div class="topics-list col-md-10">
+	<!--
+	<div class="topics-list col-md-10">
 		<ul>
 		{% for post in site.categories.java %}
 			<li>	
@@ -21,6 +22,39 @@ title : Topics
 				<a class="" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
 			</li>
 		{% endfor %}
+
+		{% for post in site.categories.webservices %}
+			<li>	
+				<a class="" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+			</li>
+		{% endfor %}
 		
 		</ul>
 	</div>
+	
+	-->
+	<div class="col-md-12">
+		{% for category in site.categories %}
+     <div class="catbloc" id="{{ category | first | remove:' ' }}">
+          <h2 class="capitalize">{{ category | first }}</h2>
+
+          <ul>
+             {% for posts in category %}
+               {% for post in posts %}
+                 {% if post.url %}
+                  <li>
+                    <a href="{{ post.url }}">
+                      <time>{{ post.date | date: "%-d %B %Y" }}</time>
+                      {{ post.title }}
+                    </a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+         </ul>
+     </div>
+		{% endfor %}
+		
+		
+	</div>
+	

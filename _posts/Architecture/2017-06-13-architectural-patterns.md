@@ -1,0 +1,48 @@
+---
+layout: post
+title: Architectural Patterns
+meta: 
+category: architecture
+published: true
+comments: true
+---
+
+### Introduction
+
+Architectural Patters help architects to break systems into smaller and more manageable sections organized by their functionality and usage.
+
+Subsystems with different responsibilities are placed in different layers.  Where higher layer use API/services provided by lower layers.
+
+There are three major layers in software architecture:
+
+* Presentation
+* Domain/Business 
+* Data
+
+### Organising Domain logic
+
+There are three mail Domain Logic patters that will help organise Domain Logic
+
+* Transaction Script
+* Table Module
+* Domain Model
+
+
+#### Domain Model :
+
+Domain Model pattern provides an object oriented way of dealing with complex business logic.  Instead of having one procedure that handles all business logic for all user actions, we create multiple objects and each one of them handles a slice of domain logic that is relavent to it. Each of the classes will incorporate both data, mainly represented in the form of attributes, and all the behaviour that is related to that data.  Domain Model object are usually in one-to-one relationship  with recoreds in database table.
+ 	
+When you start building a model of your applications domain, you'll find that initial domain classes are organized essentially around the nouns in domain.
+
+Ex:
+For an ecommerce solution you will end up with classes such as Customer, Product, Cart, Category...
+
+#### Data Mapper
+
+Very often domain objects will have some attributes which are not part of databse schema. This mismatch requires some sort of mechanism that helps structuring and transfering data between business logic and the database.  This is exactly what Data Mapper does.  Data Mapper is a layer that seperates the business logic from the the database.  A simple implementation of Data Mapper would just map table columns to equivalent attributes of a domain class.
+
+The great benefit of Data Mapper is that Data Objects don't need to know that there is a database present.  This makes it easy to make changes in business logic or Database structure. Additionally the entire Data Mapper layer can easily be substitured with mocks and subs for testing.
+
+Ref:
+
+https://inviqa.com/blog/architecture-patterns-domain-model-and-friends

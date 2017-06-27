@@ -199,4 +199,16 @@
 	---------------
 	
 		http://www.dineshonjava.com/2017/01/microservices-with-spring-boot.html
+		Good:
+		https://www.youtube.com/watch?v=bYiNlCaaRiI&index=1&list=PLTyWtrsGknYegrUmDZB6rcqMotOFZKvbn
+		
+	
+	Maven:
+	---------
+		https://www.testwithspring.com/lesson/running-integration-tests-with-maven/
+		
+	EIP's ( Enterprise Integration Patterns) : (Apache Camel) (Integration framework)
+		https://stackoverflow.com/questions/8845186/what-exactly-is-apache-camel
+		http://www.javainuse.com/camel/camel_EIP
+		
 	
