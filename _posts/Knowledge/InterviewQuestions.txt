@@ -1,0 +1,47 @@
+
+Core Java
+	Basic Java
+		1. We have interface and abstract class in java. Abstract class can have state and default implementation. If we exclude state and default behavior what could be the other reasons to use abstract class.
+		2. If you a class called Employee with field employee id, designation, boolean promoted.
+		I have a List of Employee objects and i what to sort these objects on promoted field with true's on top and false's on bottom.
+		
+	MulThread
+		1. Can you implement producer-consumer solution in java?
+		2. Did you work with Executor Services.  What are thread polls available with Executor Service?
+		3. What is that Executor framework offers over legacy api?
+		4. What are Futures and Callables?
+		5. How do you debug multi-threaded application?
+		6. Any tools used for thread analysis?
+		
+		
+	Serialization
+		* What should i do to make a class Serializable?
+		* How do i customize serialization/Deserialization?  
+		* writeObject() and readObject() belowgs to which class?
+		* Differnce between Serializable and Externalizable?
+		
+		
+Full stack
+----------
+	* What is the deal with $ in jQuery?  What is it and what does it mean?
+	* How jQuery can be used in conjunction with another javascript library that also uses $for naming?
+	* Differnce between jQuery.get and jQuery.ajax
+	* What is method chaining and what is the advatange it offers.
+	
+Design Patterns
+---------------
+	1. What is the difference b/w factory pattern and strategy
+	2. Singleton
+	3. We can achieve singleton behavior using a static class then why singleton pattern required.
+	4. 
+
+Hibernate
+	How many types of caching mechanizms Hibernate provides? What are they?
+	Can a Entity class be final? and why?
+
+WebService
+	* How do you secure REST endpoints?
+	* How do you maintain session in RESTfull services.
+	* Which implementation you used for JAX-RS
+	* What are the differences between SOAP and REST services?
+	

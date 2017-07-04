@@ -612,6 +612,10 @@ Some of the best practices to follow in Hibernate are:
 
 
 
+<!--
+http://www.developersbook.com/hibernate/interview-questions/hibernate-interview-questions-faqs.php
+-->
+
 
 Need to refer:
 

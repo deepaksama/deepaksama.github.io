@@ -7,3 +7,12 @@ What are JAXB and JAXRS?
 	
 https://www.quora.com/What-is-the-best-way-of-session-management-in-REST-architecture
 https://www.toptal.com/java/rest-security-with-jwt-spring-security-and-java
+
+
+Secure REST Service
+--------------------
+
+
+
+https://www.javagists.com/secure-rest-service
+https://www.javagists.com/secure-rest-service-basic-authentication
