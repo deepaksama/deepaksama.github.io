@@ -76,40 +76,7 @@
 
 	--------------------------------------------------------------------------------------------------------------------------------
 
-	DevOps ( Development and Operations)
-	--------------------------------------
-		Its paractice of opearations and development engineers participating together in entire service lifecycle, 
-		from design through the development process to production support.
-		
-		DevOps replaces the model where one teams writes the code and another team tests it and another team deploys it and another team operates it.
-		
-		In old way of delivering software, most of the time is spent in development is built and it is deployed and submit it for test phase at the end.
-		Which get the bug report in large batches late in the project.
-		
-		In Continuous delivery every code commit on your application code is build automatically. 
-		Unit tests are run and application is deployed in production like environment.
-		Also automated acceptence tests are run and changes are passed or failed in minutes after code is checkedin.
-		Code is always in working state with continuous delivery.
-		
-		Continuous Integration
-		----------------------
-			Is practice of automatically building and unit testing the entire application ideally on each code check-in.
-			
-		Continuous Delivery
-		-------------------
-			Is a practice of deploying every change to a production like environment and performing automated integration and acceptence testing.
-			
-		Continuous Deployment
-		-----------------------
-			Every change that goes through full enough automated testing is deployed automatically to production.
-			
-		
-		Benefit:
-		--------
-			Huge decrease in time to market the product.
-			Increase in Quality
-			Continuous delivery limits your work in progress
-			Improves mean time to recover
+
 
 
 	Spring Framework for JMS

@@ -1,0 +1,186 @@
+
+Patter of thinking
+------------------
+1. Situation - Action - Result
+2. What - So What - Now What?
+3. Problem - 
+
+Practice
+---------
+1. Slow down when you are speeking.
+2. Give yourself time to think
+3. Learn sentences not only words
+4. Learn to Listen
+	- When speaking in a foreign language, you might be so focussed on what you are saying and whether its correct or not, that you forget to listen to what others are saying. So pay attention.
+5. Practice interrogatives
+	- Keep in mind that communication is two-way process. I make you seem uninterested if you do not ask questions.
+	Some interrogatives to help:
+	- What do you think?
+	- What are your views on that?
+	- Why do you think..
+6. Practice
+
+
+1. Never talk over people.
+	- Demonstrates lack of respect.  Seems like you do not care what they are saying.
+2. Don't finish other peoples sentenses.
+	- This dis-empowers other person.  Because you are taking control of the conversation.
+3. Paraphrase
+	- If you want to show that you have really understood someone, then paraphrasing is great tool.
+	- 
+4. Maintain Eye contact.
+	- Proves that you are listening
+	- Keeps you focussed and less distracted.
+
+	
+1. Slow down. Start thinking rather than reacting be responsive.- everyday retrospective.
+2. Understand rather than evalute - coaching.  You many need to different approaches for different people like more experienced and engaged people and less experienced and less engaged. - Situational leadership.
+3. Be with the team, get to know them, and give feedback. This is very best way to motivate.
+4. Inform - Focus on the goal and build vision.
+5. Be soft to people and tough to problems - Non violent communication.
+	Ex: 
+	1. When I see/hear <<observation>>
+	2. I feel <<feeling>>
+	3. Because I need <<need>>
+	4. I would like you to <<Request>>
+6. Be enthusiastic - State management
+7. Openly discuss the rules.
+8. Find time for important things - Eliminate waste, do retrospective.
+	7 wastes of software
+	* Partially done work
+	* Extra features
+	* Relearning
+	* Handoffs
+	* Task switching
+	* Defects
+	* Delays
+
+
+4 types of difficult people
+---------------------------
+
+3. Passive - Very shy
+	- Ask directed questions
+4. Tangs - Angry & explosive
+
+Questions :
+	Are there any issue that are bothering you?
+	
+De escalate conflict situation
+------------------------------
+Calm yourself before interacting
+Maintain neutral facial expressions
+Place your hands in front of your body in open relaxed position
+Don't shrug your shoulders
+Don't point your fingers at the person.
+Avoid excessive gesturing.
+Make personal connection - Persons name - People react positive to their names.
+Listen to persons concerns
+Empathy need to be shown during situation. 
+Clarifying, paraphrasing and open ended questions help to ensure that person is aware you have understood their frustration completly.
+
+Shift to the future and create hope
+
+
+What triggers anger in leadership
+- Lack of accountability
+- Lack of openness to alternatives
+- Lack of sincerity.
+- Late to meetings
+
+Self awareness
+Self Management
+Social awareness
+Relationship management
+
+
+Dealing with difficult people
+--------------------------------------
+
+We use  basic technique of Agree-Empathize-Inquire to deal with difficult people.
+
+
+1. coworker complains about mistakes in report
+
+I thought I had checked this over but now I see there are some mistakes in the formulas. I know how frustrating it is for you to get work with errors in it.  Do you have any tips for finding errors in spreadsheets?
+
+You've admitted the mistakes (AGREE) and recognized how frustrated your co-worker is with having to deal with the problem (EMPATHIZE).  Use your co-workers expertise to help you avoid the problem in the future
+
+2. Your words affended someone
+
+I'm so sorry I said that. It was a stupid attempt to be funny. I know the challenges that families like yours face and it isn't right to make fun of the situation. I apologize.
+
+This is ok, but you are still going to have to do some major damage control.  And don't be such a jerk in the future.
+
+3. You are confronted by your team mate
+
+Yes, some of my comments were critical of your ideas.  I know how I get defensive if I think people aren't listening to me. Should we talk over your suggestions because maybe I was too hasty to dismiss them?
+
+Yes, you have AGREED that your comments may have been critical (kind of), and you have EMPATHIZED with the emotion of your co-worker.  Now, it's time to get together and give them a fair and unemotional forum.  Listen attentively and ask questions, but don't get into an argument.  If you change your mind, offer to go to the boss and explain the situation.  If you still think your co-worker's ideas are wrong, just say 'I see it differently' and leave it at that.
+
+
+
+4. Late in project team member informs that her piece of work cannot be completed.
+
+I'm sure there are good reasons why your work isn't completed. Everyone needs to complete their assigned tasks. If your task isn't finished we won't be able to deliver the final product. What do we need to do to be certain that all tasks will be completed on time?
+
+Justification:
+-------------
+Don't threaten the passive-aggressive person (at least at this stage).  Assure them that the team is behind them and make sure she understands the consequences of failing to deliver. Ask open-ended questions, not questions that can be answered 'yes' or 'no'.  Enlist the help of the rest of the team to get her to make a commitment and then follow up on a timely basis to make sure progress is being made.
+
+5. Coworker speeking about bad about the work:
+
+Yeah, I've heard you say that before and I can tell you are really frustrated. When are you going to share your thoughts with the project manager and your department head?
+
+Justification:
+-------------
+Sometimes complainers just need to vent, but if they repeatedly complain about the same things then they have to take matters into their own hands and be involved in finding solutions. Make sure they have appropriately escalated their concerns.
+
+
+6. If you feel that you have certain technical debt on the work and your coworker whats to move on to next work:
+
+We've worked a long time on this and it looks like we are almost done.  I'm ready to move on to something else and I can tell you are too. But I'm concerned that we haven't addressed the competitive landscape.  What do you think?
+
+Justification:
+-------------
+You've used AGREE-EMPATHIZE-INQUIRE to frame your concerns about the project. You can discuss the importance of the competitive analysis without being emotional about it.
+
+7. Your co-worker is constantly late for meetings:
+I'm frustrated from having to wait for you.
+
+Justification:
+-------------
+Using "I" statements instead of "You" statements makes your argument powerful and irrefutable. It's possible your colleague didn't realize how frustrated you were.
+
+
+8. Coworker made conflicting statements about progress:
+
+I'm having trouble reconciling what you just said about the project delays with your earlier statement about the project being on time.  Did I miss something?
+
+Justification:
+-------------
+Rather than attack your co-worker for an obvious inconsistency, frame your concern as a question to be less threatening and give her a chance to explain.
+
+9. If commitment on timelines are not ok:
+I think that's an aggressive schedule and I'll need some time after this meeting to confirm whether we can commit to it.
+
+10. Forced to finished in short time;
+
+I know this is important and you are counting on having it done.  I think this is about two week's worth of work. How can we make sure the report is finished on time?
+
+
+Justification:
+-------------
+You have AGREED (I know this is important...) and EMPATHIZED (...you are counting on having it done) and INQUIRED.  Further questions might be: Can I get some help? Is any part of the report more important, so I could focus on that to be finished first?
+
+
+
+	
+
+Ask client before leaving the office.
+"Hi Bob, I am heading home...do you have anything to work on before that"
+
+
+
+	
+https://www.myenglishteacher.eu/blog/ways-to-improve-your-english-communication-skills/
