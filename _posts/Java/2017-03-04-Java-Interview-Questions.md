@@ -54,15 +54,17 @@ Follow below if you already have Employee class:
 
 ### **6.	What are the benefits of Java Collections framework?**
 
-a.	Reduces development effort as we not need to implement our own collection classes
-b.	Enhances the quality of the code with well tested framework classes Or Quality is assured as they are well tested.
-c.	Reduces effort of code maintenance as they are shipped with JDK
-d.	Reusability and Interoperability
-7.	What are the benefits of Generics in Collection Framework?
+* Reduces development effort as we not need to implement our own collection classes
+* Enhances the quality of the code with well tested framework classes Or Quality is assured as they are well tested.
+* Reduces effort of code maintenance as they are shipped with JDK
+* Reusability and Interoperability
 
-a.	Generics allow us to specify the type of objects that collection can contain.  This ensures that you only insert correct Type in collection.  This avoids ClassCastException at Runtime because we’ll get the error at the time of compilation. 
-b.	Generics make code cleaner since we do not need to use casting and instanceof operator.
-8.	Why Collection does not extend Cloneable and Serializable interfaces?
+### **7.	What are the benefits of Generics in Collection Framework?**
+
+* Generics allow us to specify the type of objects that collection can contain.  This ensures that you only insert correct Type in collection.  This avoids ClassCastException at Runtime because we’ll get the error at the time of compilation. 
+* Generics make code cleaner since we do not need to use casting and instanceof operator.
+
+### **8.	Why Collection does not extend Cloneable and Serializable interfaces?**
 
 If Collection extends Cloneable or Serializable, that would require all Collection implantation to be Cloneable and Serializable, but that would be mistake as it would not be meaning full for all the collection implementation.  For example what does it mean to clone a Collection that is backed by database?  Same argument is true for serialization.
 
@@ -109,9 +111,9 @@ Both Enumeration and Iterator are used for traversing and fetching elements from
 </table>
 ### **12.	 What are differences between Iterator and ListIterator?**
 
-a.	We can use Iterator to traverse Set and List collection.  Whereas ListIterator can be used with Lists only
-b.	Iterator can traverse in forward direction only.  Whereas ListIterator can be used to traverse in both directions.
-c.	ListIterator inherits from Iterator interface and comes with extra functionalities like adding an element, replacing an element, getting index positon for previous and next elements.	
+* We can use Iterator to traverse Set and List collection.  Whereas ListIterator can be used with Lists only
+* Iterator can traverse in forward direction only.  Whereas ListIterator can be used to traverse in both directions.
+* ListIterator inherits from Iterator interface and comes with extra functionalities like adding an element, replacing an element, getting index positon for previous and next elements.	
 
 ### **13.	What are the different ways to iterate over list?**
 

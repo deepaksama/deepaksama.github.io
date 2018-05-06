@@ -1,3 +1,24 @@
+Jekyll Installation
+--------------------
+Step 1: Go to https://rubyinstaller.org/downloads/
+Step 2: download Ruby for 64bit - Ruby 2.4.1-1 (x64)
+Step 3: download Ruby Devlopment Kit : DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe
+Step 4: Execute Ruby and follow the instructions ( Provide a folder name without spaces)
+Step 5: Execute the Ruby Devkit extractor. ( Provide a folder name without spaces)
+Step 6: Go to the folder where Dev Kit is extracted and execute the below commands
+	> ruby dk.rb init
+	> ruby dk.rb install
+Step 7: Go to https://curl.haxx.se/docs/caextract.html and download cacert.pem file and place it in bin directory of Ruby installation
+Step 8: Add a envirionment variable SSL_CERT_FILE to <ruby bindir>\cacert.pem
+Step 9: Execute cmd as administrator and execute following commands
+	> gem install jekyll
+	> gem install rouge
+	
+Step 10: Now you can run the server as 
+	> jekyll serv --watch
+	
+
+
 
 
 How to Pointing/Refering another post in a post

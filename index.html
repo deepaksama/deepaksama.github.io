@@ -2,153 +2,59 @@
 layout: default
 title : Topics
 ---
-		<div class="topics-list col-md-10">
+	<!--
+	<div class="topics-list col-md-10">
 		<ul>
-{% for post in site.categories.java %}
+		{% for post in site.categories.java %}
 			<li>	
 				<a class="" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
 			</li>
-			<!--
-			<div class="row">			
-				<div class="col-md-1"> </div>
-				<div class="topic-wrapper1 col-md-10">
-					<div class="col-md-12 postlistheader">
-						<div class="col-md-2 postlistdate">
-							<div class="postlist-monthofdate col-md-4">
-								{{post.date | date: "%b" }}
-							</div>
-							<div class="postlist-dayofdate col-md-8">
-								{{post.date | date: "%d" }}
-							</div>
-							<div class="postlist-yearofdate col-md-12">
-								{{post.date | date: "%Y" }}
-							</div>
-
-						</div>
-						<div class="topic_link col-md-10">
-							<a class="" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-						</div>
-					</div>
-					<div class="topic-content-wrapper col-md-12">
-						<div class="col-md-2">
-						</div>
-						<div class="topic-desc col-md-9">
-							<div>
-								<span >{{post.meta}}</span> 
-							</div>
-							<div class="col-md-12">
-								<div class="col-md-8">
-								</div>
-								<div class="col-md-4 readmorelink-wrapper">
-									<a class="readmorelink " href="{{site.baseurl}}{{post.url}}"> Read more...</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-1"> </div>
-					
-				</div>
-				<div class="col-md-1"> </div>
-			</div>
-			-->
 		{% endfor %}
 
 		{% for post in site.categories.spring %}
 			<li>	
 				<a class="" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
 			</li>
-			<!--
-			<div class="row">			
-				<div class="col-md-1"> </div>
-				<div class="topic-wrapper1 col-md-10">
-					<div class="col-md-12 postlistheader">
-						<div class="col-md-2 postlistdate">
-							<div class="postlist-monthofdate col-md-4">
-								{{post.date | date: "%b" }}
-							</div>
-							<div class="postlist-dayofdate col-md-8">
-								{{post.date | date: "%d" }}
-							</div>
-							<div class="postlist-yearofdate col-md-12">
-								{{post.date | date: "%Y" }}
-							</div>
-
-						</div>
-						<div class="topic_link col-md-10">
-							<a class="" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-						</div>
-					</div>
-					<div class="topic-content-wrapper col-md-12">
-						<div class="col-md-2">
-						</div>
-						<div class="topic-desc col-md-9">
-							<div>
-								<span >{{post.meta}}</span> 
-							</div>
-							<div class="col-md-12">
-								<div class="col-md-8">
-								</div>
-								<div class="col-md-4 readmorelink-wrapper">
-									<a class="readmorelink " href="{{site.baseurl}}{{post.url}}"> Read more...</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-1"> </div>			
-				</div>
-				<div class="col-md-1"> </div>
-			</div>
-			-->
 		{% endfor %}
 									    
 		{% for post in site.categories.designpatterns %}
 			<li>	
 				<a class="" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
 			</li>
-			<!--
-			<div class="row">			
-				<div class="col-md-1"> </div>
-				<div class="topic-wrapper1 col-md-10">
-					<div class="col-md-12 postlistheader">
-						<div class="col-md-2 postlistdate">
-							<div class="postlist-monthofdate col-md-4">
-								{{post.date | date: "%b" }}
-							</div>
-							<div class="postlist-dayofdate col-md-8">
-								{{post.date | date: "%d" }}
-							</div>
-							<div class="postlist-yearofdate col-md-12">
-								{{post.date | date: "%Y" }}
-							</div>
+		{% endfor %}
 
-						</div>
-						<div class="topic_link col-md-10">
-							<a class="" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-						</div>
-					</div>
-					<div class="topic-content-wrapper col-md-12">
-						<div class="col-md-2">
-						</div>
-						<div class="topic-desc col-md-9">
-							<div>
-								<span >{{post.meta}}</span> 
-							</div>
-							<div class="col-md-12">
-								<div class="col-md-8">
-								</div>
-								<div class="col-md-4 readmorelink-wrapper">
-									<a class="readmorelink " href="{{site.baseurl}}{{post.url}}"> Read more...</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-1"> </div>
-					
-				</div>
-				<div class="col-md-1"> </div>
-			</div>
-			-->
+		{% for post in site.categories.webservices %}
+			<li>	
+				<a class="" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+			</li>
 		{% endfor %}
 		
 		</ul>
 	</div>
+	
+	-->
+	<div class="col-md-12">
+		{% for category in site.categories %}
+     <div class="catbloc" id="{{ category | first | remove:' ' }}">
+          <h2 class="capitalize">{{ category | first }}</h2>
+
+          <ul>
+             {% for posts in category %}
+               {% for post in posts %}
+                 {% if post.url %}
+                  <li>
+                    <a href="{{ post.url }}">
+                      <time>{{ post.date | date: "%-d %B %Y" }}</time>
+                      {{ post.title }}
+                    </a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+         </ul>
+     </div>
+		{% endfor %}
+		
+		
+	</div>
+	

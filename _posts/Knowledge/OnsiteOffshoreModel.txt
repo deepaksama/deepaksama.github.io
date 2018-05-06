@@ -1,0 +1,148 @@
+Managing Offshore Teams
+
+Offshore sounds simple, but there are challenges and you need apply proven best practices to address them.
+
+Expectations that are not met consistently
+------------------------------------------
+* More than expected management time
+* Missed schedules, Inconsistent quality
+* Low % of first time resolutions
+* Difficult to attract competent staff
+* High Turnover
+* Offshore management saying "Yes" but not delivering
+* Offshore management not coming forward with problems
+
+Challenge 
+	* Schedule, Quality , CSAT
+	* Offshore productivity
+	* Saying yes but not delivering
+	* Takes more than expected amount of time to manage
+	* Other
+	
+Culturally defined issues
+
+	Factor								Affects
+	* Language and Accent 			* Communication
+	* Hierarchy/Power				* Communication
+	* Conflict						* Communication , Schedules
+	* Context						* Communication , Schedules
+	* Time							* Schedules
+	
+* If you attending a meeting where indians of various level of in the organization are present. And you have many points to clarify. You should address your questions to most senior person present ( not a person you know or everyone equally).
+
+* Have video conferences
+* Ask team to summarise with followup email.
+
+What is required
+
+* Clarity
+* Consistency
+* Confirmation
+* Common team norms
+
+High Turnover
+------------
+
+
+
+Things not to do when managing offshore team:
+
+* Do not provide vague instructions.  We need to be clear instructions and make sure that they understand it
+* Do not rely solely on email communications.  Do talk to them for their understanding and their questions.
+* Do not assure that things will be done in first time.  
+* Avoid hiring from too many time zones
+
+Effectively manage offshore teams
+----------------------------------
+* Provide clear and details instructions.
+* Schedule time for live and verbal communications.
+* Demand to see work early and Often. We can detect early if we are off the the track.
+
+* Daily Standups
+* Follow sun
+* Daily Summaries
+
+
+
+
+Communication
+-------------------
+
+* Learn more about the clients business based what everything clients speaks
+* Listen more than you talk
+* Give Feedback to prove that you were listening
+
+
+
+Planning:
+----------
+
+1. Create a project dashboard
+2. Schedule your days work
+3. Inform clients of schedule.
+4. Update the client on work performed
+	* Git hub commit comments as bullet points
+
+	
+Communication Techniques
+------------------------
+Use questions
+Use conversational language.  
+Be present oriented - Do not think about consequences.  See it as opportunity.
+Acknowledge emotions and respond.
+
+If audience are not colcated it is good idea to keep them engaged in activities.
+Keep listening.
+In hostile situations it is good idea to paraphrase to buy time. Like let me see if i got you right/ Let me see if understand you exactly. What you are saying is....
+
+
+
+
+Leadership 
+-----------
+
+Provide Purpose
+Build star team
+Establish shared ownership
+Develop team members potential
+Make work interesting
+Develop self managed teams
+Motivating and inspiring team
+Leading and facilitating constructive communication
+Monitor but never micro manage
+
+
+How would you define team work?
+
+How will you manage multiple long term projects?
+How would you make decisions?
+
+
+Handling customer complaints:
+-----------------------------
+* I am sorry for the trouble
+* I understand why you are upset.
+* Here is what i am going to do for you.
+* 
+
+Talking like boss
+-----------------
+Aim at/to
+* Bob I would like you to aim at finishing this userstory by Friday.
+* 
+
+Count on/ Rely on
+-----------------
+* We have to deliver the code changes by this friday. Bob can I count on you to do that?
+
+Fit something in
+----------------
+* We need to finish the presentation by tomorrow.  Bob 
+
+Follow up:
+----------
+I am going to fo
+
+
+
+

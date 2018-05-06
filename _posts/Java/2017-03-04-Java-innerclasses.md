@@ -181,3 +181,81 @@ interface Hello {
 {% endhighlight %}
 
 In the above code we have created an object of anonymous class. This anonymous class is an implementer of the interface Hello.  Any anonymous inner class can implement only one interface at a time.  It can either extend a class or implement interface at a time.
+
+**Cannot define Constructors**
+
+Anonymous inner classes do not allow constructors since they require class name.  On the other hand they do allow __instance initializers__.  Instanace initializer is like a constructor which takes no parameters.  
+
+__Ex:__
+
+{% highlight java linenos %}
+public class Main {
+	public static void main(Stirng [] args) {
+		Runnable runnable = new Runnable() {
+			private static final int ARRAY_SIZE = 100;
+			private int[] array = new int[ARRAY_SIZE];
+			
+			{
+				for(int i = 0; i < ARRAY_SIZE; i++) {
+					array[i] = i;
+				}
+			}
+			
+			public void run() {
+				int total = 0;
+				for(int i = 0; i < ARRAY_SIZE; i++) {
+					total += array[i];
+				}
+				System.out.println(total);
+			}
+		}
+		runnable.run();
+	}
+}
+{% endhighlight %}
+
+**Passing parameters to base class constructors**
+
+You cannot create new constructor for an anonymous class. However if an anonymous class is based on a class which is already difined parameterized constructor, then we can pass parameters.
+
+__Ex:__
+
+**Main.java**
+
+{% highlight java linenos %}
+public class Main {
+
+	ClassA classAObj = new ClassA("Hello") {
+		public void display() {
+			System.out.println("Inherited : " + getMessage());
+		}
+	};
+	
+	public static void main(String [] args) {
+		Main main = new Main();
+		main.classAObj.display();
+	}
+}
+
+
+class ClassA {
+	private String message;
+	public ClassA(String message) {
+		this.message = message;
+	}
+	public void display() {
+		System.out.println(message);
+	}
+	public String getMessage() {
+		return message;
+	}
+}
+{% endhighlight %}
+
+
+**Advantages:**
+
+1. Allows to define special purpose classes which are used only once and define at the place they are useful. This is befit us from creating a names class polluting namespace unnecessarily.
+
+2. Key benefit is that they have access to all the data and methods of their containing classes including private members.
+

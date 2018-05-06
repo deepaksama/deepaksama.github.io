@@ -18,7 +18,7 @@ body, html {
 	font-family: 'Open Sans', sans-serif;
 	font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
 	
-	font-size:15px;
+	font-size:14px;
 	width:100%;
 	background-color:#ccc;
 }
@@ -35,7 +35,7 @@ h1,h2,h3 {
 
 h1{
 	
-	font-size:34px;
+	font-size:32px;
 	/*
 	font-weight:bold;
 	line-height:75px;
@@ -336,4 +336,9 @@ table thead tr td {
 }
 .highlight>pre {
 	border:none;
+}
+
+.capitalize 
+{
+	text-transform:capitalize;
 }

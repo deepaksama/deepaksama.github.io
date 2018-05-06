@@ -1,0 +1,8 @@
+
+
+
+mysql download:
+	https://dev.mysql.com/downloads/installer/
+	Connection URL : "jdbc:mysql://localhost/test";
+	Driver Name : com.mysql.jdbc.Driver
+	

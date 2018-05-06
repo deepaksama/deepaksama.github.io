@@ -2,7 +2,7 @@
 layout: post
 title: Web Service Implementation Bottom-up approach
 meta: Web Service Implementation Bottom-up approach
-category: web-service-implementation-bottom-up-approach
+category: webservices
 ---
 
 <div id="tableofcontents" class="col-md-6 pull-right">	

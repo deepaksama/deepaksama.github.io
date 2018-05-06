@@ -3,7 +3,7 @@ layout: post
 title: Vocabulary
 meta: 
 category: english
-published: true
+published: false
 ---
 
 **1. Articulate**

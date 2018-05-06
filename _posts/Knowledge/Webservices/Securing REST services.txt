@@ -1,0 +1,11 @@
+
+
+Authentication Mechanisms
+-------------------------
+
+Java Servlet containers usally support three types of authentication:
+	* Basic
+	* Digest
+	* Client certificate 
+
+
