@@ -3,7 +3,25 @@ What is the difference between authentication and authorization?
 	
 	Authorization is the process of verifying that you have access to something. Gaining access to a resource (e.g. directory on a hard disk) because the permissions configured on it allow you access is authorization.
 	
-	
-	
+Encoding
 
-	
+Hashing
+
+Encryption
+
+
+
+Best Practices
+---------------
+
+Let’s note down some important points while designing security for your RESTful web services.
+
+* Use only HTTPS protocol so that your whole communocation is always encrypted.
+* Never send auth credentials or API keys as query param. They appear in URL and can be logged or tracked easily.
+* Use hardest encryption level always. It will help in having more confidence.
+* For resources exposed by RESTful web services, it’s important to make sure any PUT, POST, and DELETE request is protected from Cross Site Request Forgery.
+* Always validate the input data asap it is recieved in server method. Use only primitive data as input parameter as much as possible.
+* Rely on framework provided validation features as they are tested by large community already.
+* Let me know your thoughts and experiences on securing RESTful web services in your organization.
+
+Ref: https://howtodoinjava.com/security/restful-web-services-security-guide/

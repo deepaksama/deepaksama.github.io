@@ -49,7 +49,7 @@ https://msdn.microsoft.com/en-us/library/aa292203(v=vs.71).aspx
 
 	Clusters provide scalability, high availability, and failover capabilities.
 
-	From a user’s perspective, it means that if the user is doing something on the application, and that server goes down, then depending upon whether the system is doing clustering or load balancing, the user observes different behavior. If the system is clustered, the user may be able to continue doing the transaction, and may not even realize that the server has gone down. If the system is load balanced without clustering, that means that the user’s state will likely be lost, and the user will be simply sent to the other server(s) to restart transaction. The user has lost some work.
+	From a userï¿½s perspective, it means that if the user is doing something on the application, and that server goes down, then depending upon whether the system is doing clustering or load balancing, the user observes different behavior. If the system is clustered, the user may be able to continue doing the transaction, and may not even realize that the server has gone down. If the system is load balanced without clustering, that means that the userï¿½s state will likely be lost, and the user will be simply sent to the other server(s) to restart transaction. The user has lost some work.
 
 
 5 What is Middle Tier clustering?
@@ -69,7 +69,7 @@ Middle Tier clustering is clustering of Middle tier in an Application. Middle Ti
 	* Session affinity or sticky session
 	* IP address afinity
 		
-	Load balancing can also happen without clustering when we have multiple independent servers that have same setup, but other than that, are unaware of each other. Then, we can use a load balancer to forward requests to either one server or other, but one server does not use the other server’s resources. Also, one resource does not share its state with other resources.
+	Load balancing can also happen without clustering when we have multiple independent servers that have same setup, but other than that, are unaware of each other. Then, we can use a load balancer to forward requests to either one server or other, but one server does not use the other serverï¿½s resources. Also, one resource does not share its state with other resources.
 
 	Each load balancer basically does following tasks:
 
@@ -99,3 +99,4 @@ In clustered environment, request associated with a Http Session are always rout
 	
 	
 	
+http://blog.gainlo.co/index.php/2016/03/08/system-design-interview-question-create-tinyurl-system/

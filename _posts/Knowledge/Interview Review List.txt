@@ -57,7 +57,7 @@ I have approximately 13 years of experience in IT. Worked on technologies like C
 
 1. Current Project?
 
-	I am worked with PayPal for compliance domain.  This domain falls under Risk domain and deals with Regulatory Risk. Here we deal with the compliance requirements enforced by requlatory bodyies like US OFAC (Office of Foreign Assets and Control). They provide a list of bad guys called World Check List and we have to scan the User profiles with PayPal against this World Check List for identifying bad guys and file report with OFAC if they anyone found suspicious.
+	I worked with PayPal for compliance domain.  This domain falls under Risk domain and deals with Regulatory Risk. Here we deal with the compliance requirements enforced by requlatory bodyies like US OFAC (Office of Foreign Assets and Control). They provide a list of bad guys called World Check List and we have to scan the User profiles with PayPal against this World Check List for identifying bad guys and file report with OFAC if they anyone found suspicious.
 	
 	We have a batch component which basically downloads the WorldCheckList file from OFAC site. I creates indexing on this entries.  Another component which runs in scheduler after the first component finishes and for each new user it checks the entry in indexed data and comesout with the percentage match and generates an Alert if the match is > 80%. for 90%
 	
@@ -109,7 +109,7 @@ Responsibilities:
 
  Best Practices on Coding:
  -------------------------
- Quality of product cannot be achieved in a single day.  Its a deciplain and we have follow certain practes on everyday basis:
+ Quality of product cannot be achieved in a single day.  Its a discipline and we have follow certain practes on everyday basis:
  
  1. Quality starts from the day where you write a code with comments and documents itself and adhere to the Coding standards laid by company.
 	( Which include naming convensions, indentations usage of Framework/Infra classes)

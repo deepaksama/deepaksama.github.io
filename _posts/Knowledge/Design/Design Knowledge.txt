@@ -285,7 +285,11 @@ System Design Process:
 3. Step 3: Understand the bottlenecks.
 4. Step 4: Scaling the design
 
-		
 
-	
-		
+CDN:
+---
+	https://www.globaldots.com/content-delivery-network-explained/
+
+
+http://blog.gainlo.co/index.php/2016/03/08/system-design-interview-question-create-tinyurl-system/
+http://highscalability.com/blog/2014/5/12/4-architecture-issues-when-scaling-web-applications-bottlene.html

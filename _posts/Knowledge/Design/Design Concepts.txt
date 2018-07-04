@@ -14,3 +14,4 @@ Abstraction
 Abstraction is about emphasis on idea ignoring the details.  The basis idea of the abstraction is to simply the complexity of a system.
 
 
+http://blog.gainlo.co/index.php/2016/03/08/system-design-interview-question-create-tinyurl-system/
