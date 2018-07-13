@@ -96,7 +96,33 @@ In clustered environment, request associated with a Http Session are always rout
 
 10. What are the issue with session affinity?
 
-	
-	
-	
-http://blog.gainlo.co/index.php/2016/03/08/system-design-interview-question-create-tinyurl-system/
+
+
+CDN:
+---
+	https://www.globaldots.com/content-delivery-network-explained/
+
+http://blog.gainlo.co/index.php/category/system-design-interview-questions/
+http://highscalability.com/blog/2014/5/12/4-architecture-issues-when-scaling-web-applications-bottlene.html
+
+Sharding:
+---------
+	https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6
+	https://www.clustrix.com/bettersql/sharding-theory-algorithmic-sharding/
+
+Load Balancer, App Servers:
+--------------------------
+	Load Balancer
+
+Matching System:
+----------------
+	Spatial Indexing - Nearest Neighbors Search
+
+Distributed Database:
+---------------------
+	Databases - Intro to Indexing and NoSQL
+	Wide Column Stores
+
+In Memory DB:
+-------------
+	Key-Value Stores incl. Object Stores, In Memory DBs

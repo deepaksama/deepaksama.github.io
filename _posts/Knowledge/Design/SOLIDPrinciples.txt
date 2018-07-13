@@ -18,7 +18,7 @@ Open / Closed Principle (OCP)
 
 Modules that confirm to OCP should have two primary attributes
 1. Open for extension
-	This means that as the requirements of the application change we can extend the current module and override the functionality to meat the requirements.
+	This means that as the requirements of the application change we can extend the current module and override the functionality to meet the requirements.
 	
 2. Closed for modification
 	Modification to the code is not permitted.

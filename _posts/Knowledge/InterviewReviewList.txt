@@ -38,10 +38,9 @@ What is Continuous Delivery?
 
 Continuous Delivery is sometimes confused with continuous deployment.  Continuous Deployment means that every change is automatically deployed to production once it passes the tests.  Continuous delivery means that the team ensures every change can be deployed to production but may choose not to do it, usually due to the business reasons.  In order to do continuous deployment one must be doing continuous delivery.
 
+https://semaphoreci.com/blog/2017/07/27/what-is-the-difference-between-continuous-integration-continuous-deployment-and-continuous-delivery.html
+
 https://en.wikipedia.org/wiki/Continuous_delivery
-
-
-
 
 ----------------
 
@@ -53,13 +52,11 @@ To start with educational background I have done my Masters in Computer Applicat
  
 I have approximately 13 years of experience in IT. Worked on technologies like C++ and Java. 
 
-
-
 1. Current Project?
 
 	I worked with PayPal for compliance domain.  This domain falls under Risk domain and deals with Regulatory Risk. Here we deal with the compliance requirements enforced by requlatory bodyies like US OFAC (Office of Foreign Assets and Control). They provide a list of bad guys called World Check List and we have to scan the User profiles with PayPal against this World Check List for identifying bad guys and file report with OFAC if they anyone found suspicious.
 	
-	We have a batch component which basically downloads the WorldCheckList file from OFAC site. I creates indexing on this entries.  Another component which runs in scheduler after the first component finishes and for each new user it checks the entry in indexed data and comesout with the percentage match and generates an Alert if the match is > 80%. for 90%
+	We have a batch component which basically downloads the WorldCheckList file from OFAC site. It creates indexing on this entries.  Another component which runs in scheduler after the first component finishes and for each new user it checks the entry in indexed data and comes out with the percentage match and generates an Alert if the match is > 80%. for 90%
 	
 	
 	(Suspecious Activity Report)
@@ -79,7 +76,9 @@ Responsibilities:
 	4. Collaboration with cross vertical team if they need assistence in making changes if they need changes in components I own.
 	
 	How the efforts are estimated:
-	* Typically I have 2 to 3 meeting with product to understand the requirements depending on how big the changes request.  After that I would be identifing:
+	* Typically I have 2 to 3 meeting with product to understand the requirements depending on how big the changes requested are.  
+	
+	After that I would be identifing:
 	* Components that are affected and analysis of the code changes that may be required. ( Technology Implementation )
 	* Whether any cross vertical team involvement is required. 
 	* How many of the affected components are owned by our domain and how many are not.
@@ -109,7 +108,7 @@ Responsibilities:
 
  Best Practices on Coding:
  -------------------------
- Quality of product cannot be achieved in a single day.  Its a discipline and we have follow certain practes on everyday basis:
+ Quality of product cannot be achieved in a single day.  Its a discipline and we have to follow certain practices on everyday basis:
  
  1. Quality starts from the day where you write a code with comments and documents itself and adhere to the Coding standards laid by company.
 	( Which include naming convensions, indentations usage of Framework/Infra classes)
@@ -125,10 +124,21 @@ Responsibilities:
  3. Code comments
  4. Follow DRY Remove code repetition. 
  5. Code Portability (Remove hard host names, IP addresses, URLS, hard coded literals, abosolute file paths)
-6.  
 
- 
- 
- 
+ --------------
+
+Version 2:
+
+I did my Master in computer applications in India 2003
+I started my first job in 2004 in defense and warfare systems domain
+after that I worked in Teradata R&D , Capital market, Supply chain and Payments domain.
+Longest being the Payments domain in my last job with PayPal client.
+
+With PayPal i worked with different teams :	
+	1. Checkout 
+	2. Financial Instruments (FI)
+	3. Risk domain - spanning across Financial Risk and Regulatory Risk (Compliance)
+
+
  
 
