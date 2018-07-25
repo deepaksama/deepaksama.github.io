@@ -1,0 +1,134 @@
+Java
+1. Collections
+2. Serialization
+3. Multi threading
+
+
+Spring :
+1. Spring Core
+2. Spring MVC
+3. Spring Test
+
+Tools
+1. Findbugs
+2. 
+
+
+
+https://www.atlassian.com/git/tutorials/comparing-workflows
+http://resultspositive.com/functional-vs-regression-testing/
+https://codeship.com/continuous-integration-essentials
+
+
+What is CI (Continuous Integration)
+
+Continuous Integration is a development practice that requires developers to integrate code into shared repository several time in small chunks, instead of waiting till end of development cycle. Each commit is then verified by an automated build system allowing teams to detect issues and get feedback early.
+
+Adavantages:
+------------
+1. Because you are integrating so frequently, there is significantly less back tracking to discover where things went wrong.
+2. Prevents divergence between the branches as they are integrated regularly ( Merge conflicts)
+3. 
+
+What is continuous Deployment?
+
+Continuous Deployment refers to the releasing the component to the production that passes the tests.
+
+What is Continuous Delivery?
+
+Continuous Delivery is sometimes confused with continuous deployment.  Continuous Deployment means that every change is automatically deployed to production once it passes the tests.  Continuous delivery means that the team ensures every change can be deployed to production but may choose not to do it, usually due to the business reasons.  In order to do continuous deployment one must be doing continuous delivery.
+
+https://en.wikipedia.org/wiki/Continuous_delivery
+
+
+
+
+----------------
+
+Introduction:
+
+Hello 
+
+To start with educational background I have done my Masters in Computer Applications in 2003 after that i have started my career in IT in 2004 with CMC Ltd - for the client Defence Electronics Research Labaratory and there on worked with NCR - Teradata, with TCS for Standard Chartered, with Manhattan Associates for various client like Walmart, Nemon Markus, Pets Mart, also worked with CSC for PayPal client for 7 years.
+ 
+I have approximately 13 years of experience in IT. Worked on technologies like C++ and Java. 
+
+
+
+1. Current Project?
+
+	I worked with PayPal for compliance domain.  This domain falls under Risk domain and deals with Regulatory Risk. Here we deal with the compliance requirements enforced by requlatory bodyies like US OFAC (Office of Foreign Assets and Control). They provide a list of bad guys called World Check List and we have to scan the User profiles with PayPal against this World Check List for identifying bad guys and file report with OFAC if they anyone found suspicious.
+	
+	We have a batch component which basically downloads the WorldCheckList file from OFAC site. I creates indexing on this entries.  Another component which runs in scheduler after the first component finishes and for each new user it checks the entry in indexed data and comesout with the percentage match and generates an Alert if the match is > 80%. for 90%
+	
+	
+	(Suspecious Activity Report)
+	
+	
+2. Brief on Roles an Responsibilities 
+
+Role DTL :
+	I am working as Design and Technical Lead.
+	
+Responsibilities:
+	Responsibilities on typical day would be 70% on Design and development activities and 30% component ownership activities, SME activities, collaborations with teams.
+
+	1. I receive the One pager feature request from Product for which I have to provide the Analysis required in a week.
+	2. I may have some meetings with Product to understand the requirements.
+	3. Code Reviews for the components i am owning.
+	4. Collaboration with cross vertical team if they need assistence in making changes if they need changes in components I own.
+	
+	How the efforts are estimated:
+	* Typically I have 2 to 3 meeting with product to understand the requirements depending on how big the changes request.  After that I would be identifing:
+	* Components that are affected and analysis of the code changes that may be required. ( Technology Implementation )
+	* Whether any cross vertical team involvement is required. 
+	* How many of the affected components are owned by our domain and how many are not.
+	* How much time we may need to spend in collaborating with cross vertical teams.
+	* How much efforted is required from other teams and approval process with the 	 respective domain managers.
+	
+3. As per the product road map we receive the same changes request as Epic which we breakdown into User stories.
+4. Do story pointing with voting.
+5. Once the Product prioritize them accepts User Stories we would be working on them.
+6. Day starts with standup where the team gives the updates on what they have worked on yesterday and what he is going to work on and they also update the if there is any road blockers.
+7. would be working on the development tasks assigned to me.
+ 
+
+ 
+ Difference between REST and SOAP
+ 
+ SOAP is a XML based protocol on top of HTTP and SMTP. SOAP uses service interface WSDL to expose its business logic. SOAP define standards to be followed. Used in environments where resources are not constrained. It is secure. 
+ SOAP clients are like destop client applications they are tightly coupled with service interface of service. If there is any change in the contract the client also has to change.
+ 
+ REST is an architectural style. Its Protocol independent. But HTTP being the more simple its most is implemented with HTTP. REST uses URI to expose business logic.  It does not define any standards like SOAP.  REST support different data formats like XML, Plain Text, JSON, HTML etc and client can negotiate the content type.  Requires additional plumbing for transaction, security. It gets security from its underlying protocol.
+ 
+ Rest clients are like browsers they do not need to know only the context and can assess the service using hypermedia.
+ 
+ https://blog.smartbear.com/apis/understanding-soap-and-rest-basics/
+ https://stackoverflow.com/questions/2131965/main-differences-between-soap-and-restful-web-services-in-java
+ https://en.wikipedia.org/wiki/HATEOAS
+
+ Best Practices on Coding:
+ -------------------------
+ Quality of product cannot be achieved in a single day.  Its a discipline and we have follow certain practes on everyday basis:
+ 
+ 1. Quality starts from the day where you write a code with comments and documents itself and adhere to the Coding standards laid by company.
+	( Which include naming convensions, indentations usage of Framework/Infra classes)
+	
+ 2. Code reviews improve the 
+ 
+ 
+ Code Review :
+ ------------
+ 
+ 1. Follow the coding standards laid of organization.  Like usage of internal framework/infra classes.
+ 2. Indentation
+ 3. Code comments
+ 4. Follow DRY Remove code repetition. 
+ 5. Code Portability (Remove hard host names, IP addresses, URLS, hard coded literals, abosolute file paths)
+6.  
+
+ 
+ 
+ 
+ 
+

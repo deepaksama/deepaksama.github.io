@@ -1,7 +1,18 @@
 
 
+The Two Layers of Authentication & Authorization
+------------------------------------------------
+
+There are at least two layers we should consider. The first deals with inside-the-mesh, service-to-service authentication/authorization. 
+
+The second is the user-level authentication/authorization at the edge and possibly throughout the entire system.
 
 Ref:
+Good one
+https://medium.com/tech-tajawal/microservice-authentication-and-authorization-solutions-e0e5e74b248a
+https://codeburst.io/thank-you-for-the-high-praise-190b59d778e9
+
+
 http://www.java67.com/2012/12/difference-between-truststore-vs.html
 https://javarevisited.blogspot.sg/2012/09/difference-between-truststore-vs-keyStore-Java-SSL.html
 https://javarevisited.blogspot.sg/2011/11/ldap-authentication-active-directory.html
