@@ -1,0 +1,163 @@
+SOLID principles (By Robert martin/Uncle bob)
+--------------------------------------------------
+
+S is for the Single Responsibility Principle; 
+O, the Open/Closed Principle; 
+L, the Liskov Substitution Principle; 
+I is the Interface Segregation Principle; and 
+D is the Dependency Inversion Principle.
+
+Single Responsibility Principle
+
+Every object should have a single responsibility.  Each responsibility is an axis of change.
+When requirements change, that change will manifest through a change in responsibility.  
+If a class assumes one responsibility then there will be only one reason to change.
+
+
+Open / Closed Principle (OCP) 
+
+Modules that confirm to OCP should have two primary attributes
+1. Open for extension
+	This means that as the requirements of the application change we can extend the current module and override the functionality to meet the requirements.
+	
+2. Closed for modification
+	Modification to the code is not permitted.
+	
+	
+	To understand take an example scenario where we have write a Client and Server applications where client would connect to a server to interact with DB.
+	
+	If we implement Client and server as concrete classes it would be very tightly coupled settup. Neither it is open for extension nor closed for modification.
+	
+	If we write Server as an interface/abstract class and the client class can use the reference of interface/abstract class of the server to call methods on concrete implementation of server.
+	In this kind of design client is using server reference and reference can point to any implementation of its type we can change the implementation to connect to any server.
+	This kind of implementation adheres to the Open/Closed principle.
+	
+3. Liskov Substitution Principle (LSP):
+
+	This principle says functions that use pointers or references to base classes must be able to use objects of derived  type without knowing it.
+	In other words you should be able to replace base types with their sub types in your algorithms without actully doing any type check.
+
+	We can identify the violation of LSP in a code by checking for logic implemented on the basis of type of related classes.
+	Ex:
+	public class Connection
+	{
+		publicint Connect(ConnectionManager c)
+	   {  
+	 
+		  If(c.type == ConnectionType.DialUp)
+			  (C as DialupConnection).makeConnection();
+		 If(c.type == ConnectionType.WIFI)
+		   (c as WifiConnection).makeConnection();
+		//… 
+	   }    
+	}
+ 	
+4. Interface segregation principle (ISP):
+
+The ISP says that we should focus on creating thin interfaces and try to avoid a tendency of keep on adding functionalities to existing interface.
+
+
+5. Dependency Inversion Principle (DIP):
+
+	
+	Dependency inversion principle is a software design principle which provides us the guidelines to write loosely coupled classes. 
+	According to the definition of Dependency inversion principle:
+	
+	a. High-level modules should not depend on low-level modules. Both should depend on abstractions.
+	b. Abstractions should not depend upon details. Details should depend upon abstractions.
+
+-------------------------------------------------------------------------------------------------------------------
+
+GRASP (General Responsibility Assignment Software Patterns)Principles
+
+Creator 
+Controller 
+Pure 
+Fabrication
+Information 
+Expert 
+High Cohesion 
+Indirection
+Low Coupling
+Polymorphism 
+Protected 
+Variations 
+
+
+
+
+	
+	--------------------------------
+	
+	Scalability:
+	
+	http://www.lecloud.net/tagged/scalability
+	
+	Soft Skills
+	
+	https://www.hiredintech.com/classrooms/interview-strategies/lesson/88 - course
+	
+	
+	
+	System design:
+	
+	https://github.com/checkcheckzz/system-design-interview
+	https://www.hiredintech.com/classrooms/system-design/lesson/53 - Course
+	http://blog.gainlo.co/index.php/2015/10/22/8-things-you-need-to-know-before-system-design-interviews/
+	https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview?redirected_qid=1500023 -discussion
+	https://youtu.be/-W9F__D3oY4
+	
+	https://github.com/shashank88/system_design
+	
+	Solution architecture
+	
+	
+	
+	Roles Example:
+	-------------
+	1
+		•	Responsible for Continental Europe wide Business on Architectural and Design Solution. 
+		•	E2E System/Application architecture and Design.
+		•	Designing application with Open source and Foundation reusable framework.
+		•	Architecture Solution to Business Requirement on multiple projects across Continental Europe
+		•	Technical Solution to Client and Development Team.
+		•	Creating road map and mentoring for Performance, Productivity and Quality.
+		•	Project/System Due Diligence, RFP, Pre-Sales
+		•	Industrialization, Productivity/Process improvement.
+	2. 
+	
+		Responsible for defining, documenting and articulating functional scope. Also involved in technical analytical, problem-solving and identifying, analyzing, tracking and managing customer and application data flow issues throughout a software system.
+
+		Develop architecture solutions using industry standard architecture frameworks with specialisms in the following:
+
+		Information architecture
+		Application architecture
+		Technical architecture
+		Information assurance and security
+		Resilience and performance
+
+		New and existing Project implementation
+		Help clients and reseller partners utilise the best potential
+		Defining the web architecture blueprint for both clients and reseller partners
+		Liaising with Pre-sales and Sales teams
+	
+	3. 
+	
+	
+	Data science
+	 https://www.linkedin.com/learning/data-science-and-analytics-career-paths-and-certifications/welcome
+	 
+	 
+	Linked in courses:
+		https://www.linkedin.com/learning/learning-design-thinking-lead-change-in-your-organization/about-this-course-and-our-linkedin-group
+		https://www.linkedin.com/learning/programming-foundations-databases
+		https://www.linkedin.com/learning/developing-secure-software
+		https://www.linkedin.com/learning/human-resources-pay-strategy/designing-a-pay-system
+		
+	Dev tips:
+	------------
+	https://simpleprogrammer.com/2016/12/28/software-design-patterns-hiding/
+	https://simpleprogrammer.com/2016/11/23/side-projects/
+	https://simpleprogrammer.com/2016/11/09/10-tips-junior-dev-role/
+	
+		
