@@ -96,6 +96,9 @@ In clustered environment, request associated with a Http Session are always rout
 
 10. What are the issue with session affinity?
 
+important :	
+http://highscalability.com/google-architecture
+=======
 
 
 CDN:
